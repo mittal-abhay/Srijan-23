@@ -1,0 +1,10 @@
+venv/
+media/
+
+*.log
+*.pot
+*.pyc
+__pycache__
+*.sqlite3
+
+variables.json
