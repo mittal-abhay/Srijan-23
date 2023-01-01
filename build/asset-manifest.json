@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/srijan/static/css/main.d58ff88a.chunk.css",
-    "main.js": "/srijan/static/js/main.e928e78a.chunk.js",
-    "main.js.map": "/srijan/static/js/main.e928e78a.chunk.js.map",
-    "runtime-main.js": "/srijan/static/js/runtime-main.8aa923e7.js",
-    "runtime-main.js.map": "/srijan/static/js/runtime-main.8aa923e7.js.map",
-    "static/css/2.0de7bad8.chunk.css": "/srijan/static/css/2.0de7bad8.chunk.css",
-    "static/js/2.c5a4c677.chunk.js": "/srijan/static/js/2.c5a4c677.chunk.js",
-    "static/js/2.c5a4c677.chunk.js.map": "/srijan/static/js/2.c5a4c677.chunk.js.map",
+    "main.css": "/srijan/static/css/main.f31c755c.chunk.css",
+    "main.js": "/srijan/static/js/main.ac29d55f.chunk.js",
+    "main.js.map": "/srijan/static/js/main.ac29d55f.chunk.js.map",
+    "runtime-main.js": "/srijan/static/js/runtime-main.0a3ec028.js",
+    "runtime-main.js.map": "/srijan/static/js/runtime-main.0a3ec028.js.map",
+    "static/css/2.7306e733.chunk.css": "/srijan/static/css/2.7306e733.chunk.css",
+    "static/js/2.19bbde8a.chunk.js": "/srijan/static/js/2.19bbde8a.chunk.js",
+    "static/js/2.19bbde8a.chunk.js.map": "/srijan/static/js/2.19bbde8a.chunk.js.map",
     "index.html": "/srijan/index.html",
-    "precache-manifest.08ae3e76f6a440680c49c6fd659137f1.js": "/srijan/precache-manifest.08ae3e76f6a440680c49c6fd659137f1.js",
+    "precache-manifest.3ba12a018eaa1c8c6763b60bc19ef745.js": "/srijan/precache-manifest.3ba12a018eaa1c8c6763b60bc19ef745.js",
     "service-worker.js": "/srijan/service-worker.js",
-    "static/css/2.0de7bad8.chunk.css.map": "/srijan/static/css/2.0de7bad8.chunk.css.map",
-    "static/css/main.d58ff88a.chunk.css.map": "/srijan/static/css/main.d58ff88a.chunk.css.map",
+    "static/css/2.7306e733.chunk.css.map": "/srijan/static/css/2.7306e733.chunk.css.map",
+    "static/css/main.f31c755c.chunk.css.map": "/srijan/static/css/main.f31c755c.chunk.css.map",
+    "static/media/App.css": "/srijan/static/media/bg-wall.25e27511.png",
     "static/media/font-awesome.css": "/srijan/static/media/fontawesome-webfont.fee66e71.woff"
   }
 }

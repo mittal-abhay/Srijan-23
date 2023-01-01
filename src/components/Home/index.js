@@ -177,7 +177,7 @@ class Home extends Component {
     return (
       <div>
         <Helmet>
-          <title>srijan</title>
+          <title>Srijan</title>
           <link rel="shortcut icon" href="./favicon.ico" />
           <meta
             name="description"
@@ -227,13 +227,13 @@ class Home extends Component {
               width: "100vw",
             }}
           >
-            <img
+            {/* <img
               src="../images/landing.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
               style={{ transform: "translateY(" + offset + "px" }}
-            />
+            /> */}
           </div>
         }
         <div className={classes.parallax + " gradientBg mt-0"}>
