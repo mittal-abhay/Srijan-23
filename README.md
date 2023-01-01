@@ -2,7 +2,7 @@
 
 Front end for srijan 2023 website
 
-# Hosted temporarily at https://mittal-abhay.github.io/srijan
+# Hosted temporarily at https://mittal-abhay.github.io/Srijan-23
 
 ## Available Scripts
 
@@ -26,4 +26,4 @@ Your app is ready to be deployed!
 
 ### 'npm run deploy'
 
-Deploys the app at the above github URL : https://mittal-abhay.github.io/srijan
+Deploys the app at the above github URL : https://mittal-abhay.github.io/Srijan-23
