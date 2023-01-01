@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Frontend App for srijan Website",
   "private": true,
-  "homepage": "https://bhimeshagrawal.github.io/srijan",
+  "homepage": "https://mittal-abhay.github.io/Srijan-23",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -16,7 +16,6 @@
     "bootstrap": "^4.6.2",
     "cors": "^2.8.5",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -41,7 +40,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -61,11 +60,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhimeshagrawal/srijan.git"
+    "url": "git+https://github.com/mittal-abhay/Srijan-23.git"
   },
   "author": "IIT (ISM)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bhimeshagrawal/srijan/issues"
+    "url": "https://github.com/mittal-abhay/Srijan-23/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
