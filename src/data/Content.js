@@ -6,7 +6,7 @@ export const HomeContent = [
     image2: "https://srijan-front.s3.ap-south-1.amazonaws.com/about2.jpg",
     image3: "https://srijan-front.s3.ap-south-1.amazonaws.com/about3.jpg",
     description:
-      "srijan-2022, the annual Techno-Management fest of IIT (ISM) Dhanbad will be organized from 21th to 23th October 2022, where every year, thousands of participants from all across the country come to compete in the largest techno-management fest of eastern India. Participants show their technical and management skills on one common platform, srijan.",
+      "srijan-2022, the annual cultural fest of IIT (ISM) Dhanbad will be organized from 21th to 23th October 2022, where every year, thousands of participants from all across the country come to compete in the largest techno-management fest of eastern India. Participants show their technical and management skills on one common platform, srijan.",
   },
   // {
   //   link: "exhibitions",
