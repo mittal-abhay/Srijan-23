@@ -94,7 +94,7 @@
 
 /* Floating icon */
 
-.float{
+/* .float{
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -106,7 +106,7 @@
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px rgba(84, 149, 58, 0.704);
-  /* z-index:100; */
+  z-index:100;
 }
 
 .my-float{
@@ -117,9 +117,32 @@
   .float{
     display: none;
   }
+} */
+/* .herosection {
+ position: relative;
+ background-color: black;
+ height: 100vh;
+} */
+/* .herosection img{
+  height: 100%;
+  width: 100%;
+} */
+.herosection h1 {
+  font-size: 250px;
+  color: rgba(255, 255, 255, 0.1);
+  background-image: url('../../assets/multicolored_painting2.jpg');
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 30s linear infinite;
 }
-
-
+@keyframes animate{
+  0%{
+    background-position: left 0px top 10px;
+  }
+  40%{
+    background-position: left 1000px top 10px;
+  }
+}
 
 /* moon bottom logo */
 
@@ -339,6 +362,7 @@
 }
 
 
+
 @media only screen and (max-width: 760px){
   .btn-cont .btn{
     font-size: 20px;
@@ -382,6 +406,7 @@
   position: absolute;
   width: 6px;
   height: 6px;
+  border-radius: 50%;
   box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
               550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
               1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
@@ -415,6 +440,7 @@
   position: absolute;
   width: 6px;
   height: 6px;
+  border-radius: 50%;
   box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
               550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
               1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,
@@ -448,6 +474,7 @@
   position: absolute;
   width: 4px;
   height: 4px;
+  border-radius: 50%;
   box-shadow: 100px 200px #ffeb3b93, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #009688,
               550px 150px #00BCD4, 550px 300px #2196F3, 350px 500px #FFF, 1750px 150px #00BCD4,
               1000px 400px #673AB7, 650px 450px #03A9F4, 1200px 50px #FF5722, 1100px 450px #673AB7,

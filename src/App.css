@@ -6,9 +6,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
-  color: #cdcdcd;
+  color: goldenrod;
   font-size: 1.33rem;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 /* =================== LOGO ====================== */
-.logo {
+/* .logo {
   transition: all 0.3s ease-in-out;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -62,7 +62,8 @@ body {
 .logo-home {
   position: fixed;
   height: 100vw;
-  width: 90vw;
+  width: 100vw;
+  font-size: 200px !important;
   top: 50%;
   left: 50%;
   vertical-align: middle;
@@ -78,21 +79,23 @@ body {
 }
 
 .logo-header {
-  height: 100px;
+  height: 200px;
+  font-size: 20px !important;
   position: fixed;
   transform: translate(-50%, -50%);
   width: 150px;
-  top: 30px;
-  left: 80px;
+  top: 70px;
+  left: 320px;
   z-index: 999;
-}
+} */
+
 
 /* home page gradient  */
-.gradientBg {
+/* .gradientBg {
   background-image: url("../src/assets/bg-wall.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 
 img {
   opacity: 1 !important;
@@ -129,7 +132,7 @@ a:hover {
 }
 
 .footer {
-  background-color: black;
+   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
   margin: auto;
   width: 100%;
   bottom: 0px;
@@ -249,7 +252,7 @@ a:hover {
   padding-top: 0;
   right: 0;
   top: 0;
-  background: black;
+   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -277,6 +280,7 @@ a:hover {
     padding: 2px 0;
   }
 }
+
 
 /*
  * And let's fade it in from the left
