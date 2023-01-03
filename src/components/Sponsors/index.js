@@ -47,7 +47,7 @@ export default function Sponsors() {
   });
 
   useEffect(() => {
-    fetch("https://admin.srijan.in/sponsors/", { mode: "cors" })
+    fetch("https://srijan.herokuapp.com/sponsors/", { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

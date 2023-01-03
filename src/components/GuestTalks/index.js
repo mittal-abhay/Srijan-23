@@ -25,7 +25,7 @@ export default function GuestTalk() {
   };
 
   useEffect(() => {
-    fetch("https://admin.srijan.in/guesttalks/", { mode: "cors" })
+    fetch("https://srijan.herokuapp.com/guesttalks/", { mode: "cors" })
       .then((data) => data.json())
       .then((data) => {
         setGuestTalks(data);
