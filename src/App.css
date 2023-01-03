@@ -10,6 +10,7 @@ body {
   /* background-attachment: fixed; */
   color: goldenrod;
   font-size: 1.33rem;
+  cursor: url('../src/assets/golden_cursor.svg'),auto!important;
 }
 
 @media (min-width: 1200px) {

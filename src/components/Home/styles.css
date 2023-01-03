@@ -1,3 +1,4 @@
+  @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 .demo a {
   position: absolute;
   top: 60px;
@@ -127,14 +128,56 @@
   height: 100%;
   width: 100%;
 } */
-.herosection h1 {
+/* .herosection h1 {
   font-size: 250px;
   color: rgba(255, 255, 255, 0.1);
   background-image: url('../../assets/multicolored_painting2.jpg');
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 30s linear infinite;
+} */
+#graphics {
+	position: absolute;
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+  background-color: black;
+  z-index: -10;
 }
+
+.patterns {
+ height: 100vh;
+}
+
+
+
+svg text {
+ font-family: Lora;
+ letter-spacing: 10px;
+ stroke: #FFD700;
+ font-size: 250px;
+ font-weight: 700;
+ stroke-width: 3;
+ animation: textAnimate 5s infinite alternate;
+ 
+}
+
+@keyframes textAnimate {
+ 0% {
+   stroke-dasharray: 0 50%;
+   stroke-dashoffset:  20%;
+   fill: rgb(255, 204, 0);
+
+ }
+ 
+ 100% {
+   stroke-dasharray: 50% 0;
+   stroke-dashoffstet: -20%;
+   fill: hsla(189, 68%, 75%,0%)
+ }
+ 
+}
+
 @keyframes animate{
   0%{
     background-position: left 0px top 10px;

@@ -215,20 +215,39 @@ class Home extends Component {
           </a>
         </section>
         <HomeHeader></HomeHeader>
-        <div className={classes.logo} ref={this.vantaRef}>
-          {/* <img
+        {/* <div className={classes.logo} ref={this.vantaRef}> */}
+        {/* <img
             src="../images/srijanLogo.jpeg"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={" "}
           /> */}
 
-          {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
+        {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
 
-          <div className="herosection">
-            {/* <img src={bg} alt="" /> */}
+        {/* <div className="herosection">
             <h1>SRIJAN</h1>
-          </div>
+          </div> */}
+        {/* </div> */}
+        <canvas id="graphics" />
+        <div className="patterns">
+          <svg width="100%" height="100%">
+            <defs></defs>
+
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              fill="url(#polka-dots)"
+            >
+              {" "}
+            </rect>
+
+            <text x="50%" y="60%" text-anchor="middle">
+              SRIJAN
+            </text>
+          </svg>
         </div>
 
         {/* </div> */}
@@ -250,12 +269,12 @@ class Home extends Component {
             />
           </div>
         } */}
-        <div>
+        {/* <div>
           <div class="stars-01"></div>
           <div class="stars-02"></div>
           <div class="stars-03"></div>
           <div class="stars-04"></div>
-        </div>
+        </div> */}
 
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
