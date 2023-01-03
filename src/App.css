@@ -36,9 +36,9 @@ body {
       linear,
       left bottom,
       left top,
-      color-stop(0.44, #d4af37),
-      color-stop(0.72, #d4af37),
-      color-stop(0.86, #d4af37)
+      color-stop(0.44, gold),
+      color-stop(0.72, gold),
+      color-stop(0.86, gold)
     );
   }
 }
