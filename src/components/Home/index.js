@@ -174,7 +174,6 @@ class Home extends Component {
   }
 
   render() {
-    
     const { classes } = this.props;
     const { offset, x } = this.state;
     return (
@@ -200,9 +199,7 @@ class Home extends Component {
 
           gtag('config', 'G-6WVX154NPV');
         </Safe.script> */}
-        {
-          
-        }
+        {}
         <section id="scroll_down" className="demo">
           <a
             onClick={() => {
@@ -222,13 +219,10 @@ class Home extends Component {
             ref={this.homeRef}
             alt={" "}
           /> */}
-
         {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
-
         {/* <div className="herosection">
-            <h1>SRIJAN</h1>
-          </div> */}
-        {/* </div> */}
+          <h1>SRIJAN</h1>
+        </div> */}
         <canvas id="graphics" />
         <div className="patterns">
           <svg width="100%" height="100%">
@@ -249,7 +243,6 @@ class Home extends Component {
             </text>
           </svg>
         </div>
-
         {/* </div> */}
         {/* {
           <div
@@ -275,7 +268,6 @@ class Home extends Component {
           <div class="stars-03"></div>
           <div class="stars-04"></div>
         </div> */}
-
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
@@ -307,7 +299,6 @@ class Home extends Component {
             </a>
           </div>
         </div>
-
         <br />
         <link
           rel="stylesheet"

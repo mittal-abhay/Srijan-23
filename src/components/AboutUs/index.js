@@ -25,6 +25,7 @@ class AboutUs extends Component {
         </Helmet>
         <Header />
         <br />
+
         <h1
           style={{
             textAlign: "center",

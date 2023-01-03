@@ -145,11 +145,10 @@
   z-index: -10;
 }
 
+
 .patterns {
  height: 100vh;
 }
-
-
 
 svg text {
  font-family: Lora;
@@ -158,26 +157,30 @@ svg text {
  font-size: 250px;
  font-weight: 700;
  stroke-width: 3;
- animation: textAnimate 5s infinite alternate;
+ animation: textAnimate 3s infinite alternate;
  
 }
 
 @keyframes textAnimate {
  0% {
    stroke-dasharray: 0 50%;
-   stroke-dashoffset:  20%;
-   fill: rgb(255, 204, 0);
-
+   stroke-dashoffset:  20%; 
+    fill: rgb(255, 204, 0); 
+   
+   
  }
  
  100% {
    stroke-dasharray: 50% 0;
    stroke-dashoffstet: -20%;
-   fill: hsla(189, 68%, 75%,0%)
+   fill: hsla(189, 68%, 75%,0%);
+  
+  
+
  }
  
 }
-
+/* 
 @keyframes animate{
   0%{
     background-position: left 0px top 10px;
@@ -185,7 +188,7 @@ svg text {
   40%{
     background-position: left 1000px top 10px;
   }
-}
+} */
 
 /* moon bottom logo */
 
