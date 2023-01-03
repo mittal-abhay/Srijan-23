@@ -7,9 +7,11 @@ import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
-import CLOUDS from "vanta/dist/vanta.clouds.min.js";
+import bg from "../../assets/bg.jpg";
+// import CLOUDS from "vanta/dist/vanta.clouds.min.js";
 import * as THREE from "three";
 import "./styles.css";
+
 import { Helmet } from "react-helmet";
 // import Safe from "react-safe"
 
@@ -87,22 +89,22 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    this.vantaEffect = CLOUDS({
-      el: this.vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      backgroundColor: 0x0,
-      skyColor: 0xa0111,
-      cloudColor: 0x1b2d50,
-      cloudShadowColor: 0xfafafa,
-      sunColor: 0x3a2ff,
-      sunGlareColor: 0x6030ff,
-      sunlightColor: 0x3c30ff,
-      THREE,
-    });
+    // this.vantaEffect = CLOUDS({
+    //   el: this.vantaRef.current,
+    //   mouseControls: true,
+    //   touchControls: true,
+    //   gyroControls: false,
+    //   minHeight: 200.0,
+    //   minWidth: 200.0,
+    //   backgroundColor: 0x0,
+    //   skyColor: 0xa0111,
+    //   cloudColor: 0x1b2d50,
+    //   cloudShadowColor: 0xfafafa,
+    //   sunColor: 0x3a2ff,
+    //   sunGlareColor: 0x6030ff,
+    //   sunlightColor: 0x3c30ff,
+    //   THREE,
+    // });
     console.log(window.innerWidth);
     // this.setState({ x: window.scrollY });
     window.addEventListener("scroll", this.handleScroll);
@@ -211,14 +213,23 @@ class Home extends Component {
         </section>
         <HomeHeader></HomeHeader>
         <div className={classes.logo} ref={this.vantaRef}>
-          <img
+          {/* <img
             src="../images/srijanLogo.jpeg"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={" "}
-          />
+          /> */}
+
+          {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
+
+          <div className="herosection">
+            {/* <img src={bg} alt="" /> */}
+            <h1>SRIJAN</h1>
+          </div>
         </div>
-        {
+
+        {/* </div> */}
+        {/* {
           <div
             style={{
               display: "flex",
@@ -227,21 +238,22 @@ class Home extends Component {
               width: "100vw",
             }}
           >
-            {/* <img
+            <img
               src="../images/landing.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
               style={{ transform: "translateY(" + offset + "px" }}
-            /> */}
+            />
           </div>
-        }
+        } */}
         <div>
-      <div class="stars-01"></div>
-      <div class="stars-02"></div>
-      <div class="stars-03"></div>
-      <div class="stars-04"></div>
-    </div>
+          <div class="stars-01"></div>
+          <div class="stars-02"></div>
+          <div class="stars-03"></div>
+          <div class="stars-04"></div>
+        </div>
+
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
