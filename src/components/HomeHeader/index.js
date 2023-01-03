@@ -49,7 +49,7 @@ class Header extends Component {
               type="checkbox"
               checked={isMenuOpen}
               onClick={this.toggleMenu}
-              style={{backgroundColor: "gold"}}
+              // style={{backgroundColor: "gold"}}
             />
             <span style={{backgroundColor: "gold"}}></span>
             <span style={{backgroundColor: "gold"}}></span>
