@@ -174,6 +174,7 @@ class Home extends Component {
   }
 
   render() {
+    
     const { classes } = this.props;
     const { offset, x } = this.state;
     return (
@@ -199,7 +200,9 @@ class Home extends Component {
 
           gtag('config', 'G-6WVX154NPV');
         </Safe.script> */}
-
+        {
+          
+        }
         <section id="scroll_down" className="demo">
           <a
             onClick={() => {

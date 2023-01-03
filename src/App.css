@@ -28,7 +28,7 @@ body {
   #thin::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #0a0111;
-    border-radius: 10px;
+    /* border-radius: 10px; */
   }
 
   #thin::-webkit-scrollbar-thumb {
@@ -37,9 +37,9 @@ body {
       linear,
       left bottom,
       left top,
-      color-stop(0.44, cyan),
-      color-stop(0.72, white),
-      color-stop(0.86, #05070b)
+      color-stop(0.44, gold),
+      color-stop(0.72, gold),
+      color-stop(0.86, gold)
     );
   }
 }
@@ -446,4 +446,5 @@ a :focus {
     font-size: 1.5rem;
   }
 }
+
 
