@@ -8,7 +8,6 @@ import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
-// import CLOUDS from "vanta/dist/vanta.clouds.min.js";
 import * as THREE from "three";
 import "./styles.css";
 
@@ -89,30 +88,13 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    // this.vantaEffect = CLOUDS({
-    //   el: this.vantaRef.current,
-    //   mouseControls: true,
-    //   touchControls: true,
-    //   gyroControls: false,
-    //   minHeight: 200.0,
-    //   minWidth: 200.0,
-    //   backgroundColor: 0x0,
-    //   skyColor: 0xa0111,
-    //   cloudColor: 0x1b2d50,
-    //   cloudShadowColor: 0xfafafa,
-    //   sunColor: 0x3a2ff,
-    //   sunGlareColor: 0x6030ff,
-    //   sunlightColor: 0x3c30ff,
-    //   THREE,
-    // });
     console.log(window.innerWidth);
-    // this.setState({ x: window.scrollY });
+
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "38vh";
     else document.body.style.paddingBottom = "30vh";
   }
   componentWillUnmount() {
-    // this.props.makeShowLogo();
     document.body.style.paddingBottom = "0";
     if (this.vantaEffect) this.vantaEffect.destroy();
     window.scrollTo(0, 0);
@@ -232,24 +214,14 @@ class Home extends Component {
 
         <div className="patterns">
           <svg width="100%" height="100%">
-            <defs></defs>
-
-            <rect
-              x="0"
-              y="0"
-              width="100%"
-              height="100%"
-              fill="url(#polka-dots)"
-            >
-              {" "}
-            </rect>
-
             <text x="50%" y="60%" text-anchor="middle">
               SRIJAN'23
             </text>
           </svg>
         </div>
-        {/* <h2>The Carnival of Reminiscence</h2> */}
+
+        <h2 className="glow">The Carnival of Reminiscence......</h2>
+
         {/* </div> */}
         {/* {
           <div

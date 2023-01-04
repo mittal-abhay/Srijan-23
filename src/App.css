@@ -246,7 +246,7 @@ a:hover {
   padding-top: 0;
   right: 0;
   top: 0;
-   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+   background: black;
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

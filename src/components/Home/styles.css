@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); 
 .demo a {
-  position: absolute;
+  /* position: absolute; */
   top: 60px;
   left: 50%;
   z-index: 205;
@@ -22,7 +22,7 @@
   padding-top: 80px;
 }
 #scroll_down a span {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 50%;
   width: 24px;
@@ -92,8 +92,6 @@
   }
 
 }
-
-
 /* Floating icon */
 
 /* .float{
@@ -138,18 +136,16 @@
   animation: animate 30s linear infinite;
 } */
 
-
-
-
-
 .patterns {
  height: 100vh;
+ position: relative;
 }
 
-svg text {
+text {
+ margin-top: 100px;
  font-family: Lora;
  letter-spacing: 10px;
- stroke: #FFD700;
+ stroke:  #FFBC00;
  font-size: 250px;
  font-weight: 700;
  stroke-width: 3;
@@ -160,7 +156,7 @@ svg text {
  0% {
    stroke-dasharray: 0 50%;
    stroke-dashoffset:  20%; 
-    fill: rgb(255, 204, 0); 
+    fill:  #FFBC00; 
  }
  
  100% {
@@ -171,7 +167,26 @@ svg text {
  }
  
 }
+.glow{
+  position: absolute;
+  top: 550px;
+  color: #fff;
+  right: 340px;
+  font-size: 70px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: 'Alex Brush', cursive;
 
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+  }
+}
 /* moon bottom logo */
 
 @media only screen and (max-width: 760px){
@@ -891,7 +906,7 @@ svg text {
   width: 3px;
   height: 3px;
   background: transparent;
-  animation: animStar 150s linear infinte;
+  animation: animStar 150s linear infinite;
   box-shadow: 387px 1878px #FFD700, 760px 1564px #FFD700, 1487px 999px #FFD700,
   948px 1828px #FFD700, 1977px 1001px #FFD700, 1284px 1963px #FFD700, 656px 284px #FFD700,
   1268px 1635px #FFD700, 1820px 598px #FFD700, 642px 1900px #FFD700, 296px 57px #FFD700,
