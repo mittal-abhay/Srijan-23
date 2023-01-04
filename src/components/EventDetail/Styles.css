@@ -32,6 +32,7 @@
   overflow: hidden;
   transition: 0.3s;
   border: 0px;
+  /* z-index: 6; */
 }
 button .btn-2:focus {
   outline: none !important;

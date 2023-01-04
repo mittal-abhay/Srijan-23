@@ -67,7 +67,7 @@ function EventDetail(props) {
           <div className="btnFlex">
             <Link to="club-events">
               <button
-                style={{ fontFamily: "'Noto Sans',sans-serif" }}
+                style={{ fontFamily: "'Noto Sans',sans-serif", zIndex:3 }}
                 className={
                   "btn btn-event btn-2 " + (active === 1 ? "active-bottom" : "")
                 }
@@ -77,7 +77,7 @@ function EventDetail(props) {
             </Link>
             <Link to="department-events">
               <button
-                style={{ fontFamily: "'Noto Sans',sans-serif" }}
+                style={{ fontFamily: "'Noto Sans',sans-serif", zIndex:3 }}
                 className={
                   "btn btn-event btn-2 " + (active === 0 ? "active-bottom" : "")
                 }
