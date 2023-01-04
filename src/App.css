@@ -5,9 +5,7 @@ body {
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  background-color: black;
   color: goldenrod;
   font-size: 1.33rem;
   cursor: url('../src/assets/golden_cursor.svg'),auto!important;
@@ -28,7 +26,6 @@ body {
   #thin::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #0a0111;
-    /* border-radius: 10px; */
   }
 
   #thin::-webkit-scrollbar-thumb {
@@ -43,7 +40,6 @@ body {
     );
   }
 }
-
 @media (max-width: 800px) {
   html,
   body {
@@ -51,7 +47,6 @@ body {
     overflow-x: hidden;
   }
 }
-
 /* =================== LOGO ====================== */
 /* .logo {
   transition: all 0.3s ease-in-out;
@@ -92,11 +87,7 @@ body {
 
 
 /* home page gradient  */
-/* .gradientBg {
-  background-image: url("../src/assets/bg-wall.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+
 
 img {
   opacity: 1 !important;
@@ -133,7 +124,7 @@ a:hover {
 }
 
 .footer {
-   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+  background-color: black;
   margin: auto;
   width: 100%;
   bottom: 0px;
@@ -253,7 +244,7 @@ a:hover {
   padding-top: 0;
   right: 0;
   top: 0;
-   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+   background-color: black;
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

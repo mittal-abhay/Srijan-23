@@ -200,7 +200,7 @@ class Home extends Component {
           gtag('config', 'G-6WVX154NPV');
         </Safe.script> */}
         {}
-        <section id="scroll_down" className="demo">
+        {/* <section id="scroll_down" className="demo">
           <a
             onClick={() => {
               this.scrollDown();
@@ -210,8 +210,8 @@ class Home extends Component {
             <span></span>
             <span></span>
           </a>
-        </section>
-        <HomeHeader></HomeHeader>
+        </section> */}
+        <HomeHeader />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
             src="../images/srijanLogo.jpeg"
@@ -220,10 +220,16 @@ class Home extends Component {
             alt={" "}
           /> */}
         {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
-        {/* <div className="herosection">
+        {/* <canvas id="graphics" />
+        <div className="herosection">
           <h1>SRIJAN</h1>
         </div> */}
-        <canvas id="graphics" />
+        {/* <canvas id="graphics" /> */}
+
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
         <div className="patterns">
           <svg width="100%" height="100%">
             <defs></defs>
@@ -239,10 +245,12 @@ class Home extends Component {
             </rect>
 
             <text x="50%" y="60%" text-anchor="middle">
-              SRIJAN
+              SRIJAN'23
             </text>
+            {/* <h2>The Carnival of Reminiscence</h2> */}
           </svg>
         </div>
+
         {/* </div> */}
         {/* {
           <div
@@ -262,12 +270,7 @@ class Home extends Component {
             />
           </div>
         } */}
-        {/* <div>
-          <div class="stars-01"></div>
-          <div class="stars-02"></div>
-          <div class="stars-03"></div>
-          <div class="stars-04"></div>
-        </div> */}
+
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
@@ -281,11 +284,7 @@ class Home extends Component {
                 <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
-          {/* <button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link">
-              REGISTER HERE 
-            </a>
-          </button>             */}
+
           <div class="btn-cont">
             <a
               class="btn"
