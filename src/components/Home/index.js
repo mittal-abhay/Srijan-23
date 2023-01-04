@@ -247,10 +247,9 @@ class Home extends Component {
             <text x="50%" y="60%" text-anchor="middle">
               SRIJAN'23
             </text>
-            {/* <h2>The Carnival of Reminiscence</h2> */}
           </svg>
         </div>
-
+        {/* <h2>The Carnival of Reminiscence</h2> */}
         {/* </div> */}
         {/* {
           <div
