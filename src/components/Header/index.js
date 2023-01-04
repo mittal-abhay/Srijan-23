@@ -46,9 +46,9 @@ class Header extends Component {
               checked={isMenuOpen}
               onClick={this.toggleMenu}
             />
-            <span></span>
-            <span></span>
-            <span></span>
+            <span style={{backgroundColor: "gold"}}></span>
+            <span style={{backgroundColor: "gold"}}></span>
+            <span style={{backgroundColor: "gold"}}></span>
             <ul id="menu">
               <br />
               <li>
