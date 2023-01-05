@@ -87,7 +87,7 @@ class Footer extends React.Component {
         {/* <a href="https://wa.me/919386667625" className={classes.a}>
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a> */}
-        <a
+        {/* <a
           href="https://play.google.com/store/apps/details?id=com.srijan.srijan"
           target="_blank"
           rel="noopener noreferrer"
@@ -95,7 +95,7 @@ class Footer extends React.Component {
           id="app-icon"
         >
           <img src="https://img.icons8.com/fluency/48/000000/google-play.png" />
-        </a>
+        </a> */}
         {/* <Tooltip
           placement="right"
           isOpen={this.state.tooltipOpen}
