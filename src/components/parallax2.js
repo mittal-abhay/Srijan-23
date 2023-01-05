@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import image1 from "../assets/3.jpg";
+import image2 from "../assets/38.JPG";
 import image3 from "../assets/2.1.jpg";
 
 const styles = (theme) => ({
@@ -114,7 +116,7 @@ class Parallax extends React.Component {
                     }
                   : null
               }
-              src={content.image1}
+              src={image1}
               alt="Loading..."
               className={
                 window.innerWidth > 600
@@ -139,7 +141,7 @@ class Parallax extends React.Component {
                     }
                   : null
               }
-              src={content.image2}
+              src={image2}
               alt="Loading..."
               className={
                 window.innerWidth > 600
