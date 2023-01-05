@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/Srijan-23/static/css/main.12fce728.chunk.css",
-    "main.js": "/Srijan-23/static/js/main.b386fb40.chunk.js",
-    "main.js.map": "/Srijan-23/static/js/main.b386fb40.chunk.js.map",
+    "main.css": "/Srijan-23/static/css/main.67b7b751.chunk.css",
+    "main.js": "/Srijan-23/static/js/main.a06f860f.chunk.js",
+    "main.js.map": "/Srijan-23/static/js/main.a06f860f.chunk.js.map",
     "runtime-main.js": "/Srijan-23/static/js/runtime-main.1707868c.js",
     "runtime-main.js.map": "/Srijan-23/static/js/runtime-main.1707868c.js.map",
     "static/css/2.7ea48c83.chunk.css": "/Srijan-23/static/css/2.7ea48c83.chunk.css",
-    "static/js/2.5b053d59.chunk.js": "/Srijan-23/static/js/2.5b053d59.chunk.js",
-    "static/js/2.5b053d59.chunk.js.map": "/Srijan-23/static/js/2.5b053d59.chunk.js.map",
+    "static/js/2.f1dfe989.chunk.js": "/Srijan-23/static/js/2.f1dfe989.chunk.js",
+    "static/js/2.f1dfe989.chunk.js.map": "/Srijan-23/static/js/2.f1dfe989.chunk.js.map",
     "index.html": "/Srijan-23/index.html",
-    "precache-manifest.8c04edd786dd76f95c221c6cb59954bf.js": "/Srijan-23/precache-manifest.8c04edd786dd76f95c221c6cb59954bf.js",
+    "precache-manifest.fd507429d47cc4b6e1c7b56938d4439a.js": "/Srijan-23/precache-manifest.fd507429d47cc4b6e1c7b56938d4439a.js",
     "service-worker.js": "/Srijan-23/service-worker.js",
     "static/css/2.7ea48c83.chunk.css.map": "/Srijan-23/static/css/2.7ea48c83.chunk.css.map",
-    "static/css/main.12fce728.chunk.css.map": "/Srijan-23/static/css/main.12fce728.chunk.css.map",
-    "static/media/App.css": "/Srijan-23/static/media/bg-wall.25e27511.png",
-    "static/media/font-awesome.css": "/Srijan-23/static/media/fontawesome-webfont.fee66e71.woff"
+    "static/css/main.67b7b751.chunk.css.map": "/Srijan-23/static/css/main.67b7b751.chunk.css.map",
+    "static/media/styles.css": "/Srijan-23/static/media/bg-black.af046262.webp",
+    "static/media/style.css": "/Srijan-23/static/media/bg-wall.25e27511.png",
+    "static/media/bg.jpg": "/Srijan-23/static/media/bg.554e1c07.jpg",
+    "static/media/font-awesome.css": "/Srijan-23/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/App.css": "/Srijan-23/static/media/golden_cursor.4a92410f.svg"
   }
 }

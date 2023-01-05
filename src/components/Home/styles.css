@@ -190,7 +190,6 @@ text {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
   }
 }
-
 @media screen and ( max-width: 1544px) {
   text{
     font-size: 225px;
@@ -200,7 +199,6 @@ text {
     margin-left: 550px;
   }
 }
-
 @media screen and ( max-width: 1349px) {
   .glow h2{
       
