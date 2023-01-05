@@ -16,12 +16,12 @@
 }
 @media (min-width: 60rem) {
   .cards {
-    width: 100%;
+    width: 33.3%;
   }
 }
 @media (min-width: 80rem) {
   .cards {
-    width: 100%;
+    width: 25%;
   }
 }
 .cards .card-item {
