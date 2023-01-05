@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/Srijan-23/static/css/main.67b7b751.chunk.css",
-    "main.js": "/Srijan-23/static/js/main.a06f860f.chunk.js",
-    "main.js.map": "/Srijan-23/static/js/main.a06f860f.chunk.js.map",
+    "main.css": "/Srijan-23/static/css/main.4219af1a.chunk.css",
+    "main.js": "/Srijan-23/static/js/main.2ab15878.chunk.js",
+    "main.js.map": "/Srijan-23/static/js/main.2ab15878.chunk.js.map",
     "runtime-main.js": "/Srijan-23/static/js/runtime-main.1707868c.js",
     "runtime-main.js.map": "/Srijan-23/static/js/runtime-main.1707868c.js.map",
     "static/css/2.7ea48c83.chunk.css": "/Srijan-23/static/css/2.7ea48c83.chunk.css",
-    "static/js/2.f1dfe989.chunk.js": "/Srijan-23/static/js/2.f1dfe989.chunk.js",
-    "static/js/2.f1dfe989.chunk.js.map": "/Srijan-23/static/js/2.f1dfe989.chunk.js.map",
+    "static/js/2.7b590526.chunk.js": "/Srijan-23/static/js/2.7b590526.chunk.js",
+    "static/js/2.7b590526.chunk.js.map": "/Srijan-23/static/js/2.7b590526.chunk.js.map",
     "index.html": "/Srijan-23/index.html",
-    "precache-manifest.fd507429d47cc4b6e1c7b56938d4439a.js": "/Srijan-23/precache-manifest.fd507429d47cc4b6e1c7b56938d4439a.js",
+    "precache-manifest.d85a4f79d6298da606f0c11675f1354a.js": "/Srijan-23/precache-manifest.d85a4f79d6298da606f0c11675f1354a.js",
     "service-worker.js": "/Srijan-23/service-worker.js",
     "static/css/2.7ea48c83.chunk.css.map": "/Srijan-23/static/css/2.7ea48c83.chunk.css.map",
-    "static/css/main.67b7b751.chunk.css.map": "/Srijan-23/static/css/main.67b7b751.chunk.css.map",
+    "static/css/main.4219af1a.chunk.css.map": "/Srijan-23/static/css/main.4219af1a.chunk.css.map",
+    "static/media/0.jpg": "/Srijan-23/static/media/0.52199738.jpg",
+    "static/media/2.1.jpg": "/Srijan-23/static/media/2.1.a3f85b7e.jpg",
+    "static/media/28.1.jpg": "/Srijan-23/static/media/28.1.e65c0993.jpg",
+    "static/media/3.jpg": "/Srijan-23/static/media/3.c92af5f6.jpg",
+    "static/media/38.JPG": "/Srijan-23/static/media/38.db557e27.JPG",
     "static/media/styles.css": "/Srijan-23/static/media/bg-black.af046262.webp",
     "static/media/style.css": "/Srijan-23/static/media/bg-wall.25e27511.png",
     "static/media/bg.jpg": "/Srijan-23/static/media/bg.554e1c07.jpg",
     "static/media/font-awesome.css": "/Srijan-23/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/App.css": "/Srijan-23/static/media/golden_cursor.4a92410f.svg"
+    "static/media/App.css": "/Srijan-23/static/media/golden_cursor.4a92410f.svg",
+    "static/media/srijan_day_1.jpg": "/Srijan-23/static/media/srijan_day_1.1b8056d6.jpg"
   }
 }
