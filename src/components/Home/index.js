@@ -92,7 +92,7 @@ class Home extends Component {
 
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "38vh";
-    else document.body.style.paddingBottom = "30vh";
+    else document.body.style.paddingBottom = "10vh";
   }
   componentWillUnmount() {
     document.body.style.paddingBottom = "0";
