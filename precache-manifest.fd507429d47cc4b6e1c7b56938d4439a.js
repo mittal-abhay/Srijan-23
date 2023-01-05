@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c15698e40717ff7f31c74d43eb1a6a5",
+    "revision": "9ed7f7309c4054ad692790fe4639c051",
     "url": "/Srijan-23/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Srijan-23/static/css/2.7ea48c83.chunk.css"
   },
   {
-    "revision": "199fb4b8c26187c15ce3",
-    "url": "/Srijan-23/static/css/main.8bfed7af.chunk.css"
+    "revision": "7dcb4d665e6b5337ea27",
+    "url": "/Srijan-23/static/css/main.67b7b751.chunk.css"
   },
   {
     "revision": "38424c70c829eb0a0e41",
     "url": "/Srijan-23/static/js/2.f1dfe989.chunk.js"
   },
   {
-    "revision": "199fb4b8c26187c15ce3",
+    "revision": "7dcb4d665e6b5337ea27",
     "url": "/Srijan-23/static/js/main.a06f860f.chunk.js"
   },
   {
