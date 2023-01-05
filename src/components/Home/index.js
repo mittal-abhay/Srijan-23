@@ -214,13 +214,14 @@ class Home extends Component {
 
         <div className="patterns">
           <svg width="100%" height="100%">
-            <text x="50%" y="60%" text-anchor="middle">
+            <text x="50%" y="50%" text-anchor="middle">
               SRIJAN'23
             </text>
           </svg>
         </div>
-
-        <h2 className="glow">The Carnival of Reminiscence......</h2>
+        <div className="glow">
+          <h2>The Carnival of Reminiscence......</h2>
+        </div>
 
         {/* </div> */}
         {/* {

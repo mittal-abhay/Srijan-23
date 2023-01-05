@@ -5,7 +5,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
   }
@@ -51,9 +51,9 @@ class Header extends Component {
               onClick={this.toggleMenu}
               // style={{backgroundColor: "gold"}}
             />
-            <span style={{backgroundColor: "gold"}}></span>
-            <span style={{backgroundColor: "gold"}}></span>
-            <span style={{backgroundColor: "gold"}}></span>
+            <span style={{ backgroundColor: "gold" }}></span>
+            <span style={{ backgroundColor: "gold" }}></span>
+            <span style={{ backgroundColor: "gold" }}></span>
             <ul id="menu">
               <br />
               <li>
@@ -159,7 +159,7 @@ class Header extends Component {
                   CAP
                 </NavLink>
               </li> */}
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/guest-talks"
@@ -167,7 +167,7 @@ class Header extends Component {
                 >
                   GUEST TALKS
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <a
                   className="nav-link header-link "
