@@ -1,16 +1,22 @@
 /* ================== Root ====================== */
+html{
+  max-height: 160vh;
+}
+
 body {
   min-height: 100vh;
+  max-height: 150vh;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+  background: #0f0f0f;
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
   color: goldenrod;
   font-size: 1.33rem;
-  cursor: url('../src/assets/golden_cursor.svg'),auto!important;
+  cursor: url("../src/assets/golden_cursor.svg"), auto !important;
 }
 
 @media (min-width: 1200px) {
@@ -90,7 +96,6 @@ body {
   z-index: 999;
 } */
 
-
 /* home page gradient  */
 /* .gradientBg {
   background-image: url("../src/assets/bg-wall.png");
@@ -133,7 +138,7 @@ a:hover {
 }
 
 .footer {
-   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+  background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
   margin: auto;
   width: 100%;
   bottom: 0px;
@@ -253,7 +258,7 @@ a:hover {
   padding-top: 0;
   right: 0;
   top: 0;
-   background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
+  background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -281,7 +286,6 @@ a:hover {
     padding: 2px 0;
   }
 }
-
 
 /*
  * And let's fade it in from the left
@@ -446,5 +450,3 @@ a :focus {
     font-size: 1.5rem;
   }
 }
-
-

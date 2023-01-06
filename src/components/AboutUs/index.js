@@ -39,7 +39,7 @@ class AboutUs extends Component {
         </h1>
         <div className="container">
           <div className="row container">
-            <div className="col-12 col-md-6 opaque ">
+            <div className="col-12 opaque">
               <br />
               srijan - the 3 day annual techno-management fest of IIT(ISM)
               Dhanbad. srijan is the place where the magnificent minds of
@@ -59,10 +59,12 @@ class AboutUs extends Component {
               everyone who becomes a witness of this legendary event.
             </div>
             <div
-              className="col-12 col-md-6"
-              style={{ paddingLeft: "0", paddingRight: "0" }}
+              className="col-12"
+              style={{
+                marginTop: "20px",
+              }}
             >
-              <Card
+              {/* <Card
                 body
                 inverse
                 style={{
@@ -88,7 +90,16 @@ class AboutUs extends Component {
                     </Button>
                   </a>
                 </CardBody>
-              </Card>
+              </Card> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1208808356632!2d86.43899201397402!3d23.814300192251448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1672820703102!5m2!1sen!2sin"
+                width="100%"
+                height="410"
+                title="IIT ISM DHANBAD"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <br />
@@ -106,27 +117,30 @@ class AboutUs extends Component {
         >
           Our Theme
         </h1>
-        <div className="container opaque">
-          <br />
-          Our minds hold a world of endless possibilities, a world in which we
-          can do whatever we imagine – fight space monsters, explore the oceans,
-          fly a plane, design a city, jump into the universe of our favourite
-          movie franchise.AR and VR give us the chance to live out these
-          dreams.Augmented reality is a technology that enhances your
-          surroundings by adding digital elements to a live view – possible
-          through the camera of your smartphone!Virtual reality holds the power
-          to immerse you in a simulated world of your choice – a world you can
-          explore and interact with.This theme of srijan ’22 serves as a
-          reminder that imagination is our only limit, and that technology holds
-          the key to shaping our future.srijan ’22 has informative workshops,
-          and a roster of compelling events –there’s an event for an enthusiast
-          of every technical field!Build robots, code your heart out, create new
-          designs, trade virtual money, test your wits in quizzes, and a lot
-          more!srijan ’22 returns, bigger and bolder than ever before, and is
-          waiting for you tech geeks out there! Boasting of a huge roaster of
-          exhilarating and engaging events, along with promises to be grander,
-          greater, more splendid and glorious than ever before IIT ISM
-          presenting <b>srijan: REALITY BEYOND VISION</b>.
+        <div className="container">
+          <div className="col-12 opaque">
+            <br />
+            Our minds hold a world of endless possibilities, a world in which we
+            can do whatever we imagine – fight space monsters, explore the
+            oceans, fly a plane, design a city, jump into the universe of our
+            favourite movie franchise.AR and VR give us the chance to live out
+            these dreams.Augmented reality is a technology that enhances your
+            surroundings by adding digital elements to a live view – possible
+            through the camera of your smartphone!Virtual reality holds the
+            power to immerse you in a simulated world of your choice – a world
+            you can explore and interact with.This theme of srijan ’22 serves as
+            a reminder that imagination is our only limit, and that technology
+            holds the key to shaping our future.srijan ’22 has informative
+            workshops, and a roster of compelling events –there’s an event for
+            an enthusiast of every technical field!Build robots, code your heart
+            out, create new designs, trade virtual money, test your wits in
+            quizzes, and a lot more!srijan ’22 returns, bigger and bolder than
+            ever before, and is waiting for you tech geeks out there! Boasting
+            of a huge roaster of exhilarating and engaging events, along
+            with promises to be grander, greater, more splendid and glorious
+            than ever before IIT ISM presenting{" "}
+            <b>srijan: REALITY BEYOND VISION</b>.
+          </div>
         </div>
         <br />
         <h1
@@ -141,74 +155,78 @@ class AboutUs extends Component {
         >
           Message from the Convener
         </h1>
-        <div className="container opaque">
-          <br />
-          Greetings! The past two years have been tough for everyone. As the
-          saying goes, "Tough times don't last long but tough people do this
-          tough time also challenged everyone to fight and bring out their best.
-          To keep alive the thrill of innovation and the spirit of technological
-          challenges, I am pleased to announce that the Indian Institute of
-          Technology (SM) Dhanbad is organizing its flagship techno-management
-          fest, "srijan 22", starting on 21st October 2022. The three-day fest
-          organized by the institute's students aims to disseminate individual
-          skills and mutual exchange of scientific knowledge through a series of
-          technical and management events and seminars.
-          <br />
-          <br />
-          To bridge the digital and physical worlds, this year's srijan is
-          themed on the concept of AR/VR with the tagline Reality Beyond Vision"
-          AR uses a real-world setting, while VR is entirely virtual This year,
-          we plan to make the event grander by introducing new technical
-          challenges and adding a new dimension to srijan
-          <br />
-          <br />
-          The participation of the engineering and science departments of the
-          institute and the students from other engineering institutes makes
-          this fest an arena of innovation and creativity. This fest provides
-          all young budding minds space to demonstrate their talent and grit
-          <br />
-          <br />
-          Further, talks delivered by eminent personalities and scientists
-          during the fest also inspire and encourage all students to strive for
-          greater success in life. I acknowledge all the efforts made by
-          students, faculty members, and officials toward its successful
-          execution. I also take this opportunity to express my gratitude to all
-          sponsors, advertisers, and media associated with this grand event
-          <br />
-          We aim to take the next step towards the goal of technological
-          innovation through
-          <br />
-          <br />
-          srijan 2022
-          <br />
-          <br />
-          I wish all the best to the Participants, Colleges, Event Organizers
-          and Contributors
-          <br />
-          Best Regards
-          <div className="col-12 p-5">
-            <img
-              style={{
-                display: "block",
-                position: "relative",
-                margin: "auto",
-              }}
-              className="rounded-circle"
-              src="https://people.iitism.ac.in/~download/images/employee/1004/1004.jpg"
-              alt={"Prof. Ajit Kumar"}
-              height="220"
-              width="220"
-            />
-            <h5 align="center">
-              Prof. Ajit Kumar
-              <br />
-              Convener, srijan'22
-              <br />
-              Assistant Professor
-              <br />
-              Department of Mechanical Engineering
-              <br />
-            </h5>
+        <div className="container">
+          <div className="col-12 opaque">
+            <br />
+            Greetings! The past two years have been tough for everyone. As the
+            saying goes, "Tough times don't last long but tough people do this
+            tough time also challenged everyone to fight and bring out their
+            best. To keep alive the thrill of innovation and the spirit of
+            technological challenges, I am pleased to announce that the Indian
+            Institute of Technology (SM) Dhanbad is organizing its flagship
+            techno-management fest, "srijan 22", starting on 21st October 2022.
+            The three-day fest organized by the institute's students aims to
+            disseminate individual skills and mutual exchange of scientific
+            knowledge through a series of technical and management events and
+            seminars.
+            <br />
+            <br />
+            To bridge the digital and physical worlds, this year's srijan is
+            themed on the concept of AR/VR with the tagline Reality Beyond
+            Vision" AR uses a real-world setting, while VR is entirely virtual
+            This year, we plan to make the event grander by introducing new
+            technical challenges and adding a new dimension to srijan
+            <br />
+            <br />
+            The participation of the engineering and science departments of the
+            institute and the students from other engineering institutes makes
+            this fest an arena of innovation and creativity. This fest provides
+            all young budding minds space to demonstrate their talent and grit
+            <br />
+            <br />
+            Further, talks delivered by eminent personalities and scientists
+            during the fest also inspire and encourage all students to strive
+            for greater success in life. I acknowledge all the efforts made by
+            students, faculty members, and officials toward its successful
+            execution. I also take this opportunity to express my gratitude to
+            all sponsors, advertisers, and media associated with this grand
+            event
+            <br />
+            We aim to take the next step towards the goal of technological
+            innovation through
+            <br />
+            <br />
+            srijan 2022
+            <br />
+            <br />
+            I wish all the best to the Participants, Colleges, Event Organizers
+            and Contributors
+            <br />
+            Best Regards
+            <div className="col-12 p-5">
+              <img
+                style={{
+                  display: "block",
+                  position: "relative",
+                  margin: "auto",
+                }}
+                className="rounded-circle"
+                src="https://people.iitism.ac.in/~download/images/employee/1004/1004.jpg"
+                alt={"Prof. Ajit Kumar"}
+                height="220"
+                width="220"
+              />
+              <h5 align="center">
+                Prof. Ajit Kumar
+                <br />
+                Convener, srijan'22
+                <br />
+                Assistant Professor
+                <br />
+                Department of Mechanical Engineering
+                <br />
+              </h5>
+            </div>
           </div>
         </div>
         <br />
