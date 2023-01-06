@@ -34,7 +34,6 @@ body {
   #thin::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #0a0111;
-    /* border-radius: 10px; */
   }
 
   #thin::-webkit-scrollbar-thumb {
@@ -49,7 +48,6 @@ body {
     );
   }
 }
-
 @media (max-width: 800px) {
   html,
   body {
@@ -57,7 +55,6 @@ body {
     overflow-x: hidden;
   }
 }
-
 /* =================== LOGO ====================== */
 /* .logo {
   transition: all 0.3s ease-in-out;
@@ -97,11 +94,7 @@ body {
 } */
 
 /* home page gradient  */
-/* .gradientBg {
-  background-image: url("../src/assets/bg-wall.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+
 
 img {
   opacity: 1 !important;
@@ -258,8 +251,8 @@ a:hover {
   padding-top: 0;
   right: 0;
   top: 0;
-  background: linear-gradient(90deg, #1b2d50 0%, #0a0111 100%);
-  opacity: 1;
+   background: black;
+  opacity: 0;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -392,7 +385,6 @@ a :focus {
   text-align: center;
   margin-top: 52px;
   letter-spacing: -2px;
-  /* color: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08)!important; */
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     94.75deg,
@@ -422,7 +414,7 @@ a :focus {
 
 .homeCard {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 30px 0 goldenrod;
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;

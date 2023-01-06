@@ -67,7 +67,7 @@ export default function OurTeam() {
   // ])
 
   useEffect(() => {
-    fetch("https://admin.srijan.in/organisingteammembers/", { mode: "cors" })
+    fetch("https://srijan.herokuapp.com/organisingteammembers/", { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setCoreTeam(data));
   }, []);

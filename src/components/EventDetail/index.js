@@ -65,6 +65,7 @@ class EventDetail extends Component {
           <div className="btnFlex">
             <Link to="about">
               <button
+              // style={{zIndex:5}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "about" ? "active-bottom" : "")
@@ -75,6 +76,8 @@ class EventDetail extends Component {
             </Link>
             <Link to="details">
               <button
+              
+              // style={{zIndex:3}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "details" ? "active-bottom" : "")

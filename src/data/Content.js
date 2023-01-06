@@ -38,7 +38,8 @@ export const HomeContent = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/Truss+The+Frame_main.jpg",
     image2:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/money_main.jpg",
-    image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/department3.jpg",
+    image3:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/department3.jpg",
     description:
       "Organized by the Departments of IIT (ISM) Dhanbad, these events prove to be a different kind of challenge for the participants. Along with sound technical knowledge, they also check your proficiency in various fields of engineering. They make you think out of the box in problems associated with the respective fields.",
   },

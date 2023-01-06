@@ -46,9 +46,9 @@ class Header extends Component {
               checked={isMenuOpen}
               onClick={this.toggleMenu}
             />
-            <span></span>
-            <span></span>
-            <span></span>
+            <span style={{ backgroundColor: "gold" }}></span>
+            <span style={{ backgroundColor: "gold" }}></span>
+            <span style={{ backgroundColor: "gold" }}></span>
             <ul id="menu">
               <br />
               <li>
@@ -150,7 +150,7 @@ class Header extends Component {
                   OUR TEAM
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/guest-talks"
@@ -158,7 +158,7 @@ class Header extends Component {
                 >
                   GUEST TALKS
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <a
                   className="nav-link header-link "

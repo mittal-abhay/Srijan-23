@@ -21,7 +21,7 @@ function Main(props) {
   const [events, setEvents] = useState([]);
 
   useEffect(async () => {
-    await fetch("https://admin.srijan.in/events/", { mode: "cors" })
+    await fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);

@@ -8,7 +8,6 @@ import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
-// import CLOUDS from "vanta/dist/vanta.clouds.min.js";
 import * as THREE from "three";
 import "./styles.css";
 
@@ -89,30 +88,13 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    // this.vantaEffect = CLOUDS({
-    //   el: this.vantaRef.current,
-    //   mouseControls: true,
-    //   touchControls: true,
-    //   gyroControls: false,
-    //   minHeight: 200.0,
-    //   minWidth: 200.0,
-    //   backgroundColor: 0x0,
-    //   skyColor: 0xa0111,
-    //   cloudColor: 0x1b2d50,
-    //   cloudShadowColor: 0xfafafa,
-    //   sunColor: 0x3a2ff,
-    //   sunGlareColor: 0x6030ff,
-    //   sunlightColor: 0x3c30ff,
-    //   THREE,
-    // });
     console.log(window.innerWidth);
-    // this.setState({ x: window.scrollY });
+
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "38vh";
-    else document.body.style.paddingBottom = "30vh";
+    else document.body.style.paddingBottom = "10vh";
   }
   componentWillUnmount() {
-    // this.props.makeShowLogo();
     document.body.style.paddingBottom = "0";
     if (this.vantaEffect) this.vantaEffect.destroy();
     window.scrollTo(0, 0);
@@ -174,7 +156,6 @@ class Home extends Component {
   }
 
   render() {
-    
     const { classes } = this.props;
     const { offset, x } = this.state;
     return (
@@ -200,10 +181,8 @@ class Home extends Component {
 
           gtag('config', 'G-6WVX154NPV');
         </Safe.script> */}
-        {
-          
-        }
-        <section id="scroll_down" className="demo">
+        {}
+        {/* <section id="scroll_down" className="demo">
           <a
             onClick={() => {
               this.scrollDown();
@@ -213,8 +192,8 @@ class Home extends Component {
             <span></span>
             <span></span>
           </a>
-        </section>
-        <HomeHeader></HomeHeader>
+        </section> */}
+        <HomeHeader />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
             src="../images/srijanLogo.jpeg"
@@ -222,32 +201,26 @@ class Home extends Component {
             ref={this.homeRef}
             alt={" "}
           /> */}
-
         {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
+        {/* <canvas id="graphics" />
+        <div className="herosection">
+          <h1>SRIJAN</h1>
+        </div> */}
+        {/* <canvas id="graphics" /> */}
 
-        {/* <div className="herosection">
-            <h1>SRIJAN</h1>
-          </div> */}
-        {/* </div> */}
-        <canvas id="graphics" />
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
         <div className="patterns">
           <svg width="100%" height="100%">
-            <defs></defs>
-
-            <rect
-              x="0"
-              y="0"
-              width="100%"
-              height="100%"
-              fill="url(#polka-dots)"
-            >
-              {" "}
-            </rect>
-
-            <text x="50%" y="60%" text-anchor="middle">
-              SRIJAN
+            <text x="50%" y="50%" text-anchor="middle">
+              SRIJAN'23
             </text>
           </svg>
+        </div>
+        <div className="glow">
+          <h2>The Carnival of Reminiscence......</h2>
         </div>
 
         {/* </div> */}
@@ -269,12 +242,6 @@ class Home extends Component {
             />
           </div>
         } */}
-        {/* <div>
-          <div class="stars-01"></div>
-          <div class="stars-02"></div>
-          <div class="stars-03"></div>
-          <div class="stars-04"></div>
-        </div> */}
 
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
@@ -289,11 +256,7 @@ class Home extends Component {
                 <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
-          {/* <button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link">
-              REGISTER HERE 
-            </a>
-          </button>             */}
+
           <div class="btn-cont">
             <a
               class="btn"
@@ -307,7 +270,6 @@ class Home extends Component {
             </a>
           </div>
         </div>
-
         <br />
         <link
           rel="stylesheet"
