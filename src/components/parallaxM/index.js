@@ -5,32 +5,32 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
-const styles = theme => ({
+const styles = (theme) => ({
   container: {
     position: "relative",
     margin: "40px",
-    width: '100vw',
-    overflowX: 'hidden',
+    width: "100vw",
+    overflowX: "hidden",
   },
   descriptionText: {
     fontSize: "14px",
     fontFamily: '"Noto Sans", sans- serif',
   },
   image: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    objectFit: 'contain,cover',
-    objectPosition: 'center',
-    overflow: 'hidden',
-    height: '40vh',
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      height: '55vh',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    objectFit: "contain,cover",
+    objectPosition: "center",
+    overflow: "hidden",
+    height: "40vh",
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      height: "55vh",
     },
-    [theme.breakpoints.up('md')]: {
-      height: '55vh',
+    [theme.breakpoints.up("md")]: {
+      height: "55vh",
     },
   },
 });
@@ -46,9 +46,7 @@ class Parallax extends React.Component {
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">
-          <div
-            className={classNames("slider", "col-12")}
-          >
+          <div className={classNames("slider", "col-12")}>
             <img
               src={content.image1}
               alt="Loading..."
@@ -67,7 +65,7 @@ class Parallax extends React.Component {
           </div>
           <div
             className={classNames("col-12 homeCard")}
-            style={{ textAlign: 'center' }}
+            style={{ textAlign: "center" }}
           >
             <Link to={content.link} className={" title"}>
               <h1 style={{ color: "lightblue" }} className="title">

@@ -19,7 +19,16 @@ const Title = styled.h2`
   margin-top: 52px;
   margin-bottom: 0px;
   letter-spacing: -2px;
-  color: cyan !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
   font-size: 44px !important;
   font-family: "Montserrat", sans-serif;
 `;
@@ -27,7 +36,16 @@ const Subtitle = styled.h3`
   text-align: center;
   margin-top: 40px;
   letter-spacing: -2px;
-  color: white;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
   font-size: 36px;
   font-family: "Moneterrat", sans-serif;
 `;
