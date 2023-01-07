@@ -255,18 +255,7 @@ class Home extends Component {
           </div>
         } */}
 
-        <div class="btn-cont">
-          <a
-            class="btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
-          >
-            REGISTER HERE
-            <span class="line-1"></span>
-            <span class="line-2"></span>
-            <span class="line-3"></span>
-            <span class="line-4"></span>
-          </a>
-        </div>
+        
 
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
