@@ -96,7 +96,12 @@ class Parallax extends React.Component {
             <Link to={content.link} className={" title"}>
               <h1 className="title">{content.heading}</h1>
             </Link>
-            <p className={classes.descriptionText}>{content.description}</p>
+            <p
+              className={classes.descriptionText}
+              style={{ textAlign: "left" }}
+            >
+              {content.description}
+            </p>
           </div>
           <div
             ref={this.parent}
@@ -172,7 +177,7 @@ class Parallax extends React.Component {
                 window.innerWidth > 600
                   ? classNames(
                       classes.image3,
-                      "col-offset-2 col-8 col-md-2  rounded borderImgWrapper  ",
+                      "col-offset-2 col-8 col-md-2 rounded borderImgWrapper  ",
                       "image3"
                     )
                   : classNames(

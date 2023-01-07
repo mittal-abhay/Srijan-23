@@ -94,7 +94,7 @@ function ClubEvent(props) {
                 </CardImageBody>
                 <div className="card-info">
                   <CardTitle className="card-title">{event.name}</CardTitle>
-                  <CardSummary>{event.summary}</CardSummary>
+                  <CardSummary style={{wordBreak:"break-all"}}>{event.summary}</CardSummary>
                   <CardDepartment>{event.presented_by}</CardDepartment>
                 </div>
               </Link>

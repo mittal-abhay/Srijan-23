@@ -1,115 +1,232 @@
 import React from "react";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faWhatsapp,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import {
+  Typography,
+  Grid,
+  Box,
+  Container,
+  Link,
+  Divider,
+} from "@material-ui/core";
+import iit from "../../assets/iit.png";
+import "./styles.css";
 
-const styles = (theme) => ({
-  socialMedia: {
+const socialNetworks = [
+  {
+    socialHandle: "facebook",
+    link: "https://www.facebook.com/nvcti/",
+    icon: <FontAwesomeIcon icon={faFacebook} />,
+    iconColor: "#3b5998",
+  },
+  {
+    socialHandle: "linkeldn",
+    link: "https://www.linkedin.com/company/nvcti-iitism/",
+    icon: <FontAwesomeIcon icon={faLinkedin} />,
+    iconColor: "#0e76a8",
+  },
+  {
+    socialHandle: "instagram",
+    link: "https://www.instagram.com/nvcti.iitism/",
+    icon: <FontAwesomeIcon icon={faInstagram} />,
+    iconColor: "#cc2467",
+  },
+  {
+    socialHandle: "twitter",
+    link: "https://twitter.com/nvcti1",
+    icon: <FontAwesomeIcon icon={faTwitter} />,
+    iconColor: "#1da1f2",
+  },
+  {
+    socialHandle: "youtube",
+    link: "https://www.youtube.com/channel/UC4Uw9mJgYrssRq6vC7fO3fA",
+    icon: <FontAwesomeIcon icon={faYoutube} />,
+    iconColor: "#ff0000",
+  },
+];
+
+const StyledLink = styled(Link)(({ iconColor }) => ({
+  "&:hover": {
+    color: `${iconColor} !important`,
+  },
+  transition: "300ms ease-in",
+  color: "gold",
+}));
+
+const Styles = (theme) => ({
+  container: {
+    background: "rgba(0 0 0/0.78)",
+    borderTop: "2px solid gold",
+    position: "relative",
+    width: "100%",
+    color: "#fff ",
+    marginTop: "auto",
+    padding: "0.5em 1em 0.5em 1em",
+  },
+  grid: {
     display: "flex",
-    justifyContent: "center",
     alignItems: "center",
-  },
-  a: {
-    height: "40px",
-    width: "40px",
-    // backgroundColor: "#f5f6fa",
-    margin: "5px",
-    marginRight: "20px",
-    marginLeft: "20px",
-    marginBottom: "10px",
-    borderRadius: "20px",
-    textAlign: "center",
-    // boxShadow: "1px 1px 1px 1px #dcdde1",
-    fontSize: "30px",
-    lineHeight: "45px",
-    zIndex: 205,
-    // display: "block",
-    transition: "all 0.3s linear",
-    "&:hover": {
-      fontSize: "36px",
+    justifyContent: "center",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
     },
+  },
+  box: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    gap: "6px",
+  },
+  box2: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+  },
+  grid2: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    marginBlock:"0.3em",
+    [theme.breakpoints.down("xs")]: {
+      display: "flex",
+      justifyContent: "center",
+      textAlign: "center",
+      letterSpacing: "50px",
+    },
+  },
+  gap: {
+    marginBlock: "0.5em",
+  },
+  abcd: {
     [theme.breakpoints.down("sm")]: {
-      margin: "10px",
-      marginBottom: "6px",
+      display: "none",
     },
   },
-  // facebook: {
-  //   color: "#0018ff"
-  // },
-  // instagram: {
-  //   color: "#e84393"
-  // },
-  // whatsapp: {
-  //   color: "#23d364"
-  // }
 });
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      tooltipOpen: false,
-    };
-  }
 
-  toggle() {
-    this.setState({
-      tooltipOpen: !this.state.tooltipOpen,
-    });
-  }
-  render() {
-    const { classes } = this.props;
+function Footer({ classes }) {
+  const Copyright = (props) => {
     return (
-      <div className={classes.socialMedia}>
-        <a
-          href="https://www.facebook.com/srijaniitdhanbad/"
-          className={classes.a}
-        >
-          <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
-        </a>
-        <a
-          href="https://www.instagram.com/srijan.iitism/"
-          className={classes.a}
-        >
-          <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/srijan-iitism-dhanbad/"
-          className={classes.a}
-        >
-          <img src="https://img.icons8.com/fluency/48/000000/linkedin-2.png" />
-        </a>
-        {/* <a href="https://wa.me/919386667625" className={classes.a}>
-          <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
-        </a> */}
-        {/* <a
-          href="https://play.google.com/store/apps/details?id=com.srijan.srijan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.a}
-          id="app-icon"
-        >
-          <img src="https://img.icons8.com/fluency/48/000000/google-play.png" />
-        </a> */}
-        {/* <Tooltip
-          placement="right"
-          isOpen={this.state.tooltipOpen}
-          target="map-icon"
-          toggle={this.toggle}
-        >
-          View Campus Map
-        </Tooltip> */}
-      </div>
+      <Typography variant="body2" align="center" {...props}>
+        {"Copyright © "}- IIT (ISM) Dhanbad {new Date().getFullYear()}
+      </Typography>
     );
-  }
+  };
+
+  return (
+    <Grid container component="footer" className={classes.container}>
+      <Grid
+        item
+        xs={0}
+        sm={3}
+        className={classes.grid}
+        style={{justifyContent:"flex-start"}}
+      >
+        <img
+          src={iit}
+          alt="iitism"
+          style={{ width: "56px", height: "56px", objectFit: "contain" }}
+        />
+      </Grid>
+
+      <Grid item xs={12} sm={3}>
+        <Grid
+          container
+          className={classes.grid2}
+        >
+          <Grid item xs={12}>
+            {" "}
+            {/* 6 kario */}
+            <div className="footer-nav">
+              <a>Home</a>
+            </div>
+            <div className="footer-nav">
+              <a>About Us</a>
+            </div>
+            <div className="footer-nav">
+              <a>Events</a>
+            </div>
+          </Grid>
+          {/* <Grid item xs={6}>
+            <div className="footer-nav">
+              <a>Our Sponsors</a>
+            </div>
+            <div className="footer-nav">
+              <a>Our Team</a>
+            </div>
+          </Grid> */}
+        </Grid>
+      </Grid>
+
+      {/* <Grid item xs={3}>
+        <div heading>Contact Us</div>
+      </Grid> */}
+
+      <Grid item xs={12} sm={3}>
+        <Grid
+          container
+          className={classes.grid2}
+        >
+          <Grid item xs={12}>
+            <div className="footer-nav">
+              <a>Our Sponsors</a>
+            </div>
+            <div className="footer-nav">
+              <a>Our Team</a>
+            </div>
+            <div className="footer-nav">
+              <a>Register Here</a>
+            </div>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} sm={3} className={classes.grid2}>
+        <Box className={classes.box}>
+          <Typography
+            variant="div"
+            style={{ borderBottom: "1px solid #000" }}
+            className={` ${classes.abcd} footer-nav`}
+          >
+            FOLLOW US AT-
+          </Typography>
+          <Box className={classes.box2}>
+            {socialNetworks.map(({ socialHandle, link, icon, iconColor }) => (
+              <StyledLink
+                key={socialHandle}
+                href={link}
+                target="_blank"
+                iconColor={iconColor}
+              >
+                {icon}
+              </StyledLink>
+            ))}
+          </Box>
+        </Box>
+      </Grid>
+
+      <Grid item xs={12} className={classes.gap}>
+        <Divider />
+      </Grid>
+
+      <Grid item xs={12}>
+        <Container className="footer-nav">
+          <Copyright />
+        </Container>
+      </Grid>
+    </Grid>
+  );
 }
 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(Footer);
+export default withStyles(Styles)(Footer);

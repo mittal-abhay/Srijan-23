@@ -62,7 +62,6 @@ function EventDetail(props) {
           </NavLink>
         </div>
         <br />
-
         {/* <div className="btnFlex">
           <Link to="club-events">
             <button
