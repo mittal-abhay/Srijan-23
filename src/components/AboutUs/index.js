@@ -230,19 +230,7 @@ class AboutUs extends Component {
           </div>
         </div>
         <br />
-        <h1
-          style={{
-            textAlign: "center",
-            marginTop: "120px",
-            color: "white",
-            fontSize: "52px",
-            fontFamily: "'Montserrat', sans-serif",
-          }}
-          className="title"
-        >
-          CSR EVENTS
-        </h1>
-        <CSREventDisplay />
+        
       </div>
     );
   }
