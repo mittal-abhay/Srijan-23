@@ -142,9 +142,10 @@
       var elem = document.createElement('div');
       var size = Math.ceil(Math.random() * 10 * i) + 'px';
       var precision = 50; 
-      var randomnum = Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision);   
+      // var randomnum = Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision); 
+      var randomnum = 10; 
       var rOpacity = randomnum/10;
-      var rSize = randomnum/120;
+      var rSize = randomnum/1200;
 
       elem.style.position = 'fixed';
       elem.classList.add('star-five')

@@ -46,9 +46,7 @@ class Parallax extends React.Component {
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">
-          <div
-            className={classNames("slider", "col-12")}
-          >
+          <div className={classNames("slider", "col-12")}>
             <img
               src={content.image1}
               alt="Loading..."
@@ -67,14 +65,19 @@ class Parallax extends React.Component {
           </div>
           <div
             className={classNames("col-12 homeCard")}
-            style={{ textAlign: 'center' }}
+            style={{ textAlign: "center" }}
           >
             <Link to={content.link} className={" title"}>
               <h1 style={{ color: "lightblue" }} className="title">
                 {content.heading}
               </h1>
             </Link>
-            <p className={classes.descriptionText}>{content.description}</p>
+            <p
+              className={classes.descriptionText}
+              style={{ textAlign: "left" }}
+            >
+              {content.description}
+            </p>
           </div>
         </div>
       </div>

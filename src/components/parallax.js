@@ -192,7 +192,12 @@ class Parallax extends React.Component {
             <Link to={content.link} className={" title"}>
               <h1 className="title">{content.heading}</h1>
             </Link>
-            <p className={classes.descriptionText}>{content.description}</p>
+            <p
+              className={classes.descriptionText}
+              style={{ textAlign: "left" }}
+            >
+              {content.description}
+            </p>
           </div>
         </div>
       </div>
