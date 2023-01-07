@@ -29,7 +29,10 @@ export default function GuestTalk() {
       .then((data) => data.json())
       .then((data) => {
         setGuestTalks(data);
-      });
+      })
+      .catch(() => {
+        alert('You are offline!!!')
+      });;
   }, []);
 
   return (

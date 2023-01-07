@@ -69,7 +69,10 @@ export default function OurTeam() {
   useEffect(() => {
     fetch("https://srijan.herokuapp.com/organisingteammembers/", { mode: "cors" })
       .then((res) => res.json())
-      .then((data) => setCoreTeam(data));
+      .then((data) => setCoreTeam(data))
+      .catch(() => {
+        alert('You are offline!!!')
+      });;
   }, []);
 
   return (

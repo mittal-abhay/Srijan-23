@@ -67,7 +67,10 @@ export default function Sponsors() {
   useEffect(() => {
     fetch("https://srijan.herokuapp.com/sponsors/", { mode: "cors" })
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => setData(data))
+      .catch(() => {
+        alert('You are offline!!!')
+      });
   }, []);
 
   return (
