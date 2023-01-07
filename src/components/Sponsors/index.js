@@ -7,7 +7,7 @@ import "./styles.css";
 const SponsorsContainer = styled(Container)`
   position: relative;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  box-shadow: 0 4px 32px 0 #ffd700;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
@@ -69,7 +69,7 @@ export default function Sponsors() {
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(() => {
-        alert('You are offline!!!')
+        alert("You are offline!!!");
       });
   }, []);
 
