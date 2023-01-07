@@ -11,12 +11,12 @@
 .cards {
   display: flex;
   padding: 2rem;
-  width: 100%;
+  /* width: 100%; */
   z-index: 3;
 }
 @media (min-width: 60rem) {
   .cards {
-    width: 33.3%;
+    width: 50%;
   }
 }
 @media (min-width: 80rem) {

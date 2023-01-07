@@ -14,17 +14,17 @@ import styled from "styled-components";
 
 const StyledImage = styled.img``;
 const styles = (theme) => ({
-  verticalTab: {
-    display: "flex",
-    flexDirection: "column",
-    width: "20vw !important",
-    backgroundColor: "rgba(97, 97, 97, 0.1)",
-    position: "fixed",
-    height: "100vh",
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
-    },
-  },
+  // verticalTab: {
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   width: "20vw !important",
+  //   backgroundColor: "rgba(97, 97, 97, 0.1)",
+  //   position: "fixed",
+  //   height: "100vh",
+  //   [theme.breakpoints.down("sm")]: {
+  //     display: "none",
+  //   },
+  // },
   desktopView: {
     [theme.breakpoints.down("sm")]: {
       display: "none",
@@ -65,7 +65,7 @@ class EventDetail extends Component {
           <div className="btnFlex">
             <Link to="about">
               <button
-              // style={{zIndex:5}}
+                // style={{zIndex:5}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "about" ? "active-bottom" : "")
@@ -76,8 +76,7 @@ class EventDetail extends Component {
             </Link>
             <Link to="details">
               <button
-              
-              // style={{zIndex:3}}
+                // style={{zIndex:3}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "details" ? "active-bottom" : "")

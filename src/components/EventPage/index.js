@@ -15,22 +15,22 @@ const styles = (theme) => ({
       flexDirection: "column",
     },
   },
-  verticalTab: {
-    display: "flex",
-    flexDirection: "column",
-    width: "20vw !important",
-    backgroundColor: "rgba(97, 97, 97, 0.1)",
-    position: "fixed",
-    height: "100vh",
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
-    },
-  },
+  // verticalTab: {
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   width: "20vw !important",
+  //   backgroundColor: "rgba(97, 97, 97, 0.1)",
+  //   position: "fixed",
+  //   height: "100vh",
+  //   [theme.breakpoints.down("sm")]: {
+  //     display: "none",
+  //   },
+  // },
   eventsCard: {
-    marginLeft: "40vh",
+    marginLeft: "4vh",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
-      display: "none",
+      // display: "none",
     },
   },
 });
@@ -54,41 +54,38 @@ function EventDetail(props) {
     <div className="gradientBg">
       <div className={classes.root}>
         <HomeHeader />
-        <div className={classes.verticalTab}>
-          <div>
-            <NavLink to="home" exact strict>
-              <img
-                src="../images/srijanLogo.jpeg"
-                className="img-fluid"
-                alt={" "}
-              />
-            </NavLink>
-          </div>
-          <div className="btnFlex">
-            <Link to="club-events">
-              <button
-                style={{ fontFamily: "'Noto Sans',sans-serif", zIndex:3 }}
-                className={
-                  "btn btn-event btn-2 " + (active === 1 ? "active-bottom" : "")
-                }
-              >
-                CLUB
-              </button>
-            </Link>
-           
-          </div>
+        {/* <div className={classes.verticalTab}> */}
+        <div>
+          <NavLink to="home" exact strict>
+            <img
+              src="../images/srijanLogo.jpeg"
+              className="img-fluid"
+              alt={" "}
+            />
+          </NavLink>
         </div>
-        <br />
-        <div className={classes.eventsCard}>
-          {active === 0 && <DepartmentEvent events={departmentalEvents} />}
-          {active === 1 && <ClubEvent events={clubEvents} />}
-        </div>
-        {window.innerWidth < 760 ? (
-          <Mobileview events={events} active={active} />
-        ) : (
-          ""
-        )}
+        {/* <div className="btnFlex">
+          <Link to="club-events">
+            <button
+              style={{ fontFamily: "'Noto Sans',sans-serif", zIndex: 3 }}
+              className={
+                "btn btn-event btn-2 " + (active === 1 ? "active-bottom" : "")
+              }
+            >
+              CLUB
+            </button>
+          </Link>
+        </div> */}
       </div>
+
+      <div className={classes.eventsCard}>
+        {<ClubEvent events={clubEvents} />}
+      </div>
+      {window.innerWidth < 760 ? (
+        <Mobileview events={events} active={active} />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
