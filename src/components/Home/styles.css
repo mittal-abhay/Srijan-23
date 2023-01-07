@@ -137,7 +137,7 @@
 } */
 
 .patterns {
- height: 100vh;
+ height: 85vh;
 }
 
 text {
@@ -172,7 +172,7 @@ text {
 
 .glow h2{
   position: absolute;
-   top: 440px;
+   top: 435px;
   color: #fff;
   margin-left: 800px;
   font-size: 70px;
