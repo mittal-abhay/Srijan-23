@@ -75,16 +75,7 @@ function EventDetail(props) {
                 CLUB
               </button>
             </Link>
-            <Link to="department-events">
-              <button
-                style={{ fontFamily: "'Noto Sans',sans-serif", zIndex:3 }}
-                className={
-                  "btn btn-event btn-2 " + (active === 0 ? "active-bottom" : "")
-                }
-              >
-                DEPARTMENT
-              </button>
-            </Link>
+           
           </div>
         </div>
         <br />
