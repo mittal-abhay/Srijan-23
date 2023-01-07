@@ -146,7 +146,7 @@ text {
  font-family: Lora;
  letter-spacing: 10px;
  stroke:  #FFBC00;
- font-size: 250px;
+ /* font-size: 250px; */
  font-weight: 700;
  stroke-width: 3;
  animation: textAnimate 3s infinite alternate;
@@ -172,10 +172,11 @@ text {
 
 .glow h2{
   position: absolute;
-   top: 435px;
+   top: 270px;
   color: #fff;
+  font-size: 200px;
   margin-left: 800px;
-  font-size: 70px;
+  font-size: 60px;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -192,7 +193,7 @@ text {
 }
 @media screen and ( max-width: 1544px) {
   text{
-    font-size: 225px;
+    font-size: 200px;
   }
   .glow h2{
       
@@ -277,28 +278,28 @@ text {
 }
 @media screen and ( max-width: 820px) {
   .glow h2{
-    top: 600px;  
+    top: 510px;  
     font-size: 35px;
     margin-left: 330px;
   }
 }
 @media screen and ( max-width: 819px) {
   .glow h2{
-    top: 440px;
+    top: 270px;
     font-size: 35px;
     margin-left: 330px;
   }
 }
 @media screen and ( max-width: 768px) {
   .glow h2{
-    top: 520px;
+    top: 450px;
     font-size: 35px;
     margin-left: 330px;
   }
 }
 @media screen and ( max-width: 767px) {
   .glow h2{
-    top: 440px;
+    top: 270px;
     font-size: 35px;
     margin-left: 330px;
   }
@@ -381,7 +382,7 @@ text {
   }
   .glow h2{   
     font-size: 25px;
-    top: 460px;
+    top: 390px;
     margin-left: 80px;
   }
 }
@@ -403,7 +404,7 @@ text {
   }
   .glow h2{   
     font-size: 25px;
-    top: 440px;
+    top: 397px;
     margin-left: 80px;
   }
 }
@@ -414,21 +415,34 @@ text {
   }
  .glow h2{
    font-size: 20px;
+   top:370px;
    margin-left: 120px;
  }
 }
-
-@media screen and ( max-width: 360px) {
+@media screen and ( max-width: 389px) {
   text{
    font-size: 50px;
    stroke-width: 0.8;
   }
  .glow h2{
    font-size: 20px;
-   top: 380px;
+   top: 292px;
    margin-left: 120px;
  }
 }
+@media screen and ( max-width: 375px) {
+  text{
+   font-size: 50px;
+   stroke-width: 0.8;
+  }
+ .glow h2{
+   font-size: 20px;
+   top: 270px;
+   margin-left: 100px;
+ }
+}
+
+
 
 
 

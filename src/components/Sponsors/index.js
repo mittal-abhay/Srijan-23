@@ -81,7 +81,7 @@ export default function Sponsors() {
         style={{ minHeight: { windowHeight } + "px" }}
       >
         <Title>Sponsors</Title>
-        <Subtitle>Major Sponsors </Subtitle>
+        <Subtitle>Title Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -93,9 +93,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Skill Development Partner</Subtitle>
+        <Subtitle>Decoration Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -107,9 +108,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Event Sponsor</Subtitle>
+        <Subtitle>Associate Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -121,9 +123,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Food Partner</Subtitle>
+        <Subtitle>Strategic Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -135,9 +138,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Education Sponsor</Subtitle>
+        <Subtitle>Prize Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -149,9 +153,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Hospitality Partner</Subtitle>
+        <Subtitle>Logistics Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -163,9 +168,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Technology Service Partner</Subtitle>
+        <Subtitle>Style Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -177,9 +183,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Books Partner</Subtitle>
+        <Subtitle>Health Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -191,6 +198,38 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Beverage Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {/* {data.map((sponsor) => {
+              if (sponsor.category == "Books Partner") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                   
+                  </a>
+                );
+              }
+            })} */}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Online Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.category == "Books Partner") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
       </section>
