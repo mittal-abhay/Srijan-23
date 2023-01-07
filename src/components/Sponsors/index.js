@@ -7,7 +7,7 @@ import "./styles.css";
 const SponsorsContainer = styled(Container)`
   position: relative;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  box-shadow: 0 4px 32px 0 #ffd700;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
@@ -19,7 +19,16 @@ const Title = styled.h2`
   margin-top: 52px;
   margin-bottom: 0px;
   letter-spacing: -2px;
-  color: cyan !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
   font-size: 44px !important;
   font-family: "Montserrat", sans-serif;
 `;
@@ -27,7 +36,16 @@ const Subtitle = styled.h3`
   text-align: center;
   margin-top: 40px;
   letter-spacing: -2px;
-  color: white;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
   font-size: 36px;
   font-family: "Moneterrat", sans-serif;
 `;
@@ -49,7 +67,10 @@ export default function Sponsors() {
   useEffect(() => {
     fetch("https://srijan.herokuapp.com/sponsors/", { mode: "cors" })
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => setData(data))
+      .catch(() => {
+        alert("You are offline!!!");
+      });
   }, []);
 
   return (
@@ -60,7 +81,7 @@ export default function Sponsors() {
         style={{ minHeight: { windowHeight } + "px" }}
       >
         <Title>Sponsors</Title>
-        <Subtitle>Major Sponsors </Subtitle>
+        <Subtitle>Title Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -72,9 +93,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Skill Development Partner</Subtitle>
+        <Subtitle>Decoration Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -86,9 +108,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Event Sponsor</Subtitle>
+        <Subtitle>Associate Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -100,9 +123,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Food Partner</Subtitle>
+        <Subtitle>Strategic Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -114,9 +138,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Education Sponsor</Subtitle>
+        <Subtitle>Prize Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -128,9 +153,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Hospitality Partner</Subtitle>
+        <Subtitle>Logistics Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -142,9 +168,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Technology Service Partner</Subtitle>
+        <Subtitle>Style Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -156,9 +183,10 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Books Partner</Subtitle>
+        <Subtitle>Health Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -170,6 +198,38 @@ export default function Sponsors() {
                 );
               }
             })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Beverage Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {/* {data.map((sponsor) => {
+              if (sponsor.category == "Books Partner") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                   
+                  </a>
+                );
+              }
+            })} */}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Online Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.category == "Books Partner") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
       </section>

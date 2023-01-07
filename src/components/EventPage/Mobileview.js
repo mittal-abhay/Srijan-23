@@ -9,12 +9,12 @@ import Tab from "@material-ui/core/Tab";
 import AppBar from "@material-ui/core/AppBar";
 import Header from "../Header";
 
-const styles = theme => ({
+const styles = (theme) => ({
   mobileTab: {
     border: "1px solid white",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   },
   tabRoot: {
     minWidth: "50%",
@@ -25,47 +25,49 @@ const styles = theme => ({
     color: "white",
     "&:hover": {
       color: "#000",
-      opacity: 1
+      opacity: 1,
     },
     "&$tabSelected": {
       color: "white",
       backgroundColor: "rgba(0, 0, 0, 0.6)",
-      
-      fontWeight: "bold"
-    }
+
+      fontWeight: "bold",
+    },
   },
   tabsRoot: {
     minWidth: "50%",
-    borderBottom: "1px solid #e8e8e8"
+    borderBottom: "1px solid #e8e8e8",
   },
   tabsIndicator: {
-    backgroundColor: "#1890ff"
+    backgroundColor: "#1890ff",
   },
   tab: {
-    width: "100%"
+    width: "100%",
   },
-  tabSelected: {}
+  tabSelected: {},
 });
 
 function EventDetail(props) {
-  const [events, setEvents] = useState(props.events)
-  const [classes, setClasses] = useState(props.classes)
-  const [active, setActive] = useState(props.active)
+  const [events, setEvents] = useState(props.events);
+  const [classes, setClasses] = useState(props.classes);
+  const [active, setActive] = useState(props.active);
   const [departmentalEvents, setDepartmentalEvents] = useState([]);
   const [clubEvents, setClubEvents] = useState([]);
 
   useEffect(() => {
-    setDepartmentalEvents(events.filter(event => event.event_type == "departmental"));
-    setClubEvents(events.filter(event => event.event_type === "club"))
+    setDepartmentalEvents(
+      events.filter((event) => event.event_type == "departmental")
+    );
+    setClubEvents(events.filter((event) => event.event_type === "club"));
   }, [events]);
 
   return (
     <div className={classes.mobileTab}>
-      <AppBar
+      {/* <AppBar
         style={{
           backgroundColor: "#1b2d50",
           overflow: "hidden",
-          zIndex: 10
+          zIndex: 10,
         }}
         position="fixed"
       >
@@ -91,10 +93,10 @@ function EventDetail(props) {
             to="department-events"
           />
         </Tabs>
-      </AppBar>
-      <br />
-      {active === 1 && <ClubEvent events={clubEvents} />}
-      {active === 0 && <DepartmentEvent events={departmentalEvents} />}
+      </AppBar> */}
+
+      {<ClubEvent events={clubEvents} />}
+
       <br />
     </div>
   );

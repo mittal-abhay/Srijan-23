@@ -11,20 +11,21 @@ import HomeHeader from "../HomeHeader/index";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Logo from "../../assets/WhiteLogo.png";
 
 const StyledImage = styled.img``;
 const styles = (theme) => ({
-  verticalTab: {
-    display: "flex",
-    flexDirection: "column",
-    width: "20vw !important",
-    backgroundColor: "rgba(97, 97, 97, 0.1)",
-    position: "fixed",
-    height: "100vh",
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
-    },
-  },
+  // verticalTab: {
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   width: "20vw !important",
+  //   backgroundColor: "rgba(97, 97, 97, 0.1)",
+  //   position: "fixed",
+  //   height: "100vh",
+  //   [theme.breakpoints.down("sm")]: {
+  //     display: "none",
+  //   },
+  // },
   desktopView: {
     [theme.breakpoints.down("sm")]: {
       display: "none",
@@ -34,7 +35,7 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginLeft: "20vw",
+    marginLeft: "3vw",
     marginTop: "50px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
@@ -55,17 +56,13 @@ class EventDetail extends Component {
         <div className={classes.verticalTab}>
           <div>
             <NavLink to="home">
-              <img
-                src={"../images/srijanLogo.jpeg"}
-                className="img-fluid"
-                alt={" "}
-              />
+              <img src={Logo} className="img-fluid" alt={" "} />
             </NavLink>
           </div>
           <div className="btnFlex">
             <Link to="about">
               <button
-              // style={{zIndex:5}}
+                // style={{zIndex:5}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "about" ? "active-bottom" : "")
@@ -76,8 +73,7 @@ class EventDetail extends Component {
             </Link>
             <Link to="details">
               <button
-              
-              // style={{zIndex:3}}
+                // style={{zIndex:3}}
                 className={
                   "btn btn-event btn-2 " +
                   (active === "details" ? "active-bottom" : "")

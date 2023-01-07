@@ -5,32 +5,32 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
-const styles = theme => ({
+const styles = (theme) => ({
   container: {
     position: "relative",
     margin: "40px",
-    width: '100vw',
-    overflowX: 'hidden',
+    width: "100vw",
+    overflowX: "hidden",
   },
   descriptionText: {
     fontSize: "14px",
     fontFamily: '"Noto Sans", sans- serif',
   },
   image: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    objectFit: 'contain,cover',
-    objectPosition: 'center',
-    overflow: 'hidden',
-    height: '40vh',
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      height: '55vh',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    objectFit: "contain,cover",
+    objectPosition: "center",
+    overflow: "hidden",
+    height: "40vh",
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      height: "55vh",
     },
-    [theme.breakpoints.up('md')]: {
-      height: '55vh',
+    [theme.breakpoints.up("md")]: {
+      height: "55vh",
     },
   },
 });

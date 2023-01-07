@@ -19,7 +19,16 @@ const CardImage = styled.img`
   opacity: 0.7;
 `;
 const CardTitle = styled.h2`
-  color: cyan !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
   letter-spacing: 1px;
   font-family: "Montserrat";
   font-size: 1.3rem;

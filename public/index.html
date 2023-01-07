@@ -59,7 +59,7 @@
 		
       body {
         background: black;
-		padding-bottom: 0px;
+		    padding-bottom: 0px;
       }
       body .vertical-centered-box {
         background: black;
@@ -142,10 +142,9 @@
       var elem = document.createElement('div');
       var size = Math.ceil(Math.random() * 10 * i) + 'px';
       var precision = 50; 
-      // var randomnum = Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision); 
-      var randomnum = 10; 
+      var randomnum =  Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision);   
       var rOpacity = randomnum/10;
-      var rSize = randomnum/1200;
+      var rSize = randomnum/170;
 
       elem.style.position = 'fixed';
       elem.classList.add('star-five')
