@@ -62,7 +62,7 @@ function EventDetail(props) {
           </NavLink>
         </div>
         <br />
-        <h2 class="title" style={{ textAlign: "center" }}>
+        <h2 class="title" style={{ textAlign: "center", width:"100%" }}>
           EVENTS
         </h2>
         {/* <div className="btnFlex">
