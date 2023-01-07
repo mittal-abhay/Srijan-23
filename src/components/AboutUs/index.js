@@ -4,6 +4,7 @@ import "./styles.css";
 import { Helmet } from "react-helmet";
 import CSREventDisplay from "./CSREventDisplay";
 import { Card, CardImg, CardBody, CardHeader, Button } from "reactstrap";
+import Gauri from '../../assets/prof_gauri_shankar.png'
 class AboutUs extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -212,7 +213,7 @@ class AboutUs extends Component {
                   margin: "auto",
                 }}
                 className="rounded-circle"
-                src="Srijan-23\src\assets\prof_gauri_shankar.png"
+                src={Gauri}
                 alt={"Prof. Gauri Shankar"}
                 height="220"
                 width="220"
