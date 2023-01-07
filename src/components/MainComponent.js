@@ -108,9 +108,8 @@ function Main(props) {
   };
 
   return (
-    <div className="App">
+    <main>
       <Switch location={props.location}>
-        zz{" "}
         <Route
           exact
           path="/home"
@@ -226,7 +225,7 @@ function Main(props) {
         />
         <Redirect to="/home" />
       </Switch>
-    </div>
+    </main>
   );
 }
 
