@@ -34,7 +34,7 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginLeft: "20vw",
+    marginLeft: "3vw",
     marginTop: "50px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
