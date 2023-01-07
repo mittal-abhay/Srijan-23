@@ -19,12 +19,14 @@ import { object } from "prop-types";
 function Main(props) {
   const [header, setHeader] = useState(false);
   const [events, setEvents] = useState([]);
-
-  useEffect(async () => {
-    await fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
-      .then((res) => res.json())
-      .then((data) => setEvents(data));
-  }, []);
+    useEffect(async () => {
+      fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
+        .then((res) => res.json())
+        .then((data) => setEvents(data))
+        .catch(() => {
+        alert('You are offline!!!')
+      });;
+    }, []);
 
   function makeShowLogo() {
     if (!header) setHeader(true);
