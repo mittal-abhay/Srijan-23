@@ -63,7 +63,7 @@ function EventDetail(props) {
 
   return (
     <div className={classes.mobileTab}>
-      <AppBar
+      {/* <AppBar
         style={{
           backgroundColor: "#1b2d50",
           overflow: "hidden",
@@ -93,8 +93,8 @@ function EventDetail(props) {
             to="department-events"
           />
         </Tabs>
-      </AppBar>
-      <br />
+      </AppBar> */}
+
       {<ClubEvent events={clubEvents} />}
 
       <br />

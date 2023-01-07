@@ -27,7 +27,7 @@ const styles = (theme) => ({
   //   },
   // },
   eventsCard: {
-    marginLeft: "4vh",
+    margin: "auto 0",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
       // display: "none",
@@ -64,6 +64,10 @@ function EventDetail(props) {
             />
           </NavLink>
         </div>
+        <br />
+        <h2 class="title" style={{ textAlign: "center" }}>
+          EVENTS
+        </h2>
         {/* <div className="btnFlex">
           <Link to="club-events">
             <button
