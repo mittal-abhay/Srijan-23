@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Footer from "../Footer";
-import HomeHeader from "../HomeHeader";
+import Header from "../Header";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
@@ -193,7 +193,7 @@ class Home extends Component {
             <span></span>
           </a>
         </section> */}
-        <HomeHeader />
+        <Header />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
             src="../images/srijanLogo.jpeg"
