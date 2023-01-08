@@ -151,7 +151,7 @@ export default function OurTeam() {
         </h2>
       )}
       <br />
-      <div classNam="container team">
+      <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
           {coreTeam.map((person) => (
             <Card member={person}></Card>
@@ -168,7 +168,7 @@ export default function OurTeam() {
         </h2>
       )}
       <br />
-      <div classNam="container team">
+      <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
           {developers.map((person) => (
             <Card member={person}></Card>

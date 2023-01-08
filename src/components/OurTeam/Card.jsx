@@ -4,11 +4,11 @@ import styled from "styled-components"
 const CardBody = styled.div`
     padding: 10px;
     width: 350px;
-    margin: 10px !important;
+    margin: 15px !important;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: #25271f;
-    box-shadow: 0 0px 10px 0 #ffd700;
+
     border-radius: 12px;
     border: 1px solid;
     max-width: 400px;
