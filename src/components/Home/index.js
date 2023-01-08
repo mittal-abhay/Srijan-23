@@ -9,7 +9,6 @@ import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
-
 import { Helmet } from "react-helmet";
 // import Safe from "react-safe"
 

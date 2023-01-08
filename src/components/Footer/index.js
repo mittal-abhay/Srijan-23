@@ -18,7 +18,7 @@ import {
   Link,
   Divider,
 } from "@material-ui/core";
-import iit from "../../assets/iit.png";
+import iit from "../../assets/Srijan'23_Logo_White.png";
 import "./styles.css";
 
 const socialNetworks = [
@@ -80,13 +80,13 @@ const Styles = (theme) => ({
     alignItems: "center",
     justifyContent: "flex-start",
     gap: "15px",
-    width:"100%",
+    width: "100%",
   },
   grid2: {
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-start",
-    marginBlock:"0.3em",
+    marginBlock: "0.3em",
     [theme.breakpoints.down("xs")]: {
       display: "flex",
       justifyContent: "center",
@@ -120,20 +120,17 @@ function Footer({ classes }) {
         xs={0}
         sm={3}
         className={classes.grid}
-        style={{justifyContent:"flex-start"}}
+        style={{ justifyContent: "flex-start" }}
       >
         <img
           src={iit}
           alt="iitism"
-          style={{ width: "56px", height: "56px", objectFit: "contain" }}
+          style={{ width: "200px", objectFit: "contain" }}
         />
       </Grid>
 
       <Grid item xs={12} sm={3}>
-        <Grid
-          container
-          className={classes.grid2}
-        >
+        <Grid container className={classes.grid2}>
           <Grid item xs={12}>
             {" "}
             {/* 6 kario */}
@@ -163,10 +160,7 @@ function Footer({ classes }) {
       </Grid> */}
 
       <Grid item xs={12} sm={3}>
-        <Grid
-          container
-          className={classes.grid2}
-        >
+        <Grid container className={classes.grid2}>
           <Grid item xs={12}>
             <div className="footer-nav">
               <a>Our Sponsors</a>

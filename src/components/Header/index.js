@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/WhiteLogo.png";
+
+import iit from "../../assets/Srijan'23_Logo_White.png";
 
 class Header extends Component {
   constructor(props) {
@@ -34,7 +35,11 @@ class Header extends Component {
           <NavLink to="home" exact strict>
             <a className="navbar-brand">
               <span className="helper"></span>
-              <img src={Logo} className="logo-header" alt={"srijan"} />
+              <img
+                src={iit}
+                alt="iitism"
+                style={{ width: "100px", objectFit: "contain" }}
+              />
             </a>
           </NavLink>
           <div id="menuToggle">
@@ -145,6 +150,15 @@ class Header extends Component {
                   onClick={this.toggleMenu}
                 >
                   OUR TEAM
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/Social-links"
+                  onClick={this.toggleMenu}
+                >
+                  SOCIAL LINKS
                 </NavLink>
               </li>
               {/* <li>

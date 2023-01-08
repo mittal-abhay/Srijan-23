@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import image1 from "../../assets/28.1.jpg";
+import image1 from "../../assets/1.jpg";
 import image2 from "../../assets/0.jpg";
 import image3 from "../../assets/srijan_day_1.jpg";
 
