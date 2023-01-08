@@ -18,7 +18,7 @@ import {
   Link,
   Divider,
 } from "@material-ui/core";
-import iit from "../../assets/iit.png";
+import iit from "../../assets/Srijan'23 Logo White (1).png";
 import "./styles.css";
 
 const socialNetworks = [
@@ -125,7 +125,7 @@ function Footer({ classes }) {
         <img
           src={iit}
           alt="iitism"
-          style={{ width: "56px", height: "56px", objectFit: "contain" }}
+          style={{ width: "200px",  objectFit: "contain" }}
         />
       </Grid>
 

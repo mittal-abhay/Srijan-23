@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import HomeHeader from "../HomeHeader";
+// import HomeHeader from "../HomeHeader";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
@@ -9,7 +9,7 @@ import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
-
+import Header from "../Header";
 import { Helmet } from "react-helmet";
 // import Safe from "react-safe"
 

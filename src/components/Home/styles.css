@@ -194,7 +194,7 @@ text {
     font-size: 175px;
   }
   .glow h2{     
-    margin-left: 640px;
+    margin-left: 630px;
     top:310px
   }
 } 
@@ -202,7 +202,7 @@ text {
 @media screen and ( max-width: 1247px) {
   .glow h2{
       
-    margin-left: 400px;
+    margin-left: 420px;
   }
 }
 @media screen and ( max-width: 1214px) {
@@ -211,7 +211,7 @@ text {
   }
   .glow h2{
       
-    margin-left: 330px;
+    margin-left: 420px;
   }
 } 
 @media screen and ( max-width: 1195px) {
@@ -277,7 +277,7 @@ text {
 }
 @media screen and ( max-width: 819px) {
   .glow h2{
-    top: 270px;
+    top: 315px;
     font-size: 35px;
     margin-left: 330px;
   }

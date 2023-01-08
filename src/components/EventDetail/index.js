@@ -12,6 +12,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/WhiteLogo.png";
+import iit from "../../assets/Srijan'23 Logo White (1).png";
 
 const StyledImage = styled.img``;
 const styles = (theme) => ({
@@ -56,7 +57,11 @@ class EventDetail extends Component {
         <div className={classes.verticalTab}>
           <div>
             <NavLink to="home">
-              <img src={Logo} className="img-fluid" alt={" "} />
+            <img
+          src={iit}
+          alt="iitism"
+          style={{ width: "100px",  objectFit: "contain" }}
+        />
             </NavLink>
           </div>
           <div className="btnFlex">

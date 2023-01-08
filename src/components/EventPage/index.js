@@ -8,6 +8,7 @@ import Mobileview from "./Mobileview";
 import HomeHeader from "../HomeHeader";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/WhiteLogo.png";
+import iit from "../../assets/Srijan'23 Logo White (1).png";
 
 const styles = (theme) => ({
   root: {
@@ -58,7 +59,11 @@ function EventDetail(props) {
         {/* <div className={classes.verticalTab}> */}
         <div>
           <NavLink to="home" exact strict>
-            <img src={Logo} className="img-fluid" alt={" "} />
+          <img
+          src={iit}
+          alt="iitism"
+          style={{ width: "100px",  objectFit: "contain" }}
+        />
           </NavLink>
         </div>
         <br />
