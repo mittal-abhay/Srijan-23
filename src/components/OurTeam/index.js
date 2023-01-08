@@ -68,7 +68,9 @@ export default function OurTeam() {
   // ])
 
   useEffect(() => {
-    fetch("https://srijan.herokuapp.com/organisingteammembers/", { mode: "cors" })
+    fetch("https://srijan.herokuapp.com/organisingteammembers/", {
+      mode: "cors",
+    })
       .then((res) => res.json())
       .then((data) => setCoreTeam(data))
       .catch(() => {
@@ -87,7 +89,7 @@ export default function OurTeam() {
   return (
     <div className="team-page">
       <Helmet>
-        <title>srijan Team</title>
+        <title>Srijan Team</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."

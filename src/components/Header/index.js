@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/WhiteLogo.png";
-import iit from "../../assets/Srijan'23 Logo White (1).png";
+
+import iit from "../../assets/Srijan'23_Logo_White.png";
 
 class Header extends Component {
   constructor(props) {
@@ -36,10 +36,10 @@ class Header extends Component {
             <a className="navbar-brand">
               <span className="helper"></span>
               <img
-          src={iit}
-          alt="iitism"
-          style={{ width: "100px",  objectFit: "contain" }}
-        />
+                src={iit}
+                alt="iitism"
+                style={{ width: "100px", objectFit: "contain" }}
+              />
             </a>
           </NavLink>
           <div id="menuToggle">
@@ -152,6 +152,15 @@ class Header extends Component {
                   OUR TEAM
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/Social-links"
+                  onClick={this.toggleMenu}
+                >
+                  SOCIAL LINKS
+                </NavLink>
+              </li>
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -164,7 +173,7 @@ class Header extends Component {
               <li>
                 <a
                   className="nav-link header-link "
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
+                  href="#"
                   onClick={this.toggleMenu}
                 >
                   REGISTER

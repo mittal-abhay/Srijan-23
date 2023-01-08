@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import image1 from "../assets/28.1.jpg";
+import image1 from "../assets/1.jpg";
 import image2 from "../assets/0.jpg";
 import image3 from "../assets/srijan_day_1.jpg";
 
@@ -86,6 +86,8 @@ class Parallax extends React.Component {
   }
   render() {
     const { content, classes, x } = this.props;
+    console.log(classes);
+    console.log(content);
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">
@@ -144,7 +146,7 @@ class Parallax extends React.Component {
                       )
                     : classNames(
                         classes.image2M,
-                        "col-4  rounded borderImgWrapper  "
+                        "col-4  rounded borderImgWrapper"
                       )
                 }
               />
