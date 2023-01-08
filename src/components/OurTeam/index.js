@@ -47,6 +47,7 @@ export default function OurTeam() {
   const [width, setWidth] = useState(window.innerWidth);
   // const [isCoreActive, setIsCoreActive] = useState(true);
   const [coreTeam, setCoreTeam] = useState([]);
+  const [developers, setDevelopers] = useState([]);
   // const [developers, setDevelopers] = useState([
   //   {
   //     "id": 1,
@@ -71,7 +72,15 @@ export default function OurTeam() {
       .then((res) => res.json())
       .then((data) => setCoreTeam(data))
       .catch(() => {
-        alert('You are offline!!!')
+        alert('You are offline!!!');
+      });;
+  }, []);
+  useEffect(() => {
+    fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
+      .then((res) => res.json())
+      .then((data) => setDevelopers(data))
+      .catch(() => {
+        alert('You are offline!!!');
       });;
   }, []);
 
@@ -140,9 +149,26 @@ export default function OurTeam() {
         </h2>
       )}
       <br />
-      <div class="container team">
-        <div class="row mt-2 mb-2 justify-content-center">
+      <div classNam="container team">
+        <div className="row mt-2 mb-2 justify-content-center">
           {coreTeam.map((person) => (
+            <Card member={person}></Card>
+          ))}
+        </div>
+      </div>
+      {width > 486 ? (
+        <h2 align="center" className="title highlighted">
+          DEVELOPERS
+        </h2>
+      ) : (
+        <h2 align="center" className="highlighted">
+          OUR TEAM
+        </h2>
+      )}
+      <br />
+      <div classNam="container team">
+        <div className="row mt-2 mb-2 justify-content-center">
+          {developers.map((person) => (
             <Card member={person}></Card>
           ))}
         </div>
