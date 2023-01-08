@@ -255,8 +255,6 @@ class Home extends Component {
           </div>
         } */}
 
-        
-
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)

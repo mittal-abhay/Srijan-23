@@ -144,7 +144,7 @@ class Parallax extends React.Component {
                       )
                     : classNames(
                         classes.image2M,
-                        "col-4  rounded borderImgWrapper  "
+                        "col-4  rounded borderImgWrapper"
                       )
                 }
               />
