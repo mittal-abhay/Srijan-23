@@ -12,6 +12,7 @@
   display: flex;
   padding: 2rem;
   z-index: 3;
+  min-width: 50px;
 }
 @media (min-width: 60rem) {
   .cards {

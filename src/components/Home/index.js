@@ -192,7 +192,7 @@ class Home extends Component {
             <span></span>
           </a>
         </section> */}
-        <HomeHeader />
+        <Header />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
             src="../images/srijanLogo.jpeg"

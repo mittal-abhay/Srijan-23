@@ -62,9 +62,6 @@ function EventDetail(props) {
           </NavLink>
         </div>
         <br />
-        <h2 class="title" style={{ textAlign: "center", width:"100%" }}>
-          EVENTS
-        </h2>
         {/* <div className="btnFlex">
           <Link to="club-events">
             <button
@@ -78,6 +75,18 @@ function EventDetail(props) {
           </Link>
         </div> */}
       </div>
+      <h1
+        style={{
+          textAlign: "center",
+          marginTop: "60px",
+          color: "white",
+          fontSize: "52px",
+          fontFamily: "'Montserrat', sans-serif",
+        }}
+        className="title"
+      >
+        EVENTS
+      </h1>
 
       <div className={classes.eventsCard}>
         {<ClubEvent events={clubEvents} />}
