@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import Footer from "../Footer";
 import HomeHeader from "../HomeHeader";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
@@ -292,7 +291,6 @@ class Home extends Component {
         {/* <a href="https://api.whatsapp.com/send?phone=9835063191" class="float" target="_blank">
           <i class="fa fa-whatsapp my-float"></i>
         </a> */}
-        <Footer />
       </div>
     );
   }
