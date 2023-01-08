@@ -24,33 +24,21 @@ import "./styles.css";
 const socialNetworks = [
   {
     socialHandle: "facebook",
-    link: "https://www.facebook.com/nvcti/",
+    link: "https://www.facebook.com/107585406021823/posts/pfbid0rdXTqps78PEPkPiKej9g4SRdpBRfpE6QSrGRoSZ7hXuQBbYFP4cDu1onMiiCovCol/?mibextid=Nif5oz",
     icon: <FontAwesomeIcon icon={faFacebook} />,
     iconColor: "#3b5998",
   },
   {
     socialHandle: "linkeldn",
-    link: "https://www.linkedin.com/company/nvcti-iitism/",
+    link: "https://www.linkedin.com/company/srijaniitismdhn/",
     icon: <FontAwesomeIcon icon={faLinkedin} />,
     iconColor: "#0e76a8",
   },
   {
     socialHandle: "instagram",
-    link: "https://www.instagram.com/nvcti.iitism/",
+    link: "https://instagram.com/srijaniitism?igshid=YmMyMTA2M2Y",
     icon: <FontAwesomeIcon icon={faInstagram} />,
     iconColor: "#cc2467",
-  },
-  {
-    socialHandle: "twitter",
-    link: "https://twitter.com/nvcti1",
-    icon: <FontAwesomeIcon icon={faTwitter} />,
-    iconColor: "#1da1f2",
-  },
-  {
-    socialHandle: "youtube",
-    link: "https://www.youtube.com/channel/UC4Uw9mJgYrssRq6vC7fO3fA",
-    icon: <FontAwesomeIcon icon={faYoutube} />,
-    iconColor: "#ff0000",
   },
 ];
 
@@ -65,11 +53,11 @@ const StyledLink = styled(Link)(({ iconColor }) => ({
 const Styles = (theme) => ({
   container: {
     background: "rgba(0 0 0/0.78)",
-    borderTop: "2px solid gold",
+    // borderTop: "2px solid gold",
     position: "relative",
     width: "100%",
     color: "#fff ",
-    marginTop: "auto",
+    marginTop: "5em",
     padding: "0.5em 1em 0.5em 1em",
   },
   grid: {
@@ -90,8 +78,9 @@ const Styles = (theme) => ({
   box2: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    gap: "10px",
+    justifyContent: "flex-start",
+    gap: "15px",
+    width:"100%",
   },
   grid2: {
     display: "flex",

@@ -69,6 +69,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 15px;
+  font-weight: bold;
   position: relative;
   letter-spacing: 2.5px;
   text-transform: uppercase;

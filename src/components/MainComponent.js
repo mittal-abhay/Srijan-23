@@ -15,18 +15,20 @@ import { Informals } from "../data/InformalEvents";
 import { SponsorsList } from "../data/Sponsors";
 import axios from "axios";
 import { object } from "prop-types";
+import SocialLink from "./Social-links";
+import Footer from "./Footer";
 
 function Main(props) {
   const [header, setHeader] = useState(false);
   const [events, setEvents] = useState([]);
-    useEffect(async () => {
-      fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
-        .then((res) => res.json())
-        .then((data) => setEvents(data))
-        .catch(() => {
-        alert('You are offline!!!')
-      });;
-    }, []);
+  useEffect(async () => {
+    fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
+      .then((res) => res.json())
+      .then((data) => setEvents(data))
+      .catch(() => {
+        alert("You are offline!!!");
+      });
+  }, []);
 
   function makeShowLogo() {
     if (!header) setHeader(true);
@@ -125,6 +127,9 @@ function Main(props) {
         <Route exact path="/exhibitions" component={() => <Exhibition />} />
         <Route exact path="/about-us" component={() => <AboutUs />} />
         <Route exact path="/guest-talks" component={() => <GuestTalk />} />
+        {/* social link route added for srijan 2023 */}
+        <Route exact path="/social-links" component={() => <SocialLink />} />
+
         <Route
           exact
           path="/department-events"
@@ -227,6 +232,7 @@ function Main(props) {
         />
         <Redirect to="/home" />
       </Switch>
+      <Footer/>
     </main>
   );
 }
