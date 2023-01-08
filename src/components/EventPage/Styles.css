@@ -12,16 +12,32 @@
   display: flex;
   padding: 2rem;
   z-index: 3;
-  min-width: 50px;
+  min-width: 60px;
 }
-@media (min-width: 60rem) {
+@media (min-width: 48rem) {
+  .cards {
+    width: 49.33%;
+  }
+}
+/* @media (min-width: 55rem) {
+  .cards {
+    width: 49.33%;
+  }
+} */
+/* @media (min-width: 60rem) {
+  .cards {
+    width: 49.33%;
+  }
+} */
+
+@media (min-width: 62rem) {
   .cards {
     width: 33.33%;
   }
 }
 @media (min-width: 80rem) {
   .cards {
-    width: 25%;
+    width: 33%;
   }
 }
 .cards .card-item {
@@ -72,7 +88,7 @@
 @media (min-width: 60rem) {
   .cards .card-image {
   max-height: 200px;
-  max-width: 220px;
+  max-width: 300px;
   }
 }
 .cards .card-info .card-intro {
