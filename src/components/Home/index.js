@@ -220,10 +220,7 @@ class Home extends Component {
         <div className="glow">
           <h2>Carnival of Reminiscence......</h2>
           <div class="btn-cont">
-            <a
-              class="btn"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
-            >
+            <a class="btn" href="#">
               REGISTER HERE
               <span class="line-1"></span>
               <span class="line-2"></span>
