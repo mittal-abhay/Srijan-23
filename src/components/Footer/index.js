@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
 import {
   faFacebook,
   faInstagram,
@@ -134,15 +135,21 @@ function Footer({ classes }) {
           <Grid item xs={12}>
             {" "}
             {/* 6 kario */}
-            <div className="footer-nav">
-              <a>Home</a>
-            </div>
-            <div className="footer-nav">
-              <a>About Us</a>
-            </div>
-            <div className="footer-nav">
-              <a>Events</a>
-            </div>
+            <NavLink to="/home" exact strict>
+              <div className="footer-nav">
+                <a>Home</a>
+              </div>
+            </NavLink>
+            <NavLink to="/about-us" exact strict>
+              <div className="footer-nav">
+                <a>About Us</a>
+              </div>
+            </NavLink>
+            <NavLink to="/club-events" exact strict>
+              <div className="footer-nav">
+                <a>Events</a>
+              </div>
+            </NavLink>
           </Grid>
           {/* <Grid item xs={6}>
             <div className="footer-nav">
@@ -162,14 +169,19 @@ function Footer({ classes }) {
       <Grid item xs={12} sm={3}>
         <Grid container className={classes.grid2}>
           <Grid item xs={12}>
+            <NavLink to="/sponsors" exact strict>
+              <div className="footer-nav">
+                <a>Our Sponsors</a>
+              </div>
+            </NavLink>
+            <NavLink to="/our-team" exact strict>
+              <div className="footer-nav">
+                <a>Our Team</a>
+              </div>
+            </NavLink>
+
             <div className="footer-nav">
-              <a>Our Sponsors</a>
-            </div>
-            <div className="footer-nav">
-              <a>Our Team</a>
-            </div>
-            <div className="footer-nav">
-              <a>Register Here</a>
+              <a href="#">Register Here</a>
             </div>
           </Grid>
         </Grid>
