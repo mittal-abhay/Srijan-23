@@ -218,7 +218,7 @@ class Home extends Component {
           </svg>
         </div>
         <div className="glow">
-          <h2>The Carnival of Reminiscence......</h2>
+          <h2>Carnival of Reminiscence......</h2>
           <div class="btn-cont">
             <a
               class="btn"
