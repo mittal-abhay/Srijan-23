@@ -67,7 +67,7 @@ class Parallax extends React.Component {
             />
           </div>
           <div
-            className={classNames("col-12 homeCard")}
+            className={classNames("col-12 opaque")}
             style={{ textAlign: "center" }}
           >
             <Link to={content.link} className={" title"}>
