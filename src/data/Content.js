@@ -12,7 +12,7 @@ export const HomeContent = [
 
   {
     link: "club-events",
-    heading: "CLUB EVENTS",
+    heading: "EVENTS",
     // image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/club1.jpg",
     // image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/club2.jpg",
     // image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/club3.jpg",
