@@ -5,7 +5,7 @@ import DepartmentEvent from "./DepartmentEvent";
 import { Link } from "react-router-dom";
 import ClubEvent from "./ClubEvent";
 import Mobileview from "./Mobileview";
-import HomeHeader from "../HomeHeader";
+import Header from "../Header";
 import { NavLink } from "react-router-dom";
 import iit from "../../assets/Srijan'23_Logo_White.png";
 
@@ -54,9 +54,9 @@ function EventDetail(props) {
   return (
     <div className="gradientBg">
       <div className={classes.root}>
-        <HomeHeader />
+        <Header />
         {/* <div className={classes.verticalTab}> */}
-        <div>
+        {/* <div>
           <NavLink to="home" exact strict>
             <img
               src={iit}
@@ -64,7 +64,7 @@ function EventDetail(props) {
               style={{ width: "100px", objectFit: "contain" }}
             />
           </NavLink>
-        </div>
+        </div> */}
         <br />
         {/* <div className="btnFlex">
           <Link to="club-events">

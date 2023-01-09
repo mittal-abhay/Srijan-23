@@ -169,6 +169,15 @@ class Header extends Component {
                 </NavLink>
               </li> */}
               <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/Social-links"
+                  onClick={this.toggleMenu}
+                >
+                  SOCIAL LINKS
+                </NavLink>
+              </li>
+              <li>
                 <a
                   className="nav-link header-link "
                   href="#"

@@ -8,7 +8,6 @@ const CardBody = styled.div`
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: #25271f;
-
     border-radius: 12px;
     border: 1px solid;
     max-width: 400px;

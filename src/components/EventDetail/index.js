@@ -54,15 +54,7 @@ class EventDetail extends Component {
     return (
       <div style={{ display: "flex" }}>
         <div className={classes.verticalTab}>
-          <div>
-            <NavLink to="home">
-              <img
-                src={iit}
-                alt="iitism"
-                style={{ width: "100px", objectFit: "contain" }}
-              />
-            </NavLink>
-          </div>
+          <div></div>
           <div className="btnFlex">
             <Link to="about">
               <button
@@ -98,7 +90,8 @@ class EventDetail extends Component {
             </Link>
           </div>
         </div>
-        {window.innerWidth < 960 ? <Header /> : <HomeHeader />}
+        <Header />
+        {/* {window.innerWidth < 960 ? : <HomeHeader />} */}
         <div className={classes.image}>
           <img
             src={event.image}
