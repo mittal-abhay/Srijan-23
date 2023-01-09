@@ -39,9 +39,9 @@ class AboutUs extends Component {
         >
           About Us
         </h1>
+        
         <div className="container">
-          <div className="row container">
-            <div className="col-12 opaque">
+          <div className="col-12 opaque" style={{ textAlign: "center" }}>
               <br />
               Indian Institute of Technology (Indian School of Mines), Dhanbad,
               abbreviated as IIT (ISM), is a public engineering and research
@@ -115,8 +115,7 @@ class AboutUs extends Component {
               ></iframe>
             </div>
           </div>
-          <br />
-        </div>
+       
         <br />
         <h1
           style={{
