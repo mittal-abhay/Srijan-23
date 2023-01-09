@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd615d67e8f02f883b721fb1afc39b81",
+    "revision": "28b4a78b0984c8252d6929011f28b95c",
     "url": "/Srijan-23/index.html"
   },
   {
-    "revision": "adfa202196f7916a7fd9",
+    "revision": "d30983abb64b16b3e2be",
     "url": "/Srijan-23/static/css/2.7ea48c83.chunk.css"
   },
   {
-    "revision": "7cd4ee534da5ec082c84",
-    "url": "/Srijan-23/static/css/main.ba1b7368.chunk.css"
+    "revision": "07f161f1c741a59c7502",
+    "url": "/Srijan-23/static/css/main.d5aa9951.chunk.css"
   },
   {
-    "revision": "adfa202196f7916a7fd9",
-    "url": "/Srijan-23/static/js/2.f2c230e3.chunk.js"
+    "revision": "d30983abb64b16b3e2be",
+    "url": "/Srijan-23/static/js/2.e0e0ee4d.chunk.js"
   },
   {
-    "revision": "7cd4ee534da5ec082c84",
-    "url": "/Srijan-23/static/js/main.7a7118d6.chunk.js"
+    "revision": "07f161f1c741a59c7502",
+    "url": "/Srijan-23/static/js/main.964a1208.chunk.js"
   },
   {
     "revision": "1240834f292b5d62331f",
