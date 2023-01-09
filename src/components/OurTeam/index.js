@@ -74,16 +74,16 @@ export default function OurTeam() {
       .then((res) => res.json())
       .then((data) => setCoreTeam(data))
       .catch(() => {
-        alert('You are offline!!!');
-      });;
+        alert("You are offline!!!");
+      });
   }, []);
   useEffect(() => {
     fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setDevelopers(data))
       .catch(() => {
-        alert('You are offline!!!');
-      });;
+        alert("You are offline!!!");
+      });
   }, []);
 
   return (
@@ -175,7 +175,6 @@ export default function OurTeam() {
           ))}
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }

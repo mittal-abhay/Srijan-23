@@ -182,8 +182,8 @@ class Parallax extends React.Component {
           <div
             className={
               window.innerWidth > 991
-                ? classNames(classes.text, "col-12 col-md-3 homeCard")
-                : classNames("col-12 homeCard")
+                ? classNames(classes.text, "col-12 col-md-3 opaque")
+                : classNames("col-12 opaque")
             }
             style={
               window.innerWidth < 1200 && window.innerWidth > 991
