@@ -93,7 +93,7 @@ function SocialLink() {
 
         <Grid item xs={12} style={{ alignItems: "center" }}>
           <div className="title2" style={{ fontSize: "0.5em" }}>
-            SOME IMPORTANT LINKS
+            
           </div>
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fism.srijan%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
