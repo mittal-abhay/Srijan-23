@@ -39,45 +39,45 @@ class AboutUs extends Component {
         >
           About Us
         </h1>
-        
+
         <div className="container">
-          <div className="col-12 opaque" style={{ textAlign: "center" }}>
-              <br />
-              Indian Institute of Technology (Indian School of Mines), Dhanbad,
-              abbreviated as IIT (ISM), is a public engineering and research
-              institution located in Dhanbad, India. It was formerly known as
-              the Indian School of Mines and was a Deemed University before it
-              became an Institute of National Importance under the Institutes of
-              Technology Act 1961. IIT (ISM) is located in the mineralrich
-              region of India, in the city of Dhanbad. It is the third oldest
-              institute among the IITs. The British Indian Government
-              established it on the lines of the Royal School of Mines-London
-              and was formally inaugurated on 9 December 1926 by Lord Irwin, the
-              then Viceroy of India. It started as an institution to impart
-              mining education, and today has grown into a technical institution
-              with various academic departments. The institute featured among
-              the top 100 universities in the world in the QS World University
-              Rankings of 2016 by Subject in the fields of Mining and Mineral
-              Engineering IIT (ISM) admits its undergraduate students through
-              Joint Entrance Examination (Advanced) previously IIT-JEE, IIT
-              (ISM) has 18 academic departments covering Engineering, Applied
-              Sciences, Humanities, and Social Sciences and Management programs.
-              <br /> <br />
-              "SRIJAN" is the biggest socio-cultural festival in eastern India,
-              which has been in the limelight since 1977. It attracts an annual
-              footfall of over 30,000 from more than 200 colleges across the
-              country and has prize money worth more than INR 7.5 lakhs. It
-              offers a fantastic platform where participants from different
-              parts of the country get an opportunity to interact, enhance and
-              demonstrate their creativity, personality, and talents.
-            </div>
-            <div
-              className="col-12"
-              style={{
-                marginTop: "20px",
-              }}
-            >
-              {/* <Card
+          <div className="col-12 opaque">
+            <br />
+            Indian Institute of Technology (Indian School of Mines), Dhanbad,
+            abbreviated as IIT (ISM), is a public engineering and research
+            institution located in Dhanbad, India. It was formerly known as the
+            Indian School of Mines and was a Deemed University before it became
+            an Institute of National Importance under the Institutes of
+            Technology Act 1961. IIT (ISM) is located in the mineralrich region
+            of India, in the city of Dhanbad. It is the third oldest institute
+            among the IITs. The British Indian Government established it on the
+            lines of the Royal School of Mines-London and was formally
+            inaugurated on 9 December 1926 by Lord Irwin, the then Viceroy of
+            India. It started as an institution to impart mining education, and
+            today has grown into a technical institution with various academic
+            departments. The institute featured among the top 100 universities
+            in the world in the QS World University Rankings of 2016 by Subject
+            in the fields of Mining and Mineral Engineering IIT (ISM) admits its
+            undergraduate students through Joint Entrance Examination (Advanced)
+            previously IIT-JEE, IIT (ISM) has 18 academic departments covering
+            Engineering, Applied Sciences, Humanities, and Social Sciences and
+            Management programs.
+            <br /> <br />
+            "SRIJAN" is the biggest socio-cultural festival in eastern India,
+            which has been in the limelight since 1977. It attracts an annual
+            footfall of over 30,000 from more than 200 colleges across the
+            country and has prize money worth more than INR 7.5 lakhs. It offers
+            a fantastic platform where participants from different parts of the
+            country get an opportunity to interact, enhance and demonstrate
+            their creativity, personality, and talents.
+          </div>
+          <div
+            className="col-12"
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            {/* <Card
                 body
                 inverse
                 style={{
@@ -104,18 +104,18 @@ class AboutUs extends Component {
                   </a>
                 </CardBody>
               </Card> */}
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1208808356632!2d86.43899201397402!3d23.814300192251448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1672820703102!5m2!1sen!2sin"
-                width="100%"
-                height="410"
-                title="IIT ISM DHANBAD"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1208808356632!2d86.43899201397402!3d23.814300192251448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1672820703102!5m2!1sen!2sin"
+              width="100%"
+              height="410"
+              title="IIT ISM DHANBAD"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-       
+        </div>
+
         <br />
         <h1
           style={{
@@ -130,11 +130,25 @@ class AboutUs extends Component {
           Our Theme
         </h1>
         <div className="container">
-          <div className="col-12 opaque" style={{ textAlign: "center" }}>
+          <div className="col-12 opaque">
             <br />
-            <div style={{fontSize:'25px'}}>Carnival of Reminiscence</div>
-            <br/>
-            A few memories were the only vestige of the biggest socio-cultural fest of Eastern India engraved in our hearts. As the memories of our beloved event, SRIJAN, fade after a two-year hiatus, we aim to revive the feeling of Srijan in all of our hearts. This year’s theme “CARNIVAL OF REMINISCENCE”  focuses on cherishing and reviving the wonderful experiences we experienced during the former Srijan. Bringing back the lane of memories with a flabbergasting experience to all get ready to divulge yourself in the colorful and electrifying joyride of SRIJAN ‘23. Indulging in the memories of our past events as we enter into this year’s biggest cultural fest, giving a déjà vu to many, we wish to provide a prodigious experience filled with mesmerizing and nostalgic moments. It will be a voyage that brings back memories of our beloved cultural fest with a blast alongside creating new memories that would last a lifetime. Join us in this journey of reliving and creating moments to reflect on with a reminiscing smile.
+            <div style={{ fontSize: "25px" }}>Carnival of Reminiscence</div>
+            <br />A few memories were the only vestige of the biggest
+            socio-cultural fest of Eastern India engraved in our hearts. As the
+            memories of our beloved event, SRIJAN, fade after a two-year hiatus,
+            we aim to revive the feeling of Srijan in all of our hearts. This
+            year’s theme “CARNIVAL OF REMINISCENCE” focuses on cherishing and
+            reviving the wonderful experiences we experienced during the former
+            Srijan. Bringing back the lane of memories with a flabbergasting
+            experience to all get ready to divulge yourself in the colorful and
+            electrifying joyride of SRIJAN ‘23. Indulging in the memories of our
+            past events as we enter into this year’s biggest cultural fest,
+            giving a déjà vu to many, we wish to provide a prodigious experience
+            filled with mesmerizing and nostalgic moments. It will be a voyage
+            that brings back memories of our beloved cultural fest with a blast
+            alongside creating new memories that would last a lifetime. Join us
+            in this journey of reliving and creating moments to reflect on with
+            a reminiscing smile.
           </div>
         </div>
         <br />
