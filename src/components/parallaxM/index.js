@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import image1 from "../../assets/1.jpg";
-import image2 from "../../assets/0.jpg";
+import image2 from "../../assets/0.webp";
 import image3 from "../../assets/srijan_day_1.jpg";
 
 const styles = (theme) => ({

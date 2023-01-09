@@ -10,7 +10,7 @@
 	overflow: hidden;
 	text-align:center;
 }
-.box:before {
+/* .box:before {
     position: absolute;
     content: '';
     left: 0px;
@@ -94,4 +94,4 @@ color: black !important;
 }
  .box:hover .phone-link{
      color: whitesmoke !important;
- }
+ } */
