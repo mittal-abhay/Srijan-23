@@ -141,15 +141,10 @@ export default function OurTeam() {
 
       <br />
       <br />
-      {width > 486 ? (
-        <h2 align="center" className="title highlighted">
+      <h2 align="center" className="title highlighted">
           CORE TEAM
         </h2>
-      ) : (
-        <h2 align="center" className="highlighted">
-          OUR TEAM
-        </h2>
-      )}
+   
       <br />
       <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
@@ -158,15 +153,10 @@ export default function OurTeam() {
           ))}
         </div>
       </div>
-      {width > 486 ? (
-        <h2 align="center" className="title highlighted">
+      <h2 align="center" className="title highlighted">
           DEVELOPERS
         </h2>
-      ) : (
-        <h2 align="center" className="highlighted">
-          OUR TEAM
-        </h2>
-      )}
+   
       <br />
       <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
