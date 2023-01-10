@@ -48,12 +48,12 @@ const StyledLink = styled(Link)(({ iconColor }) => ({
     color: `${iconColor} !important`,
   },
   transition: "300ms ease-in",
-  color: "gold",
+  color: "goldenrod",
 }));
 
 const Styles = (theme) => ({
   container: {
-    background: "rgba(0 0 0/0.78)",
+    background: "rgba(0 0 0/0.25)",
     // borderTop: "2px solid gold",
     position: "relative",
     width: "100%",

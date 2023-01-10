@@ -6,24 +6,18 @@ import "./styles.css";
 
 const SponsorsContainer = styled(Container)`
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  /* box-shadow: 0 4px 32px 0 #ffd700; */
-  box-shadow: 0 2.8px 2.2px rgba(255, 215, 0, 0.15),
-    0 6.7px 5.3px rgba(255, 215, 0, 0.048),
-    0 12.5px 10px rgba(255, 215, 0, 0.06),
-    0 22.3px 17.9px rgba(255, 215, 0, 0.072),
-    0 41.8px 33.4px rgba(255, 215, 0, 0.086),
-    0 100px 80px rgba(255, 215, 0, 0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 0px solid rgba(255, 255, 255, 0.18);
   justify-content: center;
 `;
 const Title = styled.h2`
+  display: flex;
   text-align: center;
-  margin-top: 52px;
-  margin-bottom: 0px;
+  margin-top: 40px;
   letter-spacing: -2px;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
@@ -39,8 +33,10 @@ const Title = styled.h2`
   font-family: "Montserrat", sans-serif;
 `;
 const Subtitle = styled.h3`
+  display: flex;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   letter-spacing: -2px;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(

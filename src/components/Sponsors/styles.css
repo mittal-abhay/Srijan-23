@@ -1,12 +1,11 @@
 .sponsors {
   padding: 75px 15px;
-  background: black;
   color: white;
   min-height: 100%;
-}
-
-.sponsors h2 {
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .sponsors-list {
