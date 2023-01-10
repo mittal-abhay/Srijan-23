@@ -210,7 +210,7 @@ class Home extends Component {
         <div id="stars2"></div>
         <div id="stars3"></div> */}
 
-        <div className="patterns">
+        {/* <div className="patterns">
           <svg width="100%">
             <text x="50%" y="50%" text-anchor="middle">
               SRIJAN'23
@@ -218,6 +218,14 @@ class Home extends Component {
           </svg>
           <div className="glow">
             <h2>Carnival of Reminiscence......</h2>
+          </div>
+        </div> */}
+        <div className="hero">
+          <div className="hero_heading">
+            <h1>SRIJAN'23</h1>
+          </div>
+          <div className="glow">
+            <h2>Carnival of Reminiscence</h2>
           </div>
         </div>
 
@@ -251,7 +259,7 @@ class Home extends Component {
           </div>
         } */}
 
-        <div className={classes.parallax + " gradientBg mt-0"}>
+        {/* <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
               return <ParallaxM key={id.toString()} content={content} />;
@@ -263,9 +271,9 @@ class Home extends Component {
               ) : (
                 <Parallax x={x} key={id.toString()} content={content} />
               );
-          })}
+          })} */}
 
-          {/* <div class="btn-cont">
+        {/* <div class="btn-cont">
             <a
               class="btn"
               href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
@@ -277,7 +285,7 @@ class Home extends Component {
               <span class="line-4"></span>
             </a>
           </div> */}
-        </div>
+        {/* </div> */}
         <br />
         <link
           rel="stylesheet"

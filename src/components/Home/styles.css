@@ -138,7 +138,7 @@
   animation: animate 30s linear infinite;
 } */
 
-/* .hero {
+.hero {
 	height: 85vh;
 	position: relative;
   display: flex;
@@ -166,8 +166,8 @@
     background-position: left 1000px top 10px;
   }
   
-} */
-.patterns {
+}
+/* .patterns {
   height: 85vh;
   display: flex;
   justify-content: center;
@@ -206,11 +206,11 @@ text {
    fill: hsla(189, 68%, 75%,0%);
  }
  
-}
+} */
 
 .glow h2{
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   color: #fff;
   font-size: 2.4rem;
   text-align: center;
@@ -218,7 +218,7 @@ text {
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 0.1s ease-in-out infinite alternate;
   font-family: 'Alex Brush', cursive;
-  position: absolute;
+  position: relative;
   margin: auto !important;
 } 
 @keyframes glow {
@@ -230,7 +230,7 @@ text {
   }
 }
 
- @media screen and ( max-width: 1544px) {
+ /* @media screen and ( max-width: 1544px) {
   text{
     font-size: 175px;
   }
@@ -474,7 +474,7 @@ text {
    top: 324px;
    margin-left: 138px;
  }
-} 
+}  */
 
 
 
