@@ -27,18 +27,7 @@ class AboutUs extends Component {
         <Header />
         <br />
 
-        <h1
-          style={{
-            textAlign: "center",
-            marginTop: "60px",
-            color: "white",
-            fontSize: "52px",
-            fontFamily: "'Montserrat', sans-serif",
-          }}
-          className="title"
-        >
-          About Us
-        </h1>
+        <h1 className="title">About Us</h1>
 
         <div className="container">
           <div className="col-12 opaque">
@@ -48,7 +37,7 @@ class AboutUs extends Component {
             institution located in Dhanbad, India. It was formerly known as the
             Indian School of Mines and was a Deemed University before it became
             an Institute of National Importance under the Institutes of
-            Technology Act 1961. IIT (ISM) is located in the mineralrich region
+            Technology Act 1961. IIT (ISM) is located in the mineral rich region
             of India, in the city of Dhanbad. It is the third oldest institute
             among the IITs. The British Indian Government established it on the
             lines of the Royal School of Mines-London and was formally
@@ -71,64 +60,10 @@ class AboutUs extends Component {
             country get an opportunity to interact, enhance and demonstrate
             their creativity, personality, and talents.
           </div>
-          <div
-            className="col-12"
-            style={{
-              marginTop: "20px",
-            }}
-          >
-            {/* <Card
-                body
-                inverse
-                style={{
-                  backgroundColor: "rgba(0,0,0,0.8)",
-                  borderColor: "#333",
-                }}
-              >
-                <CardImg
-                  top
-                  width="100%"
-                  src="/images/CAMPUS-MAP.jpg"
-                  alt="IIT (ISM) Campus Map"
-                />
-                <br />
-                <CardBody style={{ paddingLeft: "43%" }}>
-                  <a href="/images/CAMPUS-MAP.jpg" target="_blank">
-                    <Button
-                      type="button"
-                      className="themedButton"
-                      style={{ margin: "auto" }}
-                    >
-                      <i className="fa fa-eye" /> View
-                    </Button>
-                  </a>
-                </CardBody>
-              </Card> */}
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1208808356632!2d86.43899201397402!3d23.814300192251448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1672820703102!5m2!1sen!2sin"
-              width="100%"
-              height="410"
-              title="IIT ISM DHANBAD"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
         </div>
 
         <br />
-        <h1
-          style={{
-            textAlign: "center",
-            marginTop: "120px",
-            color: "white",
-            fontSize: "52px",
-            fontFamily: "'Montserrat', sans-serif",
-          }}
-          className="title"
-        >
-          Our Theme
-        </h1>
+        <h1 className="title">Our Theme</h1>
         <div className="container">
           <div className="col-12 opaque">
             <br />
@@ -152,18 +87,7 @@ class AboutUs extends Component {
           </div>
         </div>
         <br />
-        <h1
-          style={{
-            textAlign: "center",
-            marginTop: "120px",
-            color: "white",
-            fontSize: "52px",
-            fontFamily: "'Montserrat', sans-serif",
-          }}
-          className="title"
-        >
-          Message from the Convener
-        </h1>
+        <h1 className="title">Message from the Convener</h1>
         <div className="container">
           <div className="col-12 opaque">
             <br />
@@ -202,28 +126,33 @@ class AboutUs extends Component {
             <br />
             <br />
             Best Regards
-            <div className="col-12 p-5">
+            <div className="gradient-outline-rounded-copied">
               <img
-                style={{
-                  display: "block",
-                  position: "relative",
-                  margin: "auto",
-                }}
                 className="rounded-circle"
                 src={Gauri}
                 alt={"Prof. Gauri Shankar"}
-                height="220"
-                width="220"
               />
-              <h5 align="center">
-                Prof. Gauri Shankar
-                <br />
-                Convener, Srijan'23
-                <br />
-                Dept. of Electrical Engg. IIT (ISM) Dhanbad
-                <br />
-              </h5>
             </div>
+            <h5 align="center" className="prof">
+              Prof. Gauri Shankar
+              <br />
+              Convener, Srijan'23
+              <br />
+              Dept. of Electrical Engg. IIT (ISM) Dhanbad
+              <br />
+            </h5>
+          </div>
+          <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1208808356632!2d86.43899201397402!3d23.814300192251448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1672820703102!5m2!1sen!2sin"
+              width="100%"
+              height="410"
+              title="IIT ISM DHANBAD"
+              allowfullscreen=""
+              // style={{border-radius: 2px;}}
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         <br />

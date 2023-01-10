@@ -72,7 +72,15 @@ export default function OurTeam() {
       mode: "cors",
     })
       .then((res) => res.json())
-      .then((data) => setCoreTeam(data))
+      .then((data) =>{
+        console.log(data)
+        const newData = data.sort(function(a,b){
+          return a.id - b.id;
+        });
+        setCoreTeam(newData);
+        
+        console.log(newData)
+      })
       .catch(() => {
         alert("You are offline!!!");
       });

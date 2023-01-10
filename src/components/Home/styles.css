@@ -138,7 +138,7 @@
   animation: animate 30s linear infinite;
 } */
 
-.hero {
+/* .hero {
 	height: 85vh;
 	position: relative;
   display: flex;
@@ -166,16 +166,16 @@
     background-position: left 1000px top 10px;
   }
   
-}
-/* .patterns h1{
-  top: 200px;
-  text-align: center;
 } */
+.patterns {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
 
-
-/* text {
- 
- vertical-align: middle;
+text {
  font-family: Lora;
  letter-spacing: 10px;
  stroke:  #FFBC00;
@@ -183,9 +183,9 @@
  font-weight: 700;
  stroke-width: 3;
  animation: textAnimate 3s infinite alternate;
- 
-} */
-/* @keyframes textAnimate {
+ transform: translateY(50%);
+} 
+@keyframes textAnimate {
  0% {
    stroke-dasharray: 0 50%;
    stroke-dashoffset:  20%; 
@@ -206,22 +206,21 @@
    fill: hsla(189, 68%, 75%,0%);
  }
  
-} */
+}
 
 .glow h2{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   color: #fff;
   font-size: 2.4rem;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 0.1s ease-in-out infinite alternate;
-  /* font-family: 'Alex Brush', cursive; */
-  font-family: 'Tangerine', cursive;
-
-}
+  font-family: 'Alex Brush', cursive;
+  position: absolute;
+  margin: auto !important;
+} 
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
@@ -231,7 +230,7 @@
   }
 }
 
- /* @media screen and ( max-width: 1544px) {
+ @media screen and ( max-width: 1544px) {
   text{
     font-size: 175px;
   }
@@ -475,7 +474,7 @@
    top: 324px;
    margin-left: 138px;
  }
-}  */
+} 
 
 
 
@@ -497,16 +496,17 @@
 
 .btn-cont {
   text-align: center;
+  margin-bottom: 100px;
   /* margin-top: 200px; */
 }
 .btn-cont .btn {
   position: relative;
+  box-sizing: border-box;
   padding: 10px 30px;
   border: 1px solid goldenrod;
   color: goldenrod;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
 }
@@ -515,20 +515,20 @@
   border: none;
 }
 .btn-cont .btn:hover .line-1 {
-  -webkit-animation: move1 1500ms infinite ease;
-          animation: move1 1500ms infinite ease;
+  -webkit-animation: move1 1500ms 1 ease;
+          animation: move1 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-2 {
-  -webkit-animation: move2 1500ms infinite ease;
-          animation: move2 1500ms infinite ease;
+  -webkit-animation: move2 1500ms 1 ease;
+          animation: move2 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-3 {
-  -webkit-animation: move3 1500ms infinite ease;
-          animation: move3 1500ms infinite ease;
+  -webkit-animation: move3 1500ms 1 ease;
+          animation: move3 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-4 {
-  -webkit-animation: move4 1500ms infinite ease;
-          animation: move4 1500ms infinite ease;
+  -webkit-animation: move4 1500ms 1 ease;
+          animation: move4 1500ms 1 ease;
 }
 .btn-cont .line-1 {
   content: "";

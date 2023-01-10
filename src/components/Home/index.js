@@ -210,12 +210,14 @@ class Home extends Component {
         <div id="stars2"></div>
         <div id="stars3"></div> */}
 
-        <div className="hero">
-          <div className="hero_heading text-center">
-            <h1>SRIJAN'23</h1>
-          </div>
+        <div className="patterns">
+          <svg width="100%">
+            <text x="50%" y="50%" text-anchor="middle">
+              SRIJAN'23
+            </text>
+          </svg>
           <div className="glow">
-            <h2>Carnival of Reminiscence</h2>
+            <h2>Carnival of Reminiscence......</h2>
           </div>
         </div>
 

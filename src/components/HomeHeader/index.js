@@ -51,9 +51,9 @@ class Header extends Component {
               onClick={this.toggleMenu}
               // style={{backgroundColor: "gold"}}
             />
-            <span style={{ backgroundColor: "gold" }}></span>
-            <span style={{ backgroundColor: "gold" }}></span>
-            <span style={{ backgroundColor: "gold" }}></span>
+            <span style={{ backgroundColor: "goldenrod" }}></span>
+            <span style={{ backgroundColor: "goldenrod" }}></span>
+            <span style={{ backgroundColor: "goldenrod" }}></span>
             <ul id="menu">
               <br />
               <li>

@@ -1,37 +1,31 @@
-.theme-page {
-  background-image:url('../../assets/bg-black.webp');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 .opaque {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 #a0821d;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-  border: 1px solid #d4af37;
+  border: 1px solid rgba(0, 0, 0, 0.18);
   color: white;
   font-family: "Noto Sans", sans-serif;
-  padding: 30px !important;
-  padding-top: 5px !important;
+  padding: 36px !important;
   font-size: 16px;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 8px 32px 0 rgba(105, 97, 25, 0.37);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   font-family: "Noto Sans", sans-serif;
   padding: 30px !important;
   font-size: 16px;
-}
+} */
 
 .upper {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -82,3 +76,51 @@
   color: white;
 }
 
+.map {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.rounded-circle {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 4px solid black;
+  object-position: 50% 5%;
+  object-fit: cover;
+  position: relative;
+  margin: auto;
+  align-self: center;
+}
+
+.prof {
+  line-height: 1.8rem;
+}
+
+.gradient-outline-rounded-copied {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  width: fit-content;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px !important;
+  margin-bottom: 50px;
+  padding: 2px;
+}
