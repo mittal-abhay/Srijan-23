@@ -23,6 +23,7 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-hot-loader": "^4.12.14",
+    "react-icons": "^4.7.1",
     "react-loadable": "^5.5.0",
     "react-material-ui-carousel": "^2.3.11",
     "react-player": "^2.11.0",

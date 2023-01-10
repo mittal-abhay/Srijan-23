@@ -206,28 +206,27 @@ class Home extends Component {
         </div> */}
         {/* <canvas id="graphics" /> */}
 
-        <div id="stars"></div>
+        {/* <div id="stars"></div>
         <div id="stars2"></div>
-        <div id="stars3"></div>
+        <div id="stars3"></div> */}
 
-        <div className="patterns">
-          <svg width="100%" height="100%">
-            <text x="50%" y="50%" text-anchor="middle">
-              SRIJAN'23
-            </text>
-          </svg>
-        </div>
-        <div className="glow">
-          <h2>Carnival of Reminiscence......</h2>
-          <div class="btn-cont">
-            <a class="btn" href="#">
-              REGISTER HERE
-              <span class="line-1"></span>
-              <span class="line-2"></span>
-              <span class="line-3"></span>
-              <span class="line-4"></span>
-            </a>
+        <div className="hero">
+          <div className="hero_heading text-center">
+            <h1>SRIJAN'23</h1>
           </div>
+          <div className="glow">
+            <h2>Carnival of Reminiscence</h2>
+          </div>
+        </div>
+
+        <div class="btn-cont">
+          <a class="btn" href="#">
+            REGISTER HERE
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+            <span class="line-4"></span>
+          </a>
         </div>
 
         {/* </div> */}

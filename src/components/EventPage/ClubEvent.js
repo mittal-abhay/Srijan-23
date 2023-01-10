@@ -5,12 +5,12 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 const CardBody = styled.div`
-  background: rgba( 255, 255, 255, 0.11 ) !important;
-box - shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-backdrop - filter: blur(4px);
--webkit - backdrop - filter: blur(4px);
-border - radius: 10px;
-border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
 `;
 const CardImageBody = styled.div`
   height: 200px;
