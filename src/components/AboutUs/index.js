@@ -39,9 +39,9 @@ class AboutUs extends Component {
         >
           About Us
         </h1>
+        
         <div className="container">
-          <div className="row container">
-            <div className="col-12 opaque">
+          <div className="col-12 opaque" style={{ textAlign: "center" }}>
               <br />
               Indian Institute of Technology (Indian School of Mines), Dhanbad,
               abbreviated as IIT (ISM), is a public engineering and research
@@ -115,8 +115,7 @@ class AboutUs extends Component {
               ></iframe>
             </div>
           </div>
-          <br />
-        </div>
+       
         <br />
         <h1
           style={{
@@ -133,7 +132,9 @@ class AboutUs extends Component {
         <div className="container">
           <div className="col-12 opaque" style={{ textAlign: "center" }}>
             <br />
-            COMING SOON...
+            <div style={{fontSize:'25px'}}>Carnival of Reminiscence</div>
+            <br/>
+            A few memories were the only vestige of the biggest socio-cultural fest of Eastern India engraved in our hearts. As the memories of our beloved event, SRIJAN, fade after a two-year hiatus, we aim to revive the feeling of Srijan in all of our hearts. This year’s theme “CARNIVAL OF REMINISCENCE”  focuses on cherishing and reviving the wonderful experiences we experienced during the former Srijan. Bringing back the lane of memories with a flabbergasting experience to all get ready to divulge yourself in the colorful and electrifying joyride of SRIJAN ‘23. Indulging in the memories of our past events as we enter into this year’s biggest cultural fest, giving a déjà vu to many, we wish to provide a prodigious experience filled with mesmerizing and nostalgic moments. It will be a voyage that brings back memories of our beloved cultural fest with a blast alongside creating new memories that would last a lifetime. Join us in this journey of reliving and creating moments to reflect on with a reminiscing smile.
           </div>
         </div>
         <br />

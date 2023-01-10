@@ -4,6 +4,9 @@ import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import image1 from "../../assets/1.jpg";
+import image2 from "../../assets/0.webp";
+import image3 from "../../assets/srijan_day_1.jpg";
 
 const styles = (theme) => ({
   container: {
@@ -48,23 +51,23 @@ class Parallax extends React.Component {
         <div className="row">
           <div className={classNames("slider", "col-12")}>
             <img
-              src={content.image1}
+              src={image1}
               alt="Loading..."
               className={classNames("image1M", classes.image, "col-12 rounded")}
             />
             <img
-              src={content.image2}
+              src={image2}
               alt="Loading..."
               className={classNames("image2M", classes.image, "col-12 rounded")}
             />
             <img
-              src={content.image3}
+              src={image3}
               alt="Loading..."
               className={classNames("image3M", classes.image, "col-12 rounded")}
             />
           </div>
           <div
-            className={classNames("col-12 homeCard")}
+            className={classNames("col-12 opaque")}
             style={{ textAlign: "center" }}
           >
             <Link to={content.link} className={" title"}>

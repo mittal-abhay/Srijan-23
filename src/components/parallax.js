@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import image1 from "../assets/28.1.jpg";
-import image2 from "../assets/0.jpg";
+import image1 from "../assets/1.jpg";
+import image2 from "../assets/0.webp";
 import image3 from "../assets/srijan_day_1.jpg";
 
 const styles = (theme) => ({
@@ -86,6 +86,8 @@ class Parallax extends React.Component {
   }
   render() {
     const { content, classes, x } = this.props;
+    console.log(classes);
+    console.log(content);
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">
@@ -144,7 +146,7 @@ class Parallax extends React.Component {
                       )
                     : classNames(
                         classes.image2M,
-                        "col-4  rounded borderImgWrapper  "
+                        "col-4  rounded borderImgWrapper"
                       )
                 }
               />
@@ -180,8 +182,8 @@ class Parallax extends React.Component {
           <div
             className={
               window.innerWidth > 991
-                ? classNames(classes.text, "col-12 col-md-3 homeCard")
-                : classNames("col-12 homeCard")
+                ? classNames(classes.text, "col-12 col-md-3 opaque")
+                : classNames("col-12 opaque")
             }
             style={
               window.innerWidth < 1200 && window.innerWidth > 991

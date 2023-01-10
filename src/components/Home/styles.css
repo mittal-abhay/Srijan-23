@@ -144,6 +144,7 @@ text {
  
  /* vertical-align: middle; */
  font-family: Lora;
+ ;
  letter-spacing: 10px;
  stroke:  #FFBC00;
  font-size: 175px;
@@ -194,7 +195,7 @@ text {
     font-size: 175px;
   }
   .glow h2{     
-    margin-left: 640px;
+    margin-left: 630px;
     top:310px
   }
 } 
@@ -202,7 +203,7 @@ text {
 @media screen and ( max-width: 1247px) {
   .glow h2{
       
-    margin-left: 400px;
+    margin-left: 420px;
   }
 }
 @media screen and ( max-width: 1214px) {
@@ -211,7 +212,7 @@ text {
   }
   .glow h2{
       
-    margin-left: 330px;
+    margin-left: 420px;
   }
 } 
 @media screen and ( max-width: 1195px) {
@@ -277,7 +278,7 @@ text {
 }
 @media screen and ( max-width: 819px) {
   .glow h2{
-    top: 270px;
+    top: 315px;
     font-size: 35px;
     margin-left: 330px;
   }
@@ -374,12 +375,12 @@ text {
   }
   .glow h2{   
     font-size: 25px;
-    top: 390px;
-    margin-left: 80px;
+    top: 400px;
+    margin-left: 121px;
   }
 }
 
-@media screen and ( max-width: 412px) {
+/* @media screen and ( max-width: 412px) {
   text{
     font-size: 50px;
     stroke-width: 1;
@@ -389,7 +390,7 @@ text {
     top: 315px;
     margin-left: 80px;
   }
-}
+} */
 @media screen and ( max-width: 390px) {
   text{
    font-size: 50px;
@@ -398,7 +399,7 @@ text {
  .glow h2{
    font-size: 20px;
    top:370px;
-   margin-left: 120px;
+   margin-left: 150px;
  }
 }
 @media screen and ( max-width: 389px) {
@@ -421,6 +422,17 @@ text {
    font-size: 20px;
    top: 270px;
    margin-left: 100px;
+ }
+}
+@media screen and ( max-width: 360px) {
+  text{
+   font-size: 50px;
+   stroke-width: 0.8;
+  }
+ .glow h2{
+   font-size: 20px;
+   top: 324px;
+   margin-left: 138px;
  }
 }
 

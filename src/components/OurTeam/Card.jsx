@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from "react"
-import styled from "styled-components"
-
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faInstagram,
+    faLinkedin,
+    faTwitter,
+    faYoutube,
+  } from "@fortawesome/free-brands-svg-icons";
 const CardBody = styled.div`
     padding: 10px;
     width: 350px;
-    margin: 10px !important;
+    margin: 15px !important;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: #25271f;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid;
     max-width: 400px;
     margin: auto;
     overflow-y: auto;
@@ -60,7 +67,16 @@ const CardAvatar = styled.img`
 const CardName = styled.h1`
     position: absolute;
     bottom: 0;
-    color: #ccc;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      94.75deg,
+      #d19a08,
+      #fedb7e 27.6%,
+      #eac460 50%,
+      #d19a08 66.15%,
+      #d19a08
+    );
+    -webkit-background-clip: text;
     font-size: 22px;
     font-weight: 700;
     text-align: center;
@@ -75,12 +91,21 @@ const CardDesignation = styled.h2`
     margin-top: 4px;
     font-size: 12px;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 800;
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     left: 50%;
-    color: #66ffff;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      94.75deg,
+      #d19a08,
+      #fedb7e 27.6%,
+      #eac460 50%,
+      #d19a08 66.15%,
+      #d19a08
+    );
+    -webkit-background-clip: text;
     transform: translateX(-50%) translateY(-7px);
 `
 const CardSocial = styled.div`
@@ -119,7 +144,7 @@ const CardSocialLink = styled.a`
     margin-right: 10px;
     &:hover {
       svg {
-        fill: darken(rgb(165, 181, 206), 20%);
+        fill: #FFD700;
       }
     }
     &:last-child {
@@ -149,8 +174,7 @@ export default function Card(props) {
                 <CardName>{member.name}</CardName>
                 <CardDesignation>{member.designation}</CardDesignation>
                 <CardSocial>
-                    <CardSocialLink href={member.linkedin}><StyledSVG viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />LinekdIn</StyledSVG>
+                    <CardSocialLink href={member.linkedin}><FontAwesomeIcon icon={faLinkedin} />
                     </CardSocialLink>
                 </CardSocial>
                 <CardContact>

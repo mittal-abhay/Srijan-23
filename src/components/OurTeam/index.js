@@ -47,6 +47,7 @@ export default function OurTeam() {
   const [width, setWidth] = useState(window.innerWidth);
   // const [isCoreActive, setIsCoreActive] = useState(true);
   const [coreTeam, setCoreTeam] = useState([]);
+  const [developers, setDevelopers] = useState([]);
   // const [developers, setDevelopers] = useState([
   //   {
   //     "id": 1,
@@ -67,18 +68,36 @@ export default function OurTeam() {
   // ])
 
   useEffect(() => {
-    fetch("https://srijan.herokuapp.com/organisingteammembers/", { mode: "cors" })
+    fetch("https://srijan.herokuapp.com/organisingteammembers/", {
+      mode: "cors",
+    })
       .then((res) => res.json())
-      .then((data) => setCoreTeam(data))
+      .then((data) =>{
+        console.log(data)
+        const newData = data.sort(function(a,b){
+          return a.id - b.id;
+        });
+        setCoreTeam(newData);
+        
+        console.log(newData)
+      })
       .catch(() => {
-        alert('You are offline!!!')
-      });;
+        alert("You are offline!!!");
+      });
+  }, []);
+  useEffect(() => {
+    fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
+      .then((res) => res.json())
+      .then((data) => setDevelopers(data))
+      .catch(() => {
+        alert("You are offline!!!");
+      });
   }, []);
 
   return (
     <div className="team-page">
       <Helmet>
-        <title>srijan Team</title>
+        <title>Srijan Team</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."
@@ -130,24 +149,30 @@ export default function OurTeam() {
 
       <br />
       <br />
-      {width > 486 ? (
-        <h2 align="center" className="title highlighted">
+      <h2 align="center" className="title highlighted">
           CORE TEAM
         </h2>
-      ) : (
-        <h2 align="center" className="highlighted">
-          OUR TEAM
-        </h2>
-      )}
+   
       <br />
-      <div class="container team">
-        <div class="row mt-2 mb-2 justify-content-center">
+      <div className="container team">
+        <div className="row mt-2 mb-2 justify-content-center">
           {coreTeam.map((person) => (
             <Card member={person}></Card>
           ))}
         </div>
       </div>
-      {/* <Footer /> */}
+      <h2 align="center" className="title highlighted">
+          DEVELOPERS
+        </h2>
+   
+      <br />
+      <div className="container team">
+        <div className="row mt-2 mb-2 justify-content-center">
+          {developers.map((person) => (
+            <Card member={person}></Card>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

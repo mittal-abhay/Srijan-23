@@ -88,8 +88,8 @@ class Parallax extends React.Component {
           <div
             className={
               window.innerWidth > 600
-                ? classNames(classes.text, "col-12 col-md-3 homeCard")
-                : classNames("col-12 col-md-3 homeCard")
+                ? classNames(classes.text, "col-12 col-md-3 opaque")
+                : classNames("col-12 col-md-3 opaque")
             }
             style={{ textAlign: "center" }}
           >

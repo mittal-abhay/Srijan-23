@@ -61,7 +61,18 @@ function SocialLink() {
       <Header />
       <br />
 
-      <div className="title2">OUR SOCIAL LINKS</div>
+      <h1
+        style={{
+          textAlign: "center",
+          marginTop: "60px",
+          color: "white",
+          fontSize: "52px",
+          fontFamily: "'Montserrat', sans-serif",
+        }}
+        className="title"
+      >
+        OUR SOCIAL LINKS
+      </h1>
       <Grid container style={{ marginTop: "2.5em" }}>
         <Grid item xs={12}>
           <Wrapper>
@@ -80,8 +91,10 @@ function SocialLink() {
           </Wrapper>
         </Grid>
 
-        <Grid item xs={12} style={{alignItems:"center"}}>
-          <div className="title2" style={{fontSize:"0.5em"}}>SOME IMPORTANT LINKS</div>
+        <Grid item xs={12} style={{ alignItems: "center" }}>
+          <div className="title2" style={{ fontSize: "0.5em" }}>
+            
+          </div>
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fism.srijan%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="500"

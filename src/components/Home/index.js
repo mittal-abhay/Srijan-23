@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import Header from "../HomeHeader";
+import Header from "../Header";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
@@ -9,7 +9,6 @@ import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
-
 import { Helmet } from "react-helmet";
 // import Safe from "react-safe"
 
@@ -219,12 +218,9 @@ class Home extends Component {
           </svg>
         </div>
         <div className="glow">
-          <h2>The Carnival of Reminiscence......</h2>
+          <h2>Carnival of Reminiscence......</h2>
           <div class="btn-cont">
-            <a
-              class="btn"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
-            >
+            <a class="btn" href="#">
               REGISTER HERE
               <span class="line-1"></span>
               <span class="line-2"></span>
@@ -254,8 +250,6 @@ class Home extends Component {
           </div>
         } */}
 
-        
-
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
@@ -270,18 +264,7 @@ class Home extends Component {
               );
           })}
 
-          {/* <div class="btn-cont">
-            <a
-              class="btn"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
-            >
-              REGISTER HERE
-              <span class="line-1"></span>
-              <span class="line-2"></span>
-              <span class="line-3"></span>
-              <span class="line-4"></span>
-            </a>
-          </div> */}
+      
         </div>
         <br />
         <link
