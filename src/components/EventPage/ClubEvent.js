@@ -61,18 +61,17 @@ function ClubEvent(props) {
   return (
     <div className="container">
       <Helmet>
-        <title>srijan club events</title>
+        <title>Srijan club events</title>
         <meta
           name="description"
           content="Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of srijan 2022. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
         />
         <meta
           name="keywords"
-          content="club events srijan 2022, club event iit dhanbad, iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan theme, srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          content="club events Srijan 2022, club event IIT dhanbad, iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan theme, srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
         />
       </Helmet>
-      <br />
-      {events.map((event, id) => {
+      {/* {events.map((event, id) => {
         return (
           <div className="cards">
             <CardBody className="card-item" key={event.name}>
@@ -92,6 +91,24 @@ function ClubEvent(props) {
                     focusable="false"
                   />
                 </CardImageBody>
+                <div className="card-info">
+                  <CardTitle className="card-title">{event.name}</CardTitle>
+                  <CardSummary>{event.summary}</CardSummary>
+                  <CardDepartment>{event.presented_by}</CardDepartment>
+                </div>
+              </Link>
+            </CardBody>
+          </div>
+        );
+      })} */}
+      {events.map((event, id) => {
+        return (
+          <div className="cards">
+            <CardBody className="card-item" key={event.name}>
+              <Link
+                to={`club-events/${event.name.split(" ").join("-")}/about`}
+                style={{ textDecoration: "none" }}
+              >
                 <div className="card-info">
                   <CardTitle className="card-title">{event.name}</CardTitle>
                   <CardSummary>{event.summary}</CardSummary>

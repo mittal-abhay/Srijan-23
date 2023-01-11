@@ -10,6 +10,7 @@ import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
+import concert_crowd from "../../assets/concert_crowd.png";
 // import Safe from "react-safe"
 
 let max_offset, initial_offset;
@@ -231,12 +232,25 @@ class Home extends Component {
 
         <div class="btn-cont">
           <a class="btn" href="#">
-            REGISTER HERE
+            REGISTER NOW
             <span class="line-1"></span>
             <span class="line-2"></span>
             <span class="line-3"></span>
             <span class="line-4"></span>
           </a>
+        </div>
+
+        <div className="gallery-wrapper">
+          <div className="gallery-image-wrapper">
+            <div className="gallery-image image1">1</div>
+            <div className="gallery-image image2">2</div>
+            <div className="gallery-image image3">3</div>
+          </div>
+          <div className="gallery-text-wrapper">
+            <div className="gallery-text text1"></div>
+            <div className="gallery-text text2"></div>
+            <div className="gallery-text text3"></div>
+          </div>
         </div>
 
         {/* </div> */}
