@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+.scene {
+  border: 0px solid #ccc;
+  margin: 40px 0;
+  position: relative;
+  width: 420px;
+  height: 260px;
+  margin: 20px auto;
+  margin-top: 250px;
+  margin-bottom: 3rem;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 420px;
+  height: 250px;
+  left: 10px;
+  top: 10px;
+  /* border: 2px solid black; */
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+}
+
+/* .carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.94); } */
+.carousel__cell:nth-child(9n + 1) {
+  background: url("../../assets/2.1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 2) {
+  background: url("../../assets/14.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 3) {
+  background: url("../../assets/38.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 4) {
+  background: url("../../assets/2.1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 5) {
+  background: url("../../assets/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 6) {
+  background: url("../../assets/2.1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 7) {
+  background: url("../../assets/38.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 8) {
+  background: url("../../assets/14.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__cell:nth-child(9n + 0) {
+  background: url("../../assets/16.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(40rem);
+}
+.carousel__cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(40rem);
+}
+
+@media screen and (max-width: 760px) {
+  .carousel__cell {
+    width: 300px;
+    height: 220px;
+  }
+  .carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(2) {
+    transform: rotateY(40deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(3) {
+    transform: rotateY(80deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(30rem);
+  }
+  .carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(30rem);
+  }
+
+  .scene {
+    width: 320px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel__cell {
+    width: 250px;
+    height: 200px;
+    left: 0px;
+  }
+  .carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(2) {
+    transform: rotateY(40deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(3) {
+    transform: rotateY(80deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(26rem);
+  }
+  .carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(26rem);
+  }
+
+  .scene {
+    width: 270px;
+    height: 220px;
+  }
+}
+
+.carousel-options {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.carousel-options svg {
+  color: goldenrod;
+  font-size: 2rem;
+}
