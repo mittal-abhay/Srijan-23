@@ -3,6 +3,7 @@ import "./Styles.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
+import EventCard from "./EventCard";
 
 const CardBody = styled.div`
   background: rgba(0, 0, 0, 0.25) !important;
@@ -71,7 +72,7 @@ function ClubEvent(props) {
           content="club events Srijan 2022, club event IIT dhanbad, iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan theme, srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
         />
       </Helmet>
-      {/* {events.map((event, id) => {
+      {events.map((event, id) => {
         return (
           <div className="cards">
             <CardBody className="card-item" key={event.name}>
@@ -100,25 +101,28 @@ function ClubEvent(props) {
             </CardBody>
           </div>
         );
-      })} */}
-      {events.map((event, id) => {
-        return (
-          <div className="cards">
-            <CardBody className="card-item" key={event.name}>
-              <Link
-                to={`club-events/${event.name.split(" ").join("-")}/about`}
-                style={{ textDecoration: "none" }}
-              >
-                <div className="card-info">
-                  <CardTitle className="card-title">{event.name}</CardTitle>
-                  <CardSummary>{event.summary}</CardSummary>
-                  <CardDepartment>{event.presented_by}</CardDepartment>
-                </div>
-              </Link>
-            </CardBody>
-          </div>
-        );
       })}
+      {/* {events.map((event, id) => {
+        // return (
+        //   <div className="cards">
+        //     <div className="card-image-temp">
+        //       <CardBody className="card-item" key={event.name}>
+        //         <Link
+        //           to={`club-events/${event.name.split(" ").join("-")}/about`}
+        //           style={{ textDecoration: "none" }}
+        //         >
+        //           <div className="card-info">
+        //             <CardTitle className="card-title">{event.name}</CardTitle>
+        //             <CardSummary>{event.summary}</CardSummary>
+        //             <CardDepartment>{event.presented_by}</CardDepartment>
+        //           </div>
+        //         </Link>
+        //       </CardBody>
+        //     </div>
+        //   </div>
+        // );
+        return <EventCard event={event} />;
+      })} */}
     </div>
   );
 }

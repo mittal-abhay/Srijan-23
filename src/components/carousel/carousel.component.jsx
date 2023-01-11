@@ -2,8 +2,7 @@ import "./carousel.styles.css";
 import React from "react";
 import { useRef, useState } from "react";
 import { bottom } from "@popperjs/core";
-import { FiChevronRight } from "react-icons/fi";
-import { useEffect } from "react";
+import { FaChevronRight } from "react-icons/fa";
 
 const Carousel = () => {
   const carousel = useRef(null);
@@ -23,15 +22,23 @@ const Carousel = () => {
   var cellSize = isHorizontal ? cellWidth : cellHeight;
   // var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
   var radius = 380;
+  console.log(radius);
 
   function rotateCarousel() {
+    console.log("2nd");
     var angle = theta * selectedIndex * -1;
+    console.log(`carousel: ${carousel.current.style.transform}`);
+    console.log(
+      "translateZ(" + radius + "px) " + rotateFn + "(" + angle + "deg)"
+    );
     carousel.current.style.transform =
       "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
+    console.log(`carousel: ${carousel.current.style.transform}`);
   }
 
   const previous = () => {
     setselectedIndex(selectedIndex - 1);
+    console.log("1stt");
     rotateCarousel();
   };
 
@@ -87,7 +94,9 @@ const Carousel = () => {
     <>
       <div className="scene">
         <div className="carousel" ref={carousel}>
-          <div className="carousel__cell" ref={cells}></div>
+          <div className="carousel__cell" ref={cells}>
+            {/* <img src="../../assets/3.jpg" alt="" style={{width:"30px", objectFit:"contain"}}/> */}
+          </div>
           <div className="carousel__cell" ref={cells}></div>
           <div className="carousel__cell" ref={cells}></div>
           <div className="carousel__cell" ref={cells}></div>
@@ -100,7 +109,9 @@ const Carousel = () => {
       </div>
 
       <div className="carousel-options">
-        <FiChevronRight ref={nextButton} onClick={next} />
+        
+
+        <FaChevronRight ref={nextButton} onClick={next} />
       </div>
     </>
   );

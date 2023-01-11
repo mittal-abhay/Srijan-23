@@ -12,7 +12,6 @@
   display: flex;
   padding: 2rem;
   z-index: 3;
-  min-width: 60px;
 }
 @media (min-width: 48rem) {
   .cards {
@@ -91,11 +90,13 @@
   max-width: 300px;
   }
 }
+
 .cards .card-info .card-intro {
-  margin: 0px;
+  margin: auto;
   line-height: 1.5em;
- 
 }
 .club-text{
 font-weight: 800;
 }
+
+
