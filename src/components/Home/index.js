@@ -9,6 +9,7 @@ import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
+import Film from "../FilmStrip/Film.jsx";
 import { Helmet } from "react-helmet";
 import Carousel from "../carousel/carousel.component";
 import Gallery from "../HomeGallery/Gallery";
@@ -222,14 +223,15 @@ class Home extends Component {
             <h2>Carnival of Reminiscence......</h2>
           </div>
         </div> */}
-        <div className="hero">
+        <Film />
+        {/* <div className="hero">
           <div className="hero_heading">
             <h1>SRIJAN'23</h1>
           </div>
           <div className="glow">
             <h2>Carnival of Reminiscence</h2>
           </div>
-        </div>
+        </div> */}
 
         <div class="btn-cont">
           <a class="btn" href="#">

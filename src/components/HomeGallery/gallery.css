@@ -36,20 +36,54 @@
 }
 
 .image1 {
-  background-color: aquamarine;
+  background-image: url("../../assets/Gallery1.jpg");
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  left: 10rem;
+  background-size: cover;
+  background-position: center;
   z-index: 50;
+  /* transform: rotate(15deg); */
 }
 
 .image2 {
-  background-color: teal;
+  background-image: url("../../assets/Gallery2.jpg");
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
   z-index: 30;
-  transform: rotate(10deg);
+  left: 5rem;
+  background-size: cover;
+  background-position: center;
+  /* transform: rotate(10deg); */
 }
 
 .image3 {
-  background-color: magenta;
+  background-image: url("../../assets/Gallery3.jpg");
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
   z-index: 10;
-  transform: rotate(-10deg);
+  background-size: cover;
+  background-position: center;
+  /* transform: rotate(-10deg); */
+}
+/* .gallery-image:hover .image1,
+.image2,
+.image3:not(:hover) {
+  transform: scale(0.9);
+  opacity: 1;
+} */
+
+.image1:hover {
+  z-index: 60;
+  transform: scale(1.1) rotate(-10deg);
+}
+.image2:hover {
+  z-index: 60;
+  transform: scale(1.1) rotate(-10deg);
+}
+.image3:hover {
+  z-index: 60;
+  transform: scale(1.1) rotate(-10deg);
 }
 
 .stomp {

@@ -1,7 +1,9 @@
 import React from "react";
 import "../HomeGallery/gallery.css";
 import { useRef, useEffect } from "react";
-
+import Gallery1 from "../../assets/Gallery1.jpg";
+import Gallery2 from "../../assets/Gallery2.jpg";
+import Gallery3 from "../../assets/Gallery3.jpg";
 export default function Gallery() {
   const galleryWrapper = useRef(null);
   const galleryImageWrapper = useRef(null);
