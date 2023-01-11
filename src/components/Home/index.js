@@ -12,6 +12,7 @@ import "./styles.css";
 import { Helmet } from "react-helmet";
 import Carousel from "../carousel/carousel.component";
 import Gallery from "../HomeGallery/Gallery";
+import DJLightsRow from "../DJLightsRow/DJLightsRow";
 // import Safe from "react-safe"
 
 let max_offset, initial_offset;
@@ -242,7 +243,9 @@ class Home extends Component {
         </div>
 
         <Gallery />
+        <DJLightsRow count={15} />
         <Carousel />
+        <DJLightsRow />
         {/* </div> */}
         {/* {
           <div
