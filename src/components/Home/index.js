@@ -10,6 +10,7 @@ import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
+import Carousel from "../carousel/carousel.component";
 // import Safe from "react-safe"
 
 let max_offset, initial_offset;
@@ -250,6 +251,7 @@ class Home extends Component {
             />
           </div>
         } */}
+        <Carousel/>
 
         <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {

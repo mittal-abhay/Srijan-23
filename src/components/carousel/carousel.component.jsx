@@ -1,0 +1,140 @@
+import "./carousel.styles.css";
+import React from "react";
+import { useRef, useState } from "react";
+
+const Carousel = () => {
+  const carousel = useRef(null);
+  const cells = useRef(null);
+  const prevButton = useRef(null);
+  const nextButton = useRef(null);
+  const [selectedIndex, setselectedIndex] = useState(1);
+  const [isHorizontal, setisHorizontal] = useState(true);
+  
+  var cellWidth = carousel.offsetWidth;
+  var cellHeight = carousel.offsetHeight;
+  // var isHorizontal = true;
+  var rotateFn = isHorizontal ? "rotateY" : "rotateX";
+ var  cellCount = 9;
+    var theta = 360 / cellCount;
+    var cellSize = isHorizontal ? cellWidth : cellHeight;
+    // var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+    var radius = 300;
+  console.log( radius );
+
+  function rotateCarousel() {
+    console.log("2nd");
+    var angle = theta * selectedIndex * -1;
+    console.log(`carousel: ${carousel.current.style.transform}`);
+    console.log( "translateZ(" + radius + "px) " + rotateFn + "(" + angle + "deg)");
+    carousel.current.style.transform =
+      "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
+      console.log(`carousel: ${carousel.current.style.transform}`);
+  }
+
+  const previous = () => {
+    setselectedIndex(selectedIndex - 1);
+    console.log("1stt");
+    rotateCarousel();
+  };
+
+  const next = () => {
+    setselectedIndex(selectedIndex + 1);
+    rotateCarousel();
+  };
+
+  // var cellsRange = document.querySelector('.cells-range');
+  // cellsRange.addEventListener( 'change', changeCarousel );
+  // cellsRange.addEventListener( 'input', changeCarousel );
+
+  // function changeCarousel() {
+  //   cellCount = cellsRange.value;
+  //   theta = 360 / cellCount;
+  //   var cellSize = isHorizontal ? cellWidth : cellHeight;
+  //   radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+  //   for ( var i=0; i < cells.length; i++ ) {
+  //     var cell = cells[i];
+  //     if ( i < cellCount ) {
+  //       // visible cell
+  //       cell.style.opacity = 1;
+  //       var cellAngle = theta * i;
+  //       cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+  //     } else {
+  //       // hidden cell
+  //       cell.style.opacity = 0;
+  //       cell.style.transform = 'none';
+  //     }
+  //   }
+
+  //   rotateCarousel();
+  // }
+
+  // var orientationRadios = document.querySelectorAll('input[name="orientation"]');
+  // ( function() {
+  //   for ( var i=0; i < orientationRadios.length; i++ ) {
+  //     var radio = orientationRadios[i];
+  //     radio.addEventListener( 'change', onOrientationChange );
+  //   }
+  // })();
+
+  // function onOrientationChange() {
+  //   var checkedRadio = document.querySelector('input[name="orientation"]:checked');
+  //   isHorizontal = checkedRadio.value == 'horizontal';
+  //   rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+  //   changeCarousel();
+  // }
+
+  // // set initials
+  // onOrientationChange();
+  return (
+    <>
+      <div className="scene">
+        <div className="carousel" ref={carousel}>
+          <div className="carousel__cell" ref={cells}>
+            1
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            2
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            3
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            4
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            5
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            6
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            7
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            8
+          </div>
+          <div className="carousel__cell" ref={cells}>
+            9
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="carousel-options">
+       
+        <p>
+          
+          <button className="next-button" ref={nextButton} onClick={next}>
+            Next
+          </button>
+        </p>
+      
+      </div>
+    </>
+  );
+};
+
+export default Carousel;
