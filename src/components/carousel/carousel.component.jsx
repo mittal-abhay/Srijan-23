@@ -13,12 +13,13 @@ const Carousel = () => {
   var cellWidth = carousel.offsetWidth;
   var cellHeight = carousel.offsetHeight;
   // var isHorizontal = true;
+  
   var rotateFn = isHorizontal ? "rotateY" : "rotateX";
  var  cellCount = 9;
     var theta = 360 / cellCount;
     var cellSize = isHorizontal ? cellWidth : cellHeight;
     // var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
-    var radius = 300;
+    var radius = 340;
   console.log( radius );
 
   function rotateCarousel() {
