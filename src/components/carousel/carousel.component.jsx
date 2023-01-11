@@ -1,6 +1,7 @@
 import "./carousel.styles.css";
 import React from "react";
 import { useRef, useState } from "react";
+import { bottom } from "@popperjs/core";
 
 const Carousel = () => {
   const carousel = useRef(null);
@@ -19,7 +20,7 @@ const Carousel = () => {
     var theta = 360 / cellCount;
     var cellSize = isHorizontal ? cellWidth : cellHeight;
     // var radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
-    var radius = 340;
+    var radius = 380;
   console.log( radius );
 
   function rotateCarousel() {
@@ -91,31 +92,31 @@ const Carousel = () => {
       <div className="scene">
         <div className="carousel" ref={carousel}>
           <div className="carousel__cell" ref={cells}>
-            1
+            {/* <img src="../../assets/3.jpg" alt="" style={{width:"30px", objectFit:"contain"}}/> */}
           </div>
           <div className="carousel__cell" ref={cells}>
-            2
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            3
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            4
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            5
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            6
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            7
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            8
+            
           </div>
           <div className="carousel__cell" ref={cells}>
-            9
+            
           </div>
         </div>
       </div>
@@ -128,9 +129,10 @@ const Carousel = () => {
        
         <p>
           
-          <button className="next-button" ref={nextButton} onClick={next}>
+          {/* <button className="next-button" ref={nextButton} onClick={next}>
             Next
-          </button>
+          </button> */}
+        <img src="https://img.icons8.com/ios-glyphs/40/FFD700/chevron-right.png" ref={nextButton}  onClick={next}/>
         </p>
       
       </div>
