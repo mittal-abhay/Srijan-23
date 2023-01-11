@@ -108,7 +108,12 @@ const Styles = (theme) => ({
 function Footer({ classes }) {
   const Copyright = (props) => {
     return (
-      <Typography variant="body2" align="center" {...props}>
+      <Typography
+        variant="body2"
+        align="center"
+        style={{ textDecoration: "none" }}
+        {...props}
+      >
         {"Copyright © "}- IIT (ISM) Dhanbad {new Date().getFullYear()}
       </Typography>
     );

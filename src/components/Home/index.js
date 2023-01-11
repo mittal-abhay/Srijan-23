@@ -11,6 +11,7 @@ import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import Carousel from "../carousel/carousel.component";
+import Gallery from "../HomeGallery/Gallery";
 // import Safe from "react-safe"
 
 let max_offset, initial_offset;
@@ -232,7 +233,7 @@ class Home extends Component {
 
         <div class="btn-cont">
           <a class="btn" href="#">
-            REGISTER HERE
+            REGISTER NOW
             <span class="line-1"></span>
             <span class="line-2"></span>
             <span class="line-3"></span>
@@ -240,6 +241,8 @@ class Home extends Component {
           </a>
         </div>
 
+        <Gallery />
+        <Carousel />
         {/* </div> */}
         {/* {
           <div
@@ -259,7 +262,6 @@ class Home extends Component {
             />
           </div>
         } */}
-        <Carousel/>
 
         {/* <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {

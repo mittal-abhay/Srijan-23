@@ -1,7 +1,8 @@
 /* ================== Root ====================== */
 html{
   max-height: 160vh;
-  cursor: url("../src/assets/cursor.svg"), auto !important;
+  /* cursor: url("../src/assets/cursor.svg"), auto !important; */
+  cursor: none !important;
   background-image: url('./assets/backdrop.jpg') !important;
   background-repeat: repeat-y;
   background-size: cover;

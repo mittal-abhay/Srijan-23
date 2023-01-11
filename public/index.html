@@ -34,8 +34,8 @@
     className="gradientBg"
     style="overflow-x: hidden; padding: 0; margin: 0;"
   >
+  <div class="cursor-shadow"></div>
     <div id="root">
-		
       <!-- <div class="vertical-centered-box">
         <div class="content">
           <video autoplay loop class="loading-image">
@@ -135,6 +135,15 @@
       content: '';
     }
 
+    .cursor-shadow {
+      position: fixed;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      box-shadow: 0 0 40px 20px rgba(218, 165, 32, 0.7);
+      z-index: 100;
+    }
+
         /* Winter Snowflakes Theme */
     /* .snowflake {
         animation: fall 5s linear forwards;
@@ -206,6 +215,12 @@
 //         snowflake.remove()
 //     , 15000);
 // });
+
+    const cursorShadow = document.body.getElementsByClassName("cursor-shadow")[0];
+    window.addEventListener("mousemove", (e) => {
+      cursorShadow.style.top = `${e.clientY}px`;
+      cursorShadow.style.left = `${e.clientX}px`;
+    })
       </script>
     
   

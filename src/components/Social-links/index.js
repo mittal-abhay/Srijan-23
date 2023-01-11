@@ -8,21 +8,21 @@ import ReactPlayer from "react-player";
 import styled from "styled-components";
 
 const Wrapper = styled(Box)`
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  ".carousel-div": {
-    width: "60%",
-    padding: "1em 1em",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carousel-div {
+    width: 60%;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    "@media (max-width: 600px)": {
-      width: "100%",
-    },
-  },
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
 `;
 
 const videos = [
@@ -92,9 +92,7 @@ function SocialLink() {
         </Grid>
 
         <Grid item xs={12} style={{ alignItems: "center" }}>
-          <div className="title2" style={{ fontSize: "0.5em" }}>
-            
-          </div>
+          <div className="title2" style={{ fontSize: "0.5em" }}></div>
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fism.srijan%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="500"

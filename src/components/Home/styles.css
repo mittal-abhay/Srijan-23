@@ -208,6 +208,7 @@ text {
  
 } */
 
+
 .glow h2{
   left: 50%;
   transform: translateX(-50%);
@@ -216,17 +217,17 @@ text {
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 0.1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
   font-family: 'Alex Brush', cursive;
   position: relative;
   margin: auto !important;
 } 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+    text-shadow: 0 0 20px #fab507 0 0 30px #daa520, 0 0 40px #cc9303;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+    text-shadow: 0 0 30px #fab507, 0 0 40px #daa520, 0 0 50px #cc9303;
   }
 }
 
@@ -707,7 +708,7 @@ text {
 
 
 
-#stars {
+/* #stars {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -952,4 +953,5 @@ text {
   to {
       transform: translateY(-2000px);
   }
-}
+} */
+
