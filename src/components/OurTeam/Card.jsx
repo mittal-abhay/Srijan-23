@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const CardBody = styled.div`
   padding: 10px;
@@ -133,7 +133,7 @@ export default function Card(props) {
       <CardContact>
         <CardSocialLink href={member.linkedin}>
           <IconContext.Provider value={{ color: "goldenrod", size: 22 }}>
-            <FaLinkedinIn />
+            <FaLinkedin />
           </IconContext.Provider>
         </CardSocialLink>
         <CardSocialLink href={"tel:" + member.contact}>
