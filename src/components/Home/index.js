@@ -243,7 +243,7 @@ class Home extends Component {
         </div>
 
         <Gallery />
-        <DJLightsRow count={15} />
+        <DJLightsRow />
         <Carousel />
         <DJLightsRow />
         {/* </div> */}
