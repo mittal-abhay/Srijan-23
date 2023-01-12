@@ -244,7 +244,7 @@ class Home extends Component {
           </a>
         </div>
 
-        <Gallery />
+        {/* <Gallery /> */}
         <DJLightsRow />
         <Carousel />
         <DJLightsRow />

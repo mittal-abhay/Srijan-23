@@ -10,93 +10,93 @@ export default function Film() {
         <div className="film-strip back1">
           <div className="film-strip-images-wrapper">
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
           </div>
         </div>
         <div className="film-strip back2">
           <div className="film-strip-images-wrapper">
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
           </div>
         </div>
         <div className="film-strip front">
           <div className="film-strip-images-wrapper">
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img1} alt=""></img>
+              <img src={img1} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img2} alt=""></img>
+              <img src={img2} alt="" />
             </div>
             <div className="film-strip-image">
-              <img src={img3} alt=""></img>
+              <img src={img3} alt="" />
             </div>
           </div>
         </div>
