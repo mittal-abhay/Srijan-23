@@ -498,7 +498,11 @@ text {
 .btn-cont {
   text-align: center;
   margin-bottom: 100px;
-  /* margin-top: 200px; */
+  position: absolute;
+  z-index: 10;
+  top: 95vh;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn-cont .btn {
   position: relative;

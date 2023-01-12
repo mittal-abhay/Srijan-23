@@ -234,23 +234,24 @@ class Home extends Component {
           </div>
         </div> */}
 
-        <div class="btn-cont">
-          <a class="btn" href="#">
-            REGISTER NOW
-            <span class="line-1"></span>
-            <span class="line-2"></span>
-            <span class="line-3"></span>
-            <span class="line-4"></span>
-          </a>
-        </div>
+        <div id="jugaad">
+          <div class="btn-cont">
+            <a class="btn" href="#">
+              REGISTER NOW
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+              <span class="line-3"></span>
+              <span class="line-4"></span>
+            </a>
+          </div>
 
-        {/* <Gallery /> */}
-        <DJLightsRow />
-        <Carousel />
-        <DJLightsRow />
-        <HomeImageScroll />
-        {/* </div> */}
-        {/* {
+          {/* <Gallery /> */}
+          <DJLightsRow />
+          <Carousel />
+          <DJLightsRow />
+          <HomeImageScroll />
+          {/* </div> */}
+          {/* {
           <div
             style={{
               display: "flex",
@@ -269,7 +270,7 @@ class Home extends Component {
           </div>
         } */}
 
-        {/* <div className={classes.parallax + " gradientBg mt-0"}>
+          {/* <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
               return <ParallaxM key={id.toString()} content={content} />;
@@ -283,7 +284,7 @@ class Home extends Component {
               );
           })} */}
 
-        {/* <div class="btn-cont">
+          {/* <div class="btn-cont">
             <a
               class="btn"
               href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
@@ -295,15 +296,16 @@ class Home extends Component {
               <span class="line-4"></span>
             </a>
           </div> */}
-        {/* </div> */}
-        <br />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-        />
-        {/* <a href="https://api.whatsapp.com/send?phone=9835063191" class="float" target="_blank">
+          {/* </div> */}
+          <br />
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+          />
+          {/* <a href="https://api.whatsapp.com/send?phone=9835063191" class="float" target="_blank">
           <i class="fa fa-whatsapp my-float"></i>
         </a> */}
+        </div>
       </div>
     );
   }

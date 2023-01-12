@@ -7,6 +7,10 @@
     flex-wrap: wrap;
 }
 
+.dj-lights-row-wrapper:first-of-type {
+    margin-top: 10%;
+}
+
 .dj-lights-row {
     position: relative;
     display: flex;
