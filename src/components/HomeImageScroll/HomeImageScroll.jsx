@@ -1,10 +1,10 @@
 import React from "react";
 import "./homeImageScroll.css";
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/3.jpg";
-import img3 from "../../assets/14.JPG";
+import img1 from "../../assets/1.webp";
+import img2 from "../../assets/3.webp";
+import img3 from "../../assets/14.webp";
 import img4 from "../../assets/0.webp";
-import img5 from "../../assets/16.jpg";
+import img5 from "../../assets/16.webp";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { gsap } from "gsap";

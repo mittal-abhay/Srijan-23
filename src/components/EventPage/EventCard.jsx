@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { TestImg } from "../../assets/1.jpg";
+import { TestImg } from "../../assets/1.webp";
 
 const EventCardBody = styled.div`
   padding: 10px;
@@ -143,23 +143,21 @@ export default function EventCard({ event }) {
   //     </div>
   //   );
   // })}
-
   // </div>
   // );
-
-//   return (
-//     <div
-//       style={{ backgroundImage: `url('${event.image}')` }}
-//     >
-//       <EventCardBody id={event.name}>
-//         <Link
-//           to={`club-events/${event.name.split(" ").join("-")}/about`}
-//           style={{ textDecoration: "none" }}
-//         >
-//           <EventCardName>{event.name}</EventCardName>
-//           <EventCardDesignation>{event.summary}</EventCardDesignation>
-//         </Link>
-//       </EventCardBody>
-//     </div>
-//   );
+  //   return (
+  //     <div
+  //       style={{ backgroundImage: `url('${event.image}')` }}
+  //     >
+  //       <EventCardBody id={event.name}>
+  //         <Link
+  //           to={`club-events/${event.name.split(" ").join("-")}/about`}
+  //           style={{ textDecoration: "none" }}
+  //         >
+  //           <EventCardName>{event.name}</EventCardName>
+  //           <EventCardDesignation>{event.summary}</EventCardDesignation>
+  //         </Link>
+  //       </EventCardBody>
+  //     </div>
+  //   );
 }

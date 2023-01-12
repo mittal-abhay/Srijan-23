@@ -209,12 +209,10 @@ class Home extends Component {
           <h1>SRIJAN</h1>
         </div> */}
         {/* <canvas id="graphics" /> */}
-
         {/* <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div> */}
-
-        {/* <div className="patterns">
+        <div className="patterns">
           <svg width="100%">
             <text x="50%" y="50%" text-anchor="middle">
               SRIJAN'23
@@ -223,8 +221,8 @@ class Home extends Component {
           <div className="glow">
             <h2>Carnival of Reminiscence......</h2>
           </div>
-        </div> */}
-        <Film />
+        </div>
+        {/* <Film /> */}
         {/* <div className="hero">
           <div className="hero_heading">
             <h1>SRIJAN'23</h1>
@@ -233,25 +231,23 @@ class Home extends Component {
             <h2>Carnival of Reminiscence</h2>
           </div>
         </div> */}
-
-        <div id="jugaad">
-          <div class="btn-cont">
-            <a class="btn" href="#">
-              REGISTER NOW
-              <span class="line-1"></span>
-              <span class="line-2"></span>
-              <span class="line-3"></span>
-              <span class="line-4"></span>
-            </a>
-          </div>
-
-          {/* <Gallery /> */}
-          <DJLightsRow />
+        {/* <div id="jugaad"> */}
+        <div className="btn-cont">
+          <a className="btn" href="#">
+            REGISTER NOW
+            <span className="line-1"></span>
+            <span className="line-2"></span>
+            <span className="line-3"></span>
+            <span className="line-4"></span>
+          </a>
+        </div>
+        {/* <Gallery /> */}
+        {/* <DJLightsRow />
           <Carousel />
           <DJLightsRow />
-          <HomeImageScroll />
-          {/* </div> */}
-          {/* {
+          <HomeImageScroll /> */}
+        {/* </div> */}
+        {/* {
           <div
             style={{
               display: "flex",
@@ -269,8 +265,7 @@ class Home extends Component {
             />
           </div>
         } */}
-
-          {/* <div className={classes.parallax + " gradientBg mt-0"}>
+        <div className={classes.parallax + " gradientBg mt-0"}>
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
               return <ParallaxM key={id.toString()} content={content} />;
@@ -282,7 +277,7 @@ class Home extends Component {
               ) : (
                 <Parallax x={x} key={id.toString()} content={content} />
               );
-          })} */}
+          })}
 
           {/* <div class="btn-cont">
             <a
@@ -306,6 +301,7 @@ class Home extends Component {
           <i class="fa fa-whatsapp my-float"></i>
         </a> */}
         </div>
+        //{" "}
       </div>
     );
   }

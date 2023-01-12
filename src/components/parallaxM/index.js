@@ -4,9 +4,9 @@ import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import image1 from "../../assets/1.jpg";
+import image1 from "../../assets/1.webp";
 import image2 from "../../assets/0.webp";
-import image3 from "../../assets/Gallery3.jpg";
+import image3 from "../../assets/Gallery3.webp";
 
 const styles = (theme) => ({
   container: {

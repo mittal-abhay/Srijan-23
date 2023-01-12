@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-import iit from "../../assets/Srijan'23_Logo_White.png";
+import iit from "../../assets/Srijan'23_Logo_White1.png";
 
 class Header extends Component {
   constructor(props) {

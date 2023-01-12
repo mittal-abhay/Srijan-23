@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 .demo a {
   /* position: absolute; */
   top: 60px;
@@ -11,14 +11,14 @@
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   /* color: #fff; */
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .demo a:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 #scroll_down a {
   padding-top: 80px;
@@ -45,13 +45,13 @@
 }
 #scroll_down a span:nth-of-type(2) {
   top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 #scroll_down a span:nth-of-type(3) {
   top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 @-webkit-keyframes sdb07 {
   0% {
@@ -76,23 +76,22 @@
   }
 }
 
-@media (max-width: 430px){
-  .col-12{
+@media (max-width: 430px) {
+  .col-12 {
     font-size: 1.4rem;
   }
-  .title{
+  .title {
     font-size: 1.8rem;
   }
 }
 
-@media (max-width: 300px){
-  .col-12{
+@media (max-width: 300px) {
+  .col-12 {
     font-size: 1.1rem;
   }
-  .title{
+  .title {
     font-size: 1.4rem;
   }
-
 }
 /* Floating icon */
 
@@ -138,90 +137,90 @@
   animation: animate 30s linear infinite;
 } */
 
-.hero {
-	height: 85vh;
-	position: relative;
+/* .hero {
+  height: 85vh;
+  position: absolute; 
+   top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+   z-index: 10000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .hero_heading {
- padding:  120px 0 0 0;
- text-align:center;
+  padding: 120px 0 0 0;
+  text-align: center;
 }
-.hero_heading h1{
+.hero_heading h1 {
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.1);
-  background-image: url('../../assets/golden3.jpg');
+  background-image: url("../../assets/golden3.jpg");
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 30s linear infinite;
 }
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     background-position: left 0px top 10px;
   }
-  40%{
+  40% {
     background-position: left 1000px top 10px;
   }
-  
-}
-/* .patterns {
+} */
+.patterns {
   height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
- }
+}
 
 text {
- font-family: Lora;
- letter-spacing: 10px;
- stroke:  #FFBC00;
- font-size: 175px;
- font-weight: 700;
- stroke-width: 3;
- animation: textAnimate 3s infinite alternate;
- transform: translateY(50%);
-} 
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #ffbc00;
+  font-size: 175px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 3s infinite alternate;
+  transform: translateY(50%);
+}
 @keyframes textAnimate {
- 0% {
-   stroke-dasharray: 0 50%;
-   stroke-dashoffset:  20%; 
-    fill: linear-gradient(
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    /* fill: linear-gradient(
       94.75deg,
       #d19a08,
       #fedb7e 27.6%,
       #eac460 50%,
       #d19a08 66.15%,
       #d19a08
-    );
-   
- }
- 
- 100% {
-   stroke-dasharray: 50% 0;
-   stroke-dashoffstet: -20%;
-   fill: hsla(189, 68%, 75%,0%);
- }
- 
-} */
+    ); */
+  }
 
-
-.glow h2{
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    /* fill: hsla(189, 68%, 75%, 0%); */
+  }
+}
+.glow h2 {
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
   color: #fff;
   font-size: 2.4rem;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
-  font-family: 'Alex Brush', cursive;
+  font-family: "Alex Brush", cursive;
   position: relative;
   margin: auto !important;
-} 
+}
 @keyframes glow {
   from {
     text-shadow: 0 0 20px #fab507 0 0 30px #daa520, 0 0 40px #cc9303;
@@ -231,278 +230,251 @@ text {
   }
 }
 
- /* @media screen and ( max-width: 1544px) {
-  text{
+@media screen and (max-width: 1544px) {
+  text {
     font-size: 175px;
   }
-  .glow h2{     
-    margin-left: 630px;
-    top:310px
-  }
-} 
-
-@media screen and ( max-width: 1247px) {
-  .glow h2{
-      
-    margin-left: 420px;
-  }
 }
-@media screen and ( max-width: 1214px) {
-  text{
+
+@media screen and (max-width: 1247px) {
+  /* .glow h2 {
+    margin-left: 420px;
+  } */
+}
+@media screen and (max-width: 1214px) {
+  text {
     font-size: 150px;
   }
-  .glow h2{
-      
+  /* .glow h2 {
     margin-left: 420px;
-  }
-}  
- @media screen and ( max-width: 1195px) {
-  .glow h2{
-      
-    margin-left: 410px;
-  }
+  } */
 }
-@media screen and ( max-width: 1145px) {
-   text{
+@media screen and (max-width: 1195px) {
+  /* .glow h2 {
+    margin-left: 410px;
+  } */
+}
+@media screen and (max-width: 1145px) {
+  text {
     font-size: 175px;
-   }
-  .glow h2{
-      
+  }
+  /* .glow h2 {
     font-size: 50px;
     margin-left: 450px;
-  }
+  } */
 }
-@media screen and ( max-width: 1106px) {
-  .glow h2{
-      
+@media screen and (max-width: 1106px) {
+  /* .glow h2 {
     margin-left: 430px;
-  }
+  } */
 }
-@media screen and ( max-width: 1038px) {
-  .glow h2{  
+@media screen and (max-width: 1038px) {
+  /* .glow h2 {
     margin-left: 400px;
-  }
+  } */
 }
-@media screen and ( max-width: 986px) {
-  text{
-   font-size: 150px;
+@media screen and (max-width: 986px) {
+  text {
+    font-size: 150px;
   }
- .glow h2{
-     
-   font-size: 40px;
-   margin-left: 430px;
- }
+  /* .glow h2 {
+    font-size: 40px;
+    margin-left: 430px;
+  } */
 }
-@media screen and ( max-width: 905px) {
-  .glow h2{
-      
+@media screen and (max-width: 905px) {
+  /* .glow h2 {
     font-size: 40px;
     margin-left: 390px;
-  }
+  } */
 }
-@media screen and ( max-width: 887px) {
-  text{
-   font-size: 125px;
+@media screen and (max-width: 887px) {
+  text {
+    font-size: 125px;
   }
- .glow h2{
-     
-   font-size: 35px;
-   margin-left: 360px;
- }
+  /* .glow h2 {
+    font-size: 35px;
+    margin-left: 360px;
+  } */
 }
-@media screen and ( max-width: 820px) {
-  .glow h2{
-    top: 510px;  
+@media screen and (max-width: 820px) {
+  /* .glow h2 {
+    top: 510px;
     font-size: 35px;
     margin-left: 330px;
-  }
+  } */
 }
-@media screen and ( max-width: 819px) {
-  .glow h2{
+@media screen and (max-width: 819px) {
+  /* .glow h2 {
     top: 315px;
     font-size: 35px;
     margin-left: 330px;
-  }
+  } */
 }
-@media screen and ( max-width: 768px) {
-  .glow h2{
+@media screen and (max-width: 768px) {
+  /* .glow h2 {
     top: 450px;
     font-size: 35px;
     margin-left: 330px;
-  }
+  } */
 }
-@media screen and ( max-width: 767px) {
-  .glow h2{
+@media screen and (max-width: 767px) {
+  /* .glow h2 {
     top: 315px;
     font-size: 35px;
     margin-left: 330px;
-  }
+  } */
 }
 
-@media screen and ( max-width: 752px) {
-  text{
-   font-size: 100px;
+@media screen and (max-width: 752px) {
+  text {
+    font-size: 100px;
   }
- .glow h2{
-     
-   font-size: 35px;
-   margin-left: 250px;
- }
+  /* .glow h2 {
+    font-size: 35px;
+    margin-left: 250px;
+  } */
 }
-@media screen and ( max-width: 683px) {
-  .glow h2{
-      
+@media screen and (max-width: 683px) {
+  /* .glow h2 {
     font-size: 35px;
     margin-left: 220px;
+  } */
+}
+@media screen and (max-width: 644px) {
+  text {
+    font-size: 75px;
+    stroke-width: 2;
+  }
+  .glow h2 {
+    font-size: 2rem;
   }
 }
-@media screen and ( max-width: 644px) {
-  text{
-   font-size: 75px;
-   stroke-width: 2;
-  }
- .glow h2{
-     
-   font-size: 30px;
-   margin-left: 200px;
- }
-}
-@media screen and ( max-width: 561px) {
-  .glow h2{    
+@media screen and (max-width: 561px) {
+  /* .glow h2 {
     font-size: 30px;
     margin-left: 140px;
-  }
+  } */
 }
-@media screen and ( max-width: 519px) {
-  text{
-   font-size: 60px;
-   stroke-width: 1;
+@media screen and (max-width: 519px) {
+  text {
+    font-size: 60px;
+    stroke-width: 1;
   }
- .glow h2{
-     
-   font-size: 25px;
-   margin-left: 155px;
- }
+  /* .glow h2 {
+    font-size: 25px;
+    margin-left: 155px;
+  } */
 }
-@media screen and ( max-width: 480px) {
-  .glow h2{
-      
+@media screen and (max-width: 480px) {
+  /* .glow h2 {
     font-size: 25px;
     margin-left: 140px;
-  }
+  } */
 }
-@media screen and ( max-width: 450px) {
-  .glow h2{
-      
+@media screen and (max-width: 450px) {
+  /* .glow h2 {
     font-size: 25px;
     margin-left: 120px;
-  }
+  } */
 }
-@media screen and ( max-width: 416px) {
-  text{
-   font-size: 50px;
-   stroke-width: 1;
-  }
- .glow h2{
-     
-   font-size: 20px;
-   margin-left: 130px;
- }
-}
-@media screen and ( max-width: 414px) {
-  text{
+@media screen and (max-width: 416px) {
+  text {
     font-size: 50px;
     stroke-width: 1;
   }
-  .glow h2{   
-    font-size: 25px;
-    top: 400px;
-    margin-left: 121px;
+  /* .glow h2 {
+    font-size: 20px;
+    margin-left: 130px;
+  } */
+}
+@media screen and (max-width: 414px) {
+  text {
+    font-size: 50px;
+    stroke-width: 1;
+  }
+  .glow h2 {
+    font-size: 1.6rem;
   }
 }
 
- @media screen and ( max-width: 412px) {
-  text{
+@media screen and (max-width: 412px) {
+  text {
     font-size: 50px;
     stroke-width: 1;
   }
-  .glow h2{   
+  /* .glow h2 {
     font-size: 23px;
     top: 315px;
     margin-left: 80px;
-  }
-} 
-@media screen and ( max-width: 390px) {
-  text{
-   font-size: 50px;
-   stroke-width: 0.8;
-  }
- .glow h2{
-   font-size: 20px;
-   top:370px;
-   margin-left: 150px;
- }
+  } */
 }
-@media screen and ( max-width: 389px) {
-  text{
-   font-size: 50px;
-   stroke-width: 0.8;
+@media screen and (max-width: 390px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
   }
- .glow h2{
-   font-size: 20px;
-   top: 315px;
-   margin-left: 120px;
- }
+  /* .glow h2 {
+    font-size: 20px;
+    top: 370px;
+    margin-left: 150px;
+  } */
 }
-@media screen and ( max-width: 375px) {
-  text{
-   font-size: 50px;
-   stroke-width: 0.8;
+@media screen and (max-width: 389px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
   }
- .glow h2{
-   font-size: 20px;
-   top: 270px;
-   margin-left: 100px;
- }
+  /* .glow h2 {
+    font-size: 20px;
+    top: 315px;
+    margin-left: 120px;
+  }*/
 }
-@media screen and ( max-width: 360px) {
-  text{
-   font-size: 50px;
-   stroke-width: 0.8;
+@media screen and (max-width: 375px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
   }
- .glow h2{
-   font-size: 20px;
-   top: 324px;
-   margin-left: 138px;
- }
-}  */
-
-
-
-
+  /* .glow h2 {
+    font-size: 20px;
+    top: 270px;
+    margin-left: 100px;
+  } */
+}
+@media screen and (max-width: 360px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
+  }
+  /* .glow h2 {
+    font-size: 20px;
+    top: 324px;
+    margin-left: 138px;
+  } */
+}
 
 /* moon bottom logo */
 
-@media screen and (max-width: 760px){
-  .Home-moon-4{
+/* @media screen and (max-width: 760px) {
+  .Home-moon-4 {
     display: none;
-    /* height: 250px; */
-    /* width: 300px; */
+    height: 250px;
+    width: 300px;
   }
-  .moon{
+  .moon {
     display: none;
   }
-  
-}
+} */
 
 .btn-cont {
   text-align: center;
   margin-bottom: 100px;
-  position: absolute;
-  z-index: 10;
-  top: 95vh;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* z-index: 10; */
+  /* top: 95vh; */
+  margin-left: 0 auto;
+  /* transform: translate(-50%, -50%); */
 }
 .btn-cont .btn {
   position: relative;
@@ -521,19 +493,19 @@ text {
 }
 .btn-cont .btn:hover .line-1 {
   -webkit-animation: move1 1500ms 1 ease;
-          animation: move1 1500ms 1 ease;
+  animation: move1 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-2 {
   -webkit-animation: move2 1500ms 1 ease;
-          animation: move2 1500ms 1 ease;
+  animation: move2 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-3 {
   -webkit-animation: move3 1500ms 1 ease;
-          animation: move3 1500ms 1 ease;
+  animation: move3 1500ms 1 ease;
 }
 .btn-cont .btn:hover .line-4 {
   -webkit-animation: move4 1500ms 1 ease;
-          animation: move4 1500ms 1 ease;
+  animation: move4 1500ms 1 ease;
 }
 .btn-cont .line-1 {
   content: "";
@@ -702,15 +674,11 @@ text {
   }
 }
 
-
-
-@media only screen and (max-width: 760px){
-  .btn-cont .btn{
+@media only screen and (max-width: 760px) {
+  .btn-cont .btn {
     font-size: 20px;
   }
 }
-
-
 
 /* #stars {
   width: 2px;
@@ -958,4 +926,3 @@ text {
       transform: translateY(-2000px);
   }
 } */
-
