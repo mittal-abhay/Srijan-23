@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /* body {
   font-family: sans-serif;
   text-align: center;
@@ -195,7 +191,7 @@
   .scene {
     width: 270px;
     height: 220px;
-    margin: 25px auto;;
+    margin: 25px auto;
   }
 }
 
