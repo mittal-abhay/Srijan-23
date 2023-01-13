@@ -11,7 +11,7 @@ export default function EventPageNew(props) {
 
   const eventsList = events.map((event) => (
     <EventCardNew
-      image={img}
+      image={event.image}
       eventName={event.name}
       eventDescription={event.summary}
       presentedBy={event.presented_by}

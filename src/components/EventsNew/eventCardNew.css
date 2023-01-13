@@ -28,7 +28,17 @@
   font-weight: 600;
   font-size: 22px;
   margin: 10px 0 15px 0;
-  color: goldenrod;
+  /* color: goldenrod; */
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
 }
 
 .event-card-new-details p {
