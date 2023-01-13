@@ -8,6 +8,7 @@ import Mobileview from "./Mobileview";
 import Header from "../Header";
 import { NavLink } from "react-router-dom";
 import iit from "../../assets/Srijan'23_Logo_White.png";
+import EventPageNew from "../EventsNew/EventPageNew";
 
 const styles = (theme) => ({
   root: {
@@ -40,15 +41,9 @@ function EventDetail(props) {
   const [events, setEvents] = useState(props.events);
   const [classes, setClasses] = useState(props.classes);
   const [active, setActive] = useState(props.active);
-  const [departmentalEvents, setDepartmentalEvents] = useState([]);
-  const [clubEvents, setClubEvents] = useState([]);
 
   useEffect(() => {
     console.log(events);
-    setDepartmentalEvents(
-      events.filter((event) => event.event_type == "departmental")
-    );
-    setClubEvents(events.filter((event) => event.event_type === "club"));
   }, [events]);
 
   return (
@@ -92,14 +87,8 @@ function EventDetail(props) {
         EVENTS
       </h1>
 
-      <div className={classes.eventsCard}>
-        {<ClubEvent events={clubEvents} />}
-      </div>
-      {window.innerWidth < 760 ? (
-        <Mobileview events={events} active={active} />
-      ) : (
-        ""
-      )}
+      <EventPageNew events={events} />
+
     </div>
   );
 }

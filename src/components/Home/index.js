@@ -9,11 +9,7 @@ import { HomeContent } from "../../data/Content";
 import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
-import Film from "../FilmStrip/Film.jsx";
 import { Helmet } from "react-helmet";
-import Carousel from "../carousel/carousel.component";
-import DJLightsRow from "../DJLightsRow/DJLightsRow";
-import HomeImageScroll from "../HomeImageScroll/HomeImageScroll";
 // import Safe from "react-safe"
 
 let max_offset, initial_offset;
