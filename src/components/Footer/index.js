@@ -19,7 +19,7 @@ import {
   Link,
   Divider,
 } from "@material-ui/core";
-import iit from "../../assets/Srijan'23_Logo_White1.png";
+import iit from "../../assets/Logo_Final.png";
 import "./styles.css";
 
 const socialNetworks = [

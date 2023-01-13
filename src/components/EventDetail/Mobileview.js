@@ -6,13 +6,13 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 
 function Mobileview(props) {
-  console.log(props)
   const [event, setEvent] = useState(props.event);
-
   const convertTimestamp = (timestamp) => {
-    let myDate = new Date(timestamp).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
+    let myDate = new Date(timestamp).toLocaleString("en-IN", {
+      timeZone: "Asia/Kolkata",
+    });
     return myDate;
-  }
+  };
 
   return (
     <div>
@@ -35,20 +35,24 @@ function Mobileview(props) {
             {` About : ${event.summary}`}
             <br />
             <br />
-            {`${event.presented_by == "club"
-              ? " CLUB  :  " + event.presented_by
-              : " DEPARTMENT  :  " + event.presented_by
-              }`}
+            {`${
+              event.presented_by == "club"
+                ? " CLUB  :  " + event.presented_by
+                : " DEPARTMENT  :  " + event.presented_by
+            }`}
             <br />
             <br />
-            {`Registration ends : ${convertTimestamp(event.register_timestamp)}`}
+            {`Registration ends : ${convertTimestamp(
+              event.register_timestamp
+            )}`}
             <br />
             <br />
-            {`Event Duration : ${convertTimestamp(event.start_timestamp)} - ${convertTimestamp(event.end_timestamp)}`}
+            {`Event Duration : ${convertTimestamp(
+              event.start_timestamp
+            )} - ${convertTimestamp(event.end_timestamp)}`}
             <br />
             <br />
             {`Venue : ${event.venue}`}
-
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -97,7 +101,11 @@ function Mobileview(props) {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails style={{ paddingLeft: "35%" }}>
           {event.register_link ? (
-            <a href={event.register_link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={event.register_link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button type="button" className="btn btn-primary btn-lg">
                 REGISTER
               </button>

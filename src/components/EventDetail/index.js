@@ -11,7 +11,6 @@ import HomeHeader from "../HomeHeader/index";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import iit from "../../assets/Srijan'23_Logo_White.png";
 
 const StyledImage = styled.img``;
 const styles = (theme) => ({
@@ -54,7 +53,6 @@ class EventDetail extends Component {
     return (
       <div style={{ display: "flex" }}>
         <div className={classes.verticalTab}>
-          <div></div>
           <div className="btnFlex">
             <Link to="about">
               <button
