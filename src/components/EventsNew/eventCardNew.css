@@ -39,6 +39,7 @@
     #d19a08
   );
   -webkit-background-clip: text;
+  text-transform: capitalize;
 }
 
 .event-card-new-details p {

@@ -12,7 +12,7 @@ export default function EventPageNew(props) {
   const eventsList = events.map((event) => (
     <EventCardNew
       image={event.image}
-      eventName={event.name}
+      eventName={event.name.toLowerCase()}
       eventDescription={event.summary}
       presentedBy={event.presented_by}
     />
