@@ -148,10 +148,10 @@ class AboutUs extends Component {
               width="100%"
               height="410"
               title="IIT ISM DHANBAD"
-              allowfullscreen=""
+              allowFullScreen=""
               // style={{border-radius: 2px;}}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

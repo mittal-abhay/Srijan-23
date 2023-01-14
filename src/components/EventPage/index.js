@@ -9,6 +9,7 @@ import Header from "../Header";
 import { NavLink } from "react-router-dom";
 import iit from "../../assets/Srijan'23_Logo_White.png";
 import EventPageNew from "../EventsNew/EventPageNew";
+import { encryptData, decryptData } from "../../Encryption/encrypt";
 
 const styles = (theme) => ({
   root: {
@@ -37,42 +38,38 @@ const styles = (theme) => ({
   },
 });
 
-function EventDetail(props) {
-  const [events, setEvents] = useState(props.events);
+function EventPage(props) {
   const [classes, setClasses] = useState(props.classes);
-  const [active, setActive] = useState(props.active);
+  const [events, setEvents] = useState(null);
 
   useEffect(() => {
-    console.log(events);
+    if (typeof events === "undefined" || events == null) {
+      if (localStorage.getItem("events") !== null) {
+        setEvents(decryptData(localStorage.getItem("events")));
+      } else {
+        fetchData();
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (events != null)
+      window.localStorage.setItem("events", encryptData(events));
   }, [events]);
+
+  const fetchData = async () => {
+    fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
+      .then((res) => res.json())
+      .then((data) => setEvents(data))
+      .catch(() => {
+        alert("You are offline!!!");
+      });
+  };
 
   return (
     <div className="gradientBg">
-      <div className={classes.root}>
+      <div className="root">
         <Header />
-        {/* <div className={classes.verticalTab}> */}
-        {/* <div>
-          <NavLink to="home" exact strict>
-            <img
-              src={iit}
-              alt="iitism"
-              style={{ width: "100px", objectFit: "contain" }}
-            />
-          </NavLink>
-        </div> */}
-        <br />
-        {/* <div className="btnFlex">
-          <Link to="club-events">
-            <button
-              style={{ fontFamily: "'Noto Sans',sans-serif", zIndex: 3 }}
-              className={
-                "btn btn-event btn-2 " + (active === 1 ? "active-bottom" : "")
-              }
-            >
-              CLUB
-            </button>
-          </Link>
-        </div> */}
       </div>
       <h1
         style={{
@@ -86,11 +83,9 @@ function EventDetail(props) {
       >
         EVENTS
       </h1>
-
-      <EventPageNew events={events} />
-
+      {events && <EventPageNew events={events} />}
     </div>
   );
 }
 
-export default withStyles(styles)(EventDetail);
+export default withStyles(styles)(EventPage);
