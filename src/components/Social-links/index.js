@@ -36,7 +36,7 @@ const videos = [
 function SocialLink() {
   const settings = {
     autoPlay: true,
-    animation: "fade",
+    animation: "slide",
     indicators: true,
     duration: 2000,
     navButtonsAlwaysVisible: true,
@@ -49,7 +49,7 @@ function SocialLink() {
   return (
     <Container>
       <Helmet>
-        <title>srijan</title>
+        <title>Srijan | Social Links</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Know about the theme of this year - To the moon and back."
@@ -74,7 +74,7 @@ function SocialLink() {
       >
         OUR SOCIAL LINKS
       </h1>
-      <Grid container style={{ marginTop: "2.5em" }}>
+      <Grid container style={{ marginTop: "2.5em", paddingInline:"1em"}} spacing={2}>
         <Grid item xs={12} md={8}>
           <div className="title2" style={{ fontSize: "0.5em" }}>
             YOUTUBE

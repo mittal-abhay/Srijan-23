@@ -493,19 +493,20 @@ text {
 }
 .btn-cont .btn:hover .line-1 {
   -webkit-animation: move1 1500ms 1 ease;
-  animation: move1 1500ms 1 ease;
+  animation: move1 1500ms ease infinite;
 }
 .btn-cont .btn:hover .line-2 {
   -webkit-animation: move2 1500ms 1 ease;
-  animation: move2 1500ms 1 ease;
+  animation: move2 1500ms ease infinite;
 }
 .btn-cont .btn:hover .line-3 {
   -webkit-animation: move3 1500ms 1 ease;
-  animation: move3 1500ms 1 ease;
+  animation: move3 1500ms ease infinite;
 }
 .btn-cont .btn:hover .line-4 {
   -webkit-animation: move4 1500ms 1 ease;
-  animation: move4 1500ms 1 ease;
+  animation: move4 1500ms ease infinite;
+  /* animation: name duration timing-function delay iteration-count direction */
 }
 .btn-cont .line-1 {
   content: "";

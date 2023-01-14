@@ -75,7 +75,7 @@
   text-transform: uppercase;
 }
 
-.footer-nav:hover {
+.footer-nav:not(.for-using-not):hover {
   text-decoration: underline;
   text-decoration-color: #fff700;
 }

@@ -121,9 +121,9 @@ function Main(props) {
 
   function TempEventDetail() {
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
     const { event } = location.state;
-    console.log(event);
+    // console.log(event);
     if (event) {
       return <EventDetail event={event} />;
     }
