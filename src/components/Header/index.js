@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
+<<<<<<< HEAD
 import iit from "../../assets/Logo_Final.png";
+=======
+import iit from "../../assets/Srijan'23 Logo Gold.png";
+>>>>>>> 3efc9071d745c0a1c7c0a78d896f4d875c796bda
 
 class Header extends Component {
   constructor(props) {
@@ -38,7 +42,7 @@ class Header extends Component {
               <img
                 src={iit}
                 alt="iitism"
-                style={{ width: "100px", objectFit: "contain" }}
+                style={{ width: "120px", objectFit: "contain" }}
               />
             </a>
           </NavLink>
