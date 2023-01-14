@@ -7,7 +7,6 @@ import Details from "./Details";
 import Register from "./Register";
 import Mobileview from "./Mobileview";
 import Header from "../Header/index";
-import HomeHeader from "../HomeHeader/index";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";

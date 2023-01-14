@@ -8,7 +8,6 @@ import ComingSoon from "./ComingSoon";
 import InformalEvents from "./InformalEvents";
 import Workshops from "./Workshops";
 import AboutUs from "./AboutUs";
-import GuestTalk from "./GuestTalks";
 import Exhibition from "./Exhibition";
 import Sponsers from "./Sponsors";
 import { Informals } from "../data/InformalEvents";
@@ -126,8 +125,6 @@ function Main(props) {
         <Route exact path="/workshops" component={() => <Workshops />} />
         <Route exact path="/exhibitions" component={() => <Exhibition />} />
         <Route exact path="/about-us" component={() => <AboutUs />} />
-        <Route exact path="/guest-talks" component={() => <GuestTalk />} />
-        {/* social link route added for srijan 2023 */}
         <Route exact path="/social-links" component={() => <SocialLink />} />
 
         <Route
@@ -232,7 +229,7 @@ function Main(props) {
         />
         <Redirect to="/home" />
       </Switch>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
