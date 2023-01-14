@@ -11,7 +11,8 @@ import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
-// import Safe from "react-safe"
+
+import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 
 let max_offset, initial_offset;
 
@@ -192,6 +193,7 @@ class Home extends Component {
             <span></span>
           </a>
         </section> */}
+        <AnimatedBg />
         <Header />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
@@ -277,20 +279,6 @@ class Home extends Component {
           })}
 
           <PastPerformers />
-
-          {/* <div class="btn-cont">
-            <a
-              class="btn"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
-            >
-              REGISTER HERE
-              <span class="line-1"></span>
-              <span class="line-2"></span>
-              <span class="line-3"></span>
-              <span class="line-4"></span>
-            </a>
-          </div> */}
-          {/* </div> */}
           <br />
           <link
             rel="stylesheet"
