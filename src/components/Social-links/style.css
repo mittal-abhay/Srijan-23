@@ -15,3 +15,8 @@
   font-size: 35px !important;
   font-family: "Montserrat", sans-serif;
 }
+
+.CarouselItem{
+  width: 90%;
+  height: 100%;
+}

@@ -43,9 +43,9 @@ const socialNetworks = [
   },
 ];
 
-const StyledLink = styled(Link)(({ iconcolor }) => ({
+const StyledLink = styled(Link)(({ iconColor }) => ({
   "&:hover": {
-    color: `${iconcolor} !important`,
+    color: `${iconColor} !important`,
   },
   transition: "300ms ease-in",
   color: "goldenrod",
@@ -99,7 +99,7 @@ const Styles = (theme) => ({
     marginBlock: "0.5em",
   },
   abcd: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       display: "none",
     },
   },
@@ -131,52 +131,49 @@ function Footer({ classes }) {
         <img
           src={iit}
           alt="iitism"
-          style={{ width: "200px", objectFit: "contain" }}
+          style={{ width: "150px", objectFit: "contain" }}
         />
       </Grid>
 
-      <Grid item xs={12} sm={3}>
+      <Grid item xs={12} sm={3} style={{ display: "flex" }}>
         <Grid container className={classes.grid2}>
-          <Grid item xs={12}>
-            {" "}
-            {/* 6 kario */}
-            <NavLink to="/home" exact strict>
-              <div className="footer-nav">Home</div>
-            </NavLink>
-            <NavLink to="/about-us" exact strict>
-              <div className="footer-nav">About Us</div>
-            </NavLink>
-            <NavLink to="/club-events" exact strict>
-              <div className="footer-nav">Events</div>
-            </NavLink>
+          <Grid item xs={12} className="some">
+            <div className="footer-nav">
+              <NavLink to="/home" exact strict>
+                HOME
+              </NavLink>
+            </div>
+            <div className="footer-nav">
+              <NavLink to="/about-us" exact strict>
+                About Us
+              </NavLink>
+            </div>
+            <div className="footer-nav">
+              <NavLink to="/club-events" exact strict>
+                Events
+              </NavLink>
+            </div>
           </Grid>
-          {/* <Grid item xs={6}>
-            <div className="footer-nav">
-              <a>Our Sponsors</a>
-            </div>
-            <div className="footer-nav">
-              <a>Our Team</a>
-            </div>
-          </Grid> */}
         </Grid>
       </Grid>
 
-      {/* <Grid item xs={3}>
-        <div heading>Contact Us</div>
-      </Grid> */}
-
-      <Grid item xs={12} sm={3}>
+      <Grid item xs={12} sm={3} style={{ display: "flex" }}>
         <Grid container className={classes.grid2}>
           <Grid item xs={12}>
-            <NavLink to="/sponsors" exact strict>
-              <div className="footer-nav">Our Sponsors</div>
-            </NavLink>
-            <NavLink to="/our-team" exact strict>
-              <div className="footer-nav">Our Team</div>
-            </NavLink>
-
             <div className="footer-nav">
-              <a href="#">Register Here</a>
+              <NavLink to="/sponsors" exact strict>
+                Our Sponsors
+              </NavLink>
+            </div>
+            <div className="footer-nav">
+              <NavLink to="/our-team" exact strict>
+                Our Team
+              </NavLink>
+            </div>
+            <div className="footer-nav">
+              <NavLink to="/register" exact strict>
+                register here
+              </NavLink>
             </div>
           </Grid>
         </Grid>
@@ -187,7 +184,7 @@ function Footer({ classes }) {
           <Typography
             variant="div"
             style={{ borderBottom: "1px solid #000" }}
-            className={` ${classes.abcd} footer-nav`}
+            className={` ${classes.abcd} footer-nav for-using-not`}
           >
             FOLLOW US AT-
           </Typography>
@@ -197,7 +194,7 @@ function Footer({ classes }) {
                 key={socialHandle}
                 href={link}
                 target="_blank"
-                iconcolor={iconColor}
+                iconColor={iconColor}
               >
                 {icon}
               </StyledLink>

@@ -12,7 +12,7 @@ const Wrapper = styled(Box)`
   justify-content: center;
   align-items: center;
   .carousel-div {
-    width: 80%;
+    width: 100%;
     height: 100%;
     // padding: 1em 1em;
     display: flex;
@@ -36,7 +36,7 @@ const videos = [
 function SocialLink() {
   const settings = {
     autoPlay: true,
-    animation: "fade",
+    animation: "slide",
     indicators: true,
     duration: 2000,
     navButtonsAlwaysVisible: true,
@@ -74,7 +74,7 @@ function SocialLink() {
       >
         OUR SOCIAL LINKS
       </h1>
-      <Grid container style={{ marginTop: "2.5em" }}>
+      <Grid container style={{ marginTop: "2.5em", paddingInline:"1em"}} spacing={2}>
         <Grid item xs={12} md={8}>
           <div className="title2" style={{ fontSize: "0.5em" }}>
             YOUTUBE
