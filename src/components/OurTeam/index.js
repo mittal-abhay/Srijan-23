@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Header from "../Header";
 import Card from "./Card";
 import "./styles.css";
@@ -45,41 +45,53 @@ const styles = (theme) => ({
 
 export default function OurTeam() {
   const [width, setWidth] = useState(window.innerWidth);
-  // const [isCoreActive, setIsCoreActive] = useState(true);
   const [coreTeam, setCoreTeam] = useState([]);
+  const [isCoreTeamLoaded, setIsCoreTeamLoaded] = useState(false);
   const [developers, setDevelopers] = useState([]);
-  // const [developers, setDevelopers] = useState([
-  //   {
-  //     "id": 1,
-  //     "name": "Bhimesh Agrawal",
-  //     "image": "https://avatars.githubusercontent.com/u/65838772?v=4",
-  //     "designation": "Frontend Developer",
-  //     "linkedin": "https://www.linkedin.com/in/bhimesh-agrawal/",
-  //     "contact": "9414614793"
-  //   },
-  //   {
-  //     "id": 2,
-  //     "name": "Suyash Suryavanshi",
-  //     "image": "",
-  //     "designation": "Frontend Developer",
-  //     "linkedin": "https://www.linkedin.com/in/suyash-suryavanshi-1b020a203/",
-  //     "contact": "9001662144"
-  //   },
-  // ])
+  const [areDevelopersLoaded, setareDevelopersLoaded] = useState(false);
+
+  const fetchData = async () => {
+    if (!isCoreTeamLoaded) {
+      fetch("https://srijan.herokuapp.com/organisingteammembers/", {
+        mode: "cors",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          const newData = data.sort(function (a, b) {
+            return a.id - b.id;
+          });
+          setCoreTeam(newData);
+
+          console.log(newData);
+        })
+        .catch(() => {
+          alert("You are offline!!!");
+        });
+    }
+    if (!areDevelopersLoaded) {
+      fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
+        .then((res) => res.json())
+        .then((data) => setDevelopers(data))
+        .catch(() => {
+          alert("You are offline!!!");
+        });
+    }
+  };
 
   useEffect(() => {
     fetch("https://srijan.herokuapp.com/organisingteammembers/", {
       mode: "cors",
     })
       .then((res) => res.json())
-      .then((data) =>{
-        console.log(data)
-        const newData = data.sort(function(a,b){
+      .then((data) => {
+        console.log(data);
+        const newData = data.sort(function (a, b) {
           return a.id - b.id;
         });
         setCoreTeam(newData);
-        
-        console.log(newData)
+
+        console.log(newData);
       })
       .catch(() => {
         alert("You are offline!!!");
@@ -150,29 +162,35 @@ export default function OurTeam() {
       <br />
       <br />
       <h2 align="center" className="title highlighted">
-          CORE TEAM
-        </h2>
-   
+        CORE TEAM
+      </h2>
+
       <br />
-      <div className="container team">
-        <div className="row mt-2 mb-2 justify-content-center">
-          {coreTeam.map((person) => (
-            <Card member={person}></Card>
-          ))}
+      <Suspense fallback={<h1 style={{ color: "#fff" }}>Core Team Loading</h1>}>
+        <div className="container team">
+          <div className="row mt-2 mb-2 justify-content-center">
+            {coreTeam.map((person) => (
+              <Card key={person.name} member={person}></Card>
+            ))}
+          </div>
         </div>
-      </div>
+      </Suspense>
       <h2 align="center" className="title highlighted">
-          DEVELOPERS
-        </h2>
-   
+        DEVELOPERS
+      </h2>
+
       <br />
-      <div className="container team">
-        <div className="row mt-2 mb-2 justify-content-center">
-          {developers.map((person) => (
-            <Card member={person}></Card>
-          ))}
+      <Suspense
+        fallback={<h1 style={{ color: "#fff" }}>Developers Team Loading</h1>}
+      >
+        <div className="container team">
+          <div className="row mt-2 mb-2 justify-content-center">
+            {developers.map((person) => (
+              <Card key={person.name} member={person}></Card>
+            ))}
+          </div>
         </div>
-      </div>
+      </Suspense>
     </div>
   );
 }

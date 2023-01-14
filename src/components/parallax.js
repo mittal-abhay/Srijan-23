@@ -86,8 +86,8 @@ class Parallax extends React.Component {
   }
   render() {
     const { content, classes, x } = this.props;
-    console.log(classes);
-    console.log(content);
+    // console.log(classes);
+    // console.log(content);
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">

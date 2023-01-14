@@ -27,25 +27,25 @@ const socialNetworks = [
     socialHandle: "facebook",
     link: "https://www.facebook.com/107585406021823/posts/pfbid0rdXTqps78PEPkPiKej9g4SRdpBRfpE6QSrGRoSZ7hXuQBbYFP4cDu1onMiiCovCol/?mibextid=Nif5oz",
     icon: <FontAwesomeIcon icon={faFacebook} />,
-    iconColor: "#3b5998",
+    iconcolor: "#3b5998",
   },
   {
     socialHandle: "linkeldn",
     link: "https://www.linkedin.com/company/srijaniitismdhn/",
     icon: <FontAwesomeIcon icon={faLinkedin} />,
-    iconColor: "#0e76a8",
+    iconcolor: "#0e76a8",
   },
   {
     socialHandle: "instagram",
     link: "https://instagram.com/srijaniitism?igshid=YmMyMTA2M2Y",
     icon: <FontAwesomeIcon icon={faInstagram} />,
-    iconColor: "#cc2467",
+    iconcolor: "#cc2467",
   },
 ];
 
-const StyledLink = styled(Link)(({ iconColor }) => ({
+const StyledLink = styled(Link)(({ iconcolor }) => ({
   "&:hover": {
-    color: `${iconColor} !important`,
+    color: `${iconcolor} !important`,
   },
   transition: "300ms ease-in",
   color: "goldenrod",
@@ -141,19 +141,13 @@ function Footer({ classes }) {
             {" "}
             {/* 6 kario */}
             <NavLink to="/home" exact strict>
-              <div className="footer-nav">
-                <a>Home</a>
-              </div>
+              <div className="footer-nav">Home</div>
             </NavLink>
             <NavLink to="/about-us" exact strict>
-              <div className="footer-nav">
-                <a>About Us</a>
-              </div>
+              <div className="footer-nav">About Us</div>
             </NavLink>
             <NavLink to="/club-events" exact strict>
-              <div className="footer-nav">
-                <a>Events</a>
-              </div>
+              <div className="footer-nav">Events</div>
             </NavLink>
           </Grid>
           {/* <Grid item xs={6}>
@@ -175,14 +169,10 @@ function Footer({ classes }) {
         <Grid container className={classes.grid2}>
           <Grid item xs={12}>
             <NavLink to="/sponsors" exact strict>
-              <div className="footer-nav">
-                <a>Our Sponsors</a>
-              </div>
+              <div className="footer-nav">Our Sponsors</div>
             </NavLink>
             <NavLink to="/our-team" exact strict>
-              <div className="footer-nav">
-                <a>Our Team</a>
-              </div>
+              <div className="footer-nav">Our Team</div>
             </NavLink>
 
             <div className="footer-nav">
@@ -207,7 +197,7 @@ function Footer({ classes }) {
                 key={socialHandle}
                 href={link}
                 target="_blank"
-                iconColor={iconColor}
+                iconcolor={iconColor}
               >
                 {icon}
               </StyledLink>

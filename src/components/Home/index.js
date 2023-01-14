@@ -211,7 +211,7 @@ class Home extends Component {
         <div id="stars3"></div> */}
         <div className="patterns">
           <svg width="100%">
-            <text x="50%" y="50%" text-anchor="middle">
+            <text x="50%" y="50%" textAnchor="middle">
               SRIJAN'23
             </text>
           </svg>
