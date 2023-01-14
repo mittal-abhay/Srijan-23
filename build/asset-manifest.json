@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/Srijan-23/static/css/main.36234429.chunk.css",
     "main.js": "/Srijan-23/static/js/main.6bfb619d.chunk.js",
     "main.js.map": "/Srijan-23/static/js/main.6bfb619d.chunk.js.map",
@@ -28,5 +29,35 @@
     "static/media/bg.jpg": "/Srijan-23/static/media/bg.554e1c07.jpg",
     "static/media/font-awesome.css": "/Srijan-23/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/prof_gauri_shankar.png": "/Srijan-23/static/media/prof_gauri_shankar.67eb11f9.png"
+=======
+    "main.css": "/static/css/main.51876f32.chunk.css",
+    "main.js": "/static/js/main.28765d09.chunk.js",
+    "main.js.map": "/static/js/main.28765d09.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ae9fc14.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ae9fc14.js.map",
+    "static/css/2.04566360.chunk.css": "/static/css/2.04566360.chunk.css",
+    "static/js/2.21b0b8cf.chunk.js": "/static/js/2.21b0b8cf.chunk.js",
+    "static/js/2.21b0b8cf.chunk.js.map": "/static/js/2.21b0b8cf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.763232233564addb9ea9283f56d12d86.js": "/precache-manifest.763232233564addb9ea9283f56d12d86.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.04566360.chunk.css.map": "/static/css/2.04566360.chunk.css.map",
+    "static/css/main.51876f32.chunk.css.map": "/static/css/main.51876f32.chunk.css.map",
+    "static/media/0.webp": "/static/media/0.ac4710bf.webp",
+    "static/media/1.webp": "/static/media/1.93e341e3.webp",
+    "static/media/2.1.webp": "/static/media/2.1.32e8809d.webp",
+    "static/media/2.jpg": "/static/media/2.f251dafc.jpg",
+    "static/media/3.webp": "/static/media/3.20943714.webp",
+    "static/media/38.webp": "/static/media/38.4a8f4b38.webp",
+    "static/media/Gallery3.webp": "/static/media/Gallery3.1227f8a1.webp",
+    "static/media/Srijan'23_Logo_White.png": "/static/media/Srijan'23_Logo_White.0a45e7f5.png",
+    "static/media/Srijan'23_Logo_White1.png": "/static/media/Srijan'23_Logo_White1.f78b44d2.png",
+    "static/media/App.css": "/static/media/cursor.8a9db234.svg",
+    "static/media/styles.css": "/static/media/bg-black.af046262.webp",
+    "static/media/style.css": "/static/media/bg-wall.25e27511.png",
+    "static/media/bg.jpg": "/static/media/bg.554e1c07.jpg",
+    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/prof_gauri_shankar.png": "/static/media/prof_gauri_shankar.67eb11f9.png"
+>>>>>>> 99a083b8cbee56d2e5416339bc2d933d75ae5f05
   }
 }

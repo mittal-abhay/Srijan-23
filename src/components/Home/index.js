@@ -10,7 +10,9 @@ import bg from "../../assets/bg.jpg";
 import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
-// import Safe from "react-safe"
+import PastPerformers from "../pastPerformers/PastPerformers";
+
+import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 
 let max_offset, initial_offset;
 
@@ -191,6 +193,7 @@ class Home extends Component {
             <span></span>
           </a>
         </section> */}
+        <AnimatedBg />
         <Header />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
@@ -274,6 +277,8 @@ class Home extends Component {
                 <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
+
+          <PastPerformers />
 
           {/* <div class="btn-cont">
             <a
