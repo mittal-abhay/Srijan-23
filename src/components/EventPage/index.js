@@ -44,8 +44,8 @@ function EventPage(props) {
 
   useEffect(() => {
     if (typeof events === "undefined" || events == null) {
-      if (localStorage.getItem("events") !== null) {
-        setEvents(decryptData(localStorage.getItem("events")));
+      if (sessionStorage.getItem("events") !== null) {
+        setEvents(decryptData(sessionStorage.getItem("events")));
       } else {
         fetchData();
       }
@@ -54,7 +54,7 @@ function EventPage(props) {
 
   useEffect(() => {
     if (events != null)
-      window.localStorage.setItem("events", encryptData(events));
+      window.sessionStorage.setItem("events", encryptData(events));
   }, [events]);
 
   const fetchData = async () => {

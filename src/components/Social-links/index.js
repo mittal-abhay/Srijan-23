@@ -12,7 +12,7 @@ const Wrapper = styled(Box)`
   justify-content: center;
   align-items: center;
   .carousel-div {
-    width: 80%;
+    width: 100%;
     height: 100%;
     // padding: 1em 1em;
     display: flex;

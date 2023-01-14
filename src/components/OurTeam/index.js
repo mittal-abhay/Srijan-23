@@ -75,15 +75,15 @@ export default function OurTeam() {
 
   useEffect(() => {
     if (typeof coreTeam === "undefined" || coreTeam == null) {
-      if (localStorage.getItem("coreteam") !== null) {
-        setCoreTeam(decryptData(localStorage.getItem("coreteam")));
+      if (sessionStorage.getItem("coreteam") !== null) {
+        setCoreTeam(decryptData(sessionStorage.getItem("coreteam")));
       } else {
         fetchData();
       }
     }
     if (typeof developers === "undefined" || developers == null) {
-      if (localStorage.getItem("developers") !== null) {
-        setDevelopers(decryptData(localStorage.getItem("developers")));
+      if (sessionStorage.getItem("developers") !== null) {
+        setDevelopers(decryptData(sessionStorage.getItem("developers")));
       } else {
         fetchData();
       }
@@ -92,9 +92,9 @@ export default function OurTeam() {
 
   useEffect(() => {
     if (coreTeam != null)
-      window.localStorage.setItem("coreteam", encryptData(coreTeam));
+      window.sessionStorage.setItem("coreteam", encryptData(coreTeam));
     if (developers != null)
-      window.localStorage.setItem("developers", encryptData(developers));
+      window.sessionStorage.setItem("developers", encryptData(developers));
   }, [coreTeam, developers]);
 
   // useEffect(() => {
@@ -127,7 +127,7 @@ export default function OurTeam() {
   return (
     <div className="team-page">
       <Helmet>
-        <title>Srijan Team</title>
+        <title>Srijan/Our Team</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."
