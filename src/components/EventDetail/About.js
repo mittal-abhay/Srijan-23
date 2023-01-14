@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 const StyledText = styled.p`
-  color: white;
+  /* color: white; */
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -16,7 +16,7 @@ export default function About(props) {
     let myDate = new Date(timestamp).toLocaleString("en-IN", {
       timeZone: "Asia/Kolkata",
     });
-    console.log(myDate);
+    // console.log(myDate);
     return myDate;
   };
 

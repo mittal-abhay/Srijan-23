@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-import iit from "../../assets/Srijan'23 Logo Gold.png";
+import iit from "../../assets/Logo_Final.png";
 
 class Header extends Component {
   constructor(props) {
@@ -33,20 +33,19 @@ class Header extends Component {
       >
         <nav className="navbar navbar-expand-md navbar-dark">
           <NavLink to="home" exact strict>
-            <a className="navbar-brand">
-              <span className="helper"></span>
-              <img
-                src={iit}
-                alt="iitism"
-                style={{ width: "120px", objectFit: "contain" }}
-              />
-            </a>
+            <span className="helper"></span>
+            <img
+              src={iit}
+              alt="iitism"
+              style={{ width: "100px", objectFit: "contain" }}
+            />
           </NavLink>
           <div id="menuToggle">
             <input
               type="checkbox"
               checked={isMenuOpen}
               onClick={this.toggleMenu}
+              onChange={() => {}}
             />
             <span style={{ backgroundColor: "goldenrod" }}></span>
             <span style={{ backgroundColor: "goldenrod" }}></span>

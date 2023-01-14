@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Home from "./Home";
 import EventPage from "./EventPage";
-import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  Redirect,
+  withRouter,
+  useLocation,
+} from "react-router-dom";
 import EventDetail from "./EventDetail";
 import OurTeam from "./OurTeam";
 import ComingSoon from "./ComingSoon";
 import InformalEvents from "./InformalEvents";
 import Workshops from "./Workshops";
 import AboutUs from "./AboutUs";
-import GuestTalk from "./GuestTalks";
 import Exhibition from "./Exhibition";
 import Sponsers from "./Sponsors";
 import { Informals } from "../data/InformalEvents";
@@ -20,15 +25,18 @@ import Footer from "./Footer";
 
 function Main(props) {
   const [header, setHeader] = useState(false);
-  const [events, setEvents] = useState([]);
-  useEffect(async () => {
-    fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
-      .then((res) => res.json())
-      .then((data) => setEvents(data))
-      .catch(() => {
-        alert("You are offline!!!");
-      });
-  }, []);
+  // const [events, setEvents] = useState([]);
+  // useEffect(async () => {
+  //   if (events.length == 0) {
+  //     fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
+  //       .then((res) => res.json())
+  //       .then((data) => setEvents(data))
+  //       .catch(() => {
+  //         alert("You are offline!!!");
+  //       });
+  //       console.count("Events Fetched");
+  //   }
+  // }, []);
 
   function makeShowLogo() {
     if (!header) setHeader(true);
@@ -38,78 +46,89 @@ function Main(props) {
     if (header) setHeader(false);
   }
 
-  const EventWithNameAbout = ({ match }) => {
-    let selectedEvent = events.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
+  // const EventWithNameAbout = ({ match }) => {
+  //   let selectedEvent = events.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"about"} />;
+  // };
+  // const InformalWithNameAbout = ({ match }) => {
+  //   let selectedEvent = Informals.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"about"} />;
+  // };
+  // const EventWithNameRules = ({ match }) => {
+  //   let selectedEvent = events.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"rules"} />;
+  // };
+  // const InformalWithNameRules = ({ match }) => {
+  //   let selectedEvent = Informals.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"rules"} />;
+  // };
+  // const EventWithNameDetails = ({ match }) => {
+  //   let selectedEvent = events.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"details"} />;
+  // };
+  // const InformalWithNameDetails = ({ match }) => {
+  //   let selectedEvent = Informals.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"details"} />;
+  // };
+  // const EventWithNameRegister = ({ match }) => {
+  //   let selectedEvent = events.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"register"} />;
+  // };
+  // const InformalWithNameRegister = ({ match }) => {
+  //   let selectedEvent = Informals.filter(
+  //     (event) => event.name.split(" ").join("-") === match.params.eventName
+  //   )[0];
+  //   if (selectedEvent === undefined) {
+  //     return <ComingSoon />;
+  //   }
+  //   return <EventDetail event={selectedEvent} active={"register"} />;
+  // };
+
+  function TempEventDetail() {
+    const location = useLocation();
+    // console.log(location);
+    const { event } = location.state;
+    // console.log(event);
+    if (event) {
+      return <EventDetail event={event} />;
     }
-    return <EventDetail event={selectedEvent} active={"about"} />;
-  };
-  const InformalWithNameAbout = ({ match }) => {
-    let selectedEvent = Informals.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"about"} />;
-  };
-  const EventWithNameRules = ({ match }) => {
-    let selectedEvent = events.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"rules"} />;
-  };
-  const InformalWithNameRules = ({ match }) => {
-    let selectedEvent = Informals.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"rules"} />;
-  };
-  const EventWithNameDetails = ({ match }) => {
-    let selectedEvent = events.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"details"} />;
-  };
-  const InformalWithNameDetails = ({ match }) => {
-    let selectedEvent = Informals.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"details"} />;
-  };
-  const EventWithNameRegister = ({ match }) => {
-    let selectedEvent = events.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"register"} />;
-  };
-  const InformalWithNameRegister = ({ match }) => {
-    let selectedEvent = Informals.filter(
-      (event) => event.name.split(" ").join("-") === match.params.eventName
-    )[0];
-    if (selectedEvent === undefined) {
-      return <ComingSoon />;
-    }
-    return <EventDetail event={selectedEvent} active={"register"} />;
-  };
+    return <ComingSoon />;
+  }
 
   return (
     <main>
@@ -126,20 +145,14 @@ function Main(props) {
         <Route exact path="/workshops" component={() => <Workshops />} />
         <Route exact path="/exhibitions" component={() => <Exhibition />} />
         <Route exact path="/about-us" component={() => <AboutUs />} />
-        <Route exact path="/guest-talks" component={() => <GuestTalk />} />
-        {/* social link route added for srijan 2023 */}
         <Route exact path="/social-links" component={() => <SocialLink />} />
 
         <Route
           exact
           path="/department-events"
-          component={() => <EventPage events={events} active={0} />}
+          component={() => <EventPage />}
         />
-        <Route
-          exact
-          path="/club-events"
-          component={() => <EventPage events={events} active={1} />}
-        />
+        <Route exact path="/club-events" component={() => <EventPage />} />
         <Route
           exact
           path="/informal-events"
@@ -147,19 +160,19 @@ function Main(props) {
         />
         <Route
           path="/department-events/:eventName/about"
-          component={EventWithNameAbout}
+          component={TempEventDetail}
         />
         <Route
           path="/department-events/:eventName/rules"
-          component={EventWithNameRules}
+          component={TempEventDetail}
         />
         <Route
           path="/department-events/:eventName/details"
-          component={EventWithNameDetails}
+          component={TempEventDetail}
         />
         <Route
           path="/department-events/:eventName/register"
-          component={EventWithNameRegister}
+          component={TempEventDetail}
         />
         <Route
           exact
@@ -174,19 +187,19 @@ function Main(props) {
         />
         <Route
           path="/club-events/:eventName/about"
-          component={EventWithNameAbout}
+          component={EventDetail}
         />
         <Route
           path="/club-events/:eventName/rules"
-          component={EventWithNameRules}
+          component={TempEventDetail}
         />
         <Route
           path="/club-events/:eventName/details"
-          component={EventWithNameDetails}
+          component={TempEventDetail}
         />
         <Route
           path="/club-events/:eventName/register"
-          component={EventWithNameRegister}
+          component={TempEventDetail}
         />
         <Route
           exact
@@ -201,19 +214,19 @@ function Main(props) {
         />
         <Route
           path="/informal-events/:eventName/about"
-          component={InformalWithNameAbout}
+          component={TempEventDetail}
         />
         <Route
           path="/informal-events/:eventName/rules"
-          component={InformalWithNameRules}
+          component={TempEventDetail}
         />
         <Route
           path="/informal-events/:eventName/details"
-          component={InformalWithNameDetails}
+          component={TempEventDetail}
         />
         <Route
           path="/informal-events/:eventName/register"
-          component={InformalWithNameRegister}
+          component={TempEventDetail}
         />
         <Route
           exact
@@ -232,7 +245,7 @@ function Main(props) {
         />
         <Redirect to="/home" />
       </Switch>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

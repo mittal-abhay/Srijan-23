@@ -17,7 +17,7 @@ const styles = (theme) => ({
     },
   },
   descriptionText: {
-    fontSize: "18.5px",
+    fontSize: "15px",
     fontFamily: '"Noto Sans", sans- serif',
   },
   images: {
@@ -87,8 +87,8 @@ class Parallax extends React.Component {
   }
   render() {
     const { content, classes, x } = this.props;
-    console.log(classes);
-    console.log(content);
+    // console.log(classes);
+    // console.log(content);
     return (
       <div className={classNames(classes.container, "container")}>
         <div className="row">

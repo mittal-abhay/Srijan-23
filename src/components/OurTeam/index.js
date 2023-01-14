@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Header from "../Header";
 import Card from "./Card";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
+import { encryptData, decryptData } from "../../Encryption/encrypt";
 
 const styles = (theme) => ({
   mobileTab: {
@@ -44,55 +45,84 @@ const styles = (theme) => ({
 });
 
 export default function OurTeam() {
-  const [width, setWidth] = useState(window.innerWidth);
-  // const [isCoreActive, setIsCoreActive] = useState(true);
-  const [coreTeam, setCoreTeam] = useState([]);
-  const [developers, setDevelopers] = useState([]);
-  // const [developers, setDevelopers] = useState([
-  //   {
-  //     "id": 1,
-  //     "name": "Bhimesh Agrawal",
-  //     "image": "https://avatars.githubusercontent.com/u/65838772?v=4",
-  //     "designation": "Frontend Developer",
-  //     "linkedin": "https://www.linkedin.com/in/bhimesh-agrawal/",
-  //     "contact": "9414614793"
-  //   },
-  //   {
-  //     "id": 2,
-  //     "name": "Suyash Suryavanshi",
-  //     "image": "",
-  //     "designation": "Frontend Developer",
-  //     "linkedin": "https://www.linkedin.com/in/suyash-suryavanshi-1b020a203/",
-  //     "contact": "9001662144"
-  //   },
-  // ])
+  const [coreTeam, setCoreTeam] = useState(null);
+  const [developers, setDevelopers] = useState(null);
 
-  useEffect(() => {
+  const fetchData = async () => {
     fetch("https://srijan.herokuapp.com/organisingteammembers/", {
       mode: "cors",
     })
       .then((res) => res.json())
-      .then((data) =>{
-        console.log(data)
-        const newData = data.sort(function(a,b){
+      .then((data) => {
+        console.log(data);
+        const newData = data.sort(function (a, b) {
           return a.id - b.id;
         });
         setCoreTeam(newData);
-        
-        console.log(newData)
+
+        console.log(newData);
       })
       .catch(() => {
         alert("You are offline!!!");
       });
-  }, []);
-  useEffect(() => {
     fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setDevelopers(data))
       .catch(() => {
         alert("You are offline!!!");
       });
+  };
+
+  useEffect(() => {
+    if (typeof coreTeam === "undefined" || coreTeam == null) {
+      if (localStorage.getItem("coreteam") !== null) {
+        setCoreTeam(decryptData(localStorage.getItem("coreteam")));
+      } else {
+        fetchData();
+      }
+    }
+    if (typeof developers === "undefined" || developers == null) {
+      if (localStorage.getItem("developers") !== null) {
+        setDevelopers(decryptData(localStorage.getItem("developers")));
+      } else {
+        fetchData();
+      }
+    }
   }, []);
+
+  useEffect(() => {
+    if (coreTeam != null)
+      window.localStorage.setItem("coreteam", encryptData(coreTeam));
+    if (developers != null)
+      window.localStorage.setItem("developers", encryptData(developers));
+  }, [coreTeam, developers]);
+
+  // useEffect(() => {
+  //   fetch("https://srijan.herokuapp.com/organisingteammembers/", {
+  //     mode: "cors",
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       const newData = data.sort(function (a, b) {
+  //         return a.id - b.id;
+  //       });
+  //       setCoreTeam(newData);
+
+  //       console.log(newData);
+  //     })
+  //     .catch(() => {
+  //       alert("You are offline!!!");
+  //     });
+  // }, []);
+  // useEffect(() => {
+  //   fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
+  //     .then((res) => res.json())
+  //     .then((data) => setDevelopers(data))
+  //     .catch(() => {
+  //       alert("You are offline!!!");
+  //     });
+  // }, []);
 
   return (
     <div className="team-page">
@@ -150,27 +180,30 @@ export default function OurTeam() {
       <br />
       <br />
       <h2 align="center" className="title highlighted">
-          CORE TEAM
-        </h2>
-   
+        CORE TEAM
+      </h2>
+
       <br />
       <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
-          {coreTeam.map((person) => (
-            <Card member={person}></Card>
-          ))}
+          {coreTeam &&
+            coreTeam.map((person) => (
+              <Card key={person.name} member={person}></Card>
+            ))}
         </div>
       </div>
       <h2 align="center" className="title highlighted">
-          DEVELOPERS
-        </h2>
-   
+        DEVELOPERS
+      </h2>
+
       <br />
+
       <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
-          {developers.map((person) => (
-            <Card member={person}></Card>
-          ))}
+          {developers &&
+            developers.map((person) => (
+              <Card key={person.name} member={person}></Card>
+            ))}
         </div>
       </div>
     </div>

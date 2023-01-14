@@ -11,7 +11,8 @@ import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
-// import Safe from "react-safe"
+
+import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 
 let max_offset, initial_offset;
 
@@ -192,6 +193,7 @@ class Home extends Component {
             <span></span>
           </a>
         </section> */}
+        <AnimatedBg />
         <Header />
         {/* <div className={classes.logo} ref={this.vantaRef}> */}
         {/* <img
@@ -211,7 +213,7 @@ class Home extends Component {
         <div id="stars3"></div> */}
         <div className="patterns">
           <svg width="100%">
-            <text x="50%" y="50%" text-anchor="middle">
+            <text x="50%" y="50%" textAnchor="middle">
               SRIJAN'23
             </text>
           </svg>

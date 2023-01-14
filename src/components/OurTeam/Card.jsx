@@ -39,6 +39,7 @@ const CardAvatar = styled.img`
   border: 4px solid black;
   object-position: center;
   object-fit: cover;
+  background-color: black;
   position: relative;
 `;
 
@@ -69,16 +70,7 @@ const CardDesignation = styled.h2`
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(
-    94.75deg,
-    #d19a08,
-    #fedb7e 27.6%,
-    #eac460 50%,
-    #d19a08 66.15%,
-    #d19a08
-  );
-  -webkit-background-clip: text;
+  color: #fff;
   margin-bottom: 30px;
 `;
 const StyledSVG = styled.svg`
