@@ -12,8 +12,9 @@ const Wrapper = styled(Box)`
   justify-content: center;
   align-items: center;
   .carousel-div {
-    width: 60%;
-    padding: 1em 1em;
+    width: 80%;
+    height: 100%;
+    // padding: 1em 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +39,7 @@ function SocialLink() {
     animation: "fade",
     indicators: true,
     duration: 2000,
-    navButtonsAlwaysVisible: false,
+    navButtonsAlwaysVisible: true,
     navButtonsAlwaysInvisible: false,
     cycleNavigation: true,
     fullHeightHover: true,
@@ -74,7 +75,10 @@ function SocialLink() {
         OUR SOCIAL LINKS
       </h1>
       <Grid container style={{ marginTop: "2.5em" }}>
-        <Grid item xs={12}>
+        <Grid item xs={12} md={8}>
+          <div className="title2" style={{ fontSize: "0.5em" }}>
+            YOUTUBE
+          </div>
           <Wrapper>
             <Carousel {...settings} className="carousel-div">
               {videos.map((item, idx) => (
@@ -91,12 +95,24 @@ function SocialLink() {
           </Wrapper>
         </Grid>
 
-        <Grid item xs={12} style={{ alignItems: "center" }}>
-          <div className="title2" style={{ fontSize: "0.5em" }}></div>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <div className="title2" style={{ fontSize: "0.5em" }}>
+            FACEBOOK
+          </div>
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fism.srijan%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-            width="500"
-            height="500 "
+            width="345"
+            height="400"
             style={{ border: "none", overflow: "hidden" }}
             scrolling="no"
             frameborder="0"
