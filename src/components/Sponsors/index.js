@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 import Header from "../Header";
+import { Helmet } from "react-helmet";
 import "./styles.css";
 
 const SponsorsContainer = styled(Container)`
@@ -77,6 +78,17 @@ export default function Sponsors() {
 
   return (
     <>
+    <Helmet>
+        <title>Srijan | Sponsors</title>
+        <meta
+          name="description"
+          content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."
+        />
+        <meta
+          name="keywords"
+          content="iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan core-team, srijan developers, srijan techfest,srijan tecnical fest, srijan 2022-2023, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+        />
+      </Helmet>
       <Header />
       <section
         className="sponsors"

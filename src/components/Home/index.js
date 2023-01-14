@@ -161,7 +161,7 @@ class Home extends Component {
     return (
       <div>
         <Helmet>
-          <title>Srijan</title>
+          <title>Srijan | IIT ISM</title>
           <link rel="shortcut icon" href="./favicon.ico" />
           <meta
             name="description"
