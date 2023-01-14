@@ -11,6 +11,7 @@ import HomeHeader from "../HomeHeader/index";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import tempimg from "../../assets/Gallery3.webp";
 
 const StyledImage = styled.img``;
 const styles = (theme) => ({
@@ -52,7 +53,7 @@ class EventDetail extends Component {
     const { classes, active, event } = this.props;
     return (
       <div style={{ display: "flex" }}>
-        <div className={classes.verticalTab}>
+        {/* <div className={classes.verticalTab}>
           <div className="btnFlex">
             <Link to="about">
               <button
@@ -87,9 +88,8 @@ class EventDetail extends Component {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
         <Header />
-        {/* {window.innerWidth < 960 ? : <HomeHeader />} */}
         <div className={classes.image}>
           <img
             src={event.image}
@@ -115,6 +115,18 @@ class EventDetail extends Component {
             {window.innerWidth < 960 ? <Mobileview event={event} /> : ""}
           </div>
         </div>
+        {/* <div className="eventDetailContainer">
+          <img className="eventImg" src={tempimg} alt="no" />
+          <div className="eventDesc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              cumque praesentium repudiandae beatae quas dolores dolor deleniti,
+              ducimus accusantium rem delectus ea nobis id quo enim. Aliquam
+              adipisci debitis blanditiis in, mollitia pariatur accusantium
+              optio iste quis magnam nostrum tempore.
+            </p>
+          </div>
+        </div> */}
       </div>
     );
   }

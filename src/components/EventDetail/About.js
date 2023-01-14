@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 const StyledText = styled.p`
-  color: white;
+  /* color: white; */
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   text-align: center;
