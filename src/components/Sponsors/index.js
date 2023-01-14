@@ -133,7 +133,7 @@ export default function Sponsors() {
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        {/* <Subtitle>Strategic Sponsor</Subtitle>
+        <Subtitle>Strategic Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -237,8 +237,8 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
-        </SponsorsContainer> */}
-        <Subtitle>Grateful to our past sponsors</Subtitle>
+        </SponsorsContainer>
+        {/* <Subtitle>Grateful to our past sponsors</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             <div className="past-sponsors-container">
@@ -259,7 +259,7 @@ export default function Sponsors() {
               </div>
             </div>
           </div>
-        </SponsorsContainer>
+        </SponsorsContainer> */}
       </section>
     </>
   );
