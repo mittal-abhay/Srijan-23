@@ -14,7 +14,7 @@ const styles = (theme) => ({
     right: "60px",
   },
   descriptionText: {
-    fontSize: "15px",
+    fontSize: "17px",
     fontFamily: '"Noto Sans", sans- serif',
     color:'white'
   },

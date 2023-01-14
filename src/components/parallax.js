@@ -17,7 +17,7 @@ const styles = (theme) => ({
     },
   },
   descriptionText: {
-    fontSize: "15px",
+    fontSize: "17px",
     fontFamily: '"Noto Sans", sans- serif',
   },
   images: {

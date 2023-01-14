@@ -49,7 +49,7 @@ function SocialLink() {
   return (
     <Container>
       <Helmet>
-        <title>srijan</title>
+        <title>Srijan | Social Links</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Know about the theme of this year - To the moon and back."
