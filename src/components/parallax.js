@@ -17,7 +17,7 @@ const styles = (theme) => ({
     },
   },
   descriptionText: {
-    fontSize: "20px",
+    fontSize: "18.5px",
     fontFamily: '"Noto Sans", sans- serif',
   },
   images: {
@@ -54,6 +54,7 @@ const styles = (theme) => ({
   image2M: {},
   image3: {
     height: "70% !important",
+
     minWidth: "300px !important",
     position: "absolute",
     right: "-70px",
