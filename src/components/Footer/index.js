@@ -25,7 +25,7 @@ import "./styles.css";
 const socialNetworks = [
   {
     socialHandle: "facebook",
-    link: "https://www.facebook.com/107585406021823/posts/pfbid0rdXTqps78PEPkPiKej9g4SRdpBRfpE6QSrGRoSZ7hXuQBbYFP4cDu1onMiiCovCol/?mibextid=Nif5oz",
+    link: "https://www.facebook.com/ism.srijan",
     icon: <FontAwesomeIcon icon={faFacebook} />,
     iconcolor: "#3b5998",
   },
