@@ -5,6 +5,7 @@ import "./styles.css";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
+import { API_BASE_URL } from "../../data/Constants";
 
 const styles = (theme) => ({
   mobileTab: {
@@ -49,7 +50,7 @@ export default function OurTeam() {
   const [developers, setDevelopers] = useState(null);
 
   const fetchData = async () => {
-    fetch("https://srijan.herokuapp.com/organisingteammembers/", {
+    fetch(`${API_BASE_URL}/organisingteammembers/`, {
       mode: "cors",
     })
       .then((res) => res.json())
@@ -65,7 +66,7 @@ export default function OurTeam() {
       .catch(() => {
         alert("You are offline!!!");
       });
-    fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
+    fetch(`${API_BASE_URL}/developers/`, { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setDevelopers(data))
       .catch(() => {

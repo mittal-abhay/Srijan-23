@@ -9,6 +9,7 @@ import { redbull } from "../../assets/RedBull.webp";
 import { reliance } from "../../assets/Reliance.webp";
 import { vanhuesen } from "../../assets/VanHuesen.png";
 import { ongc } from "../../assets/Ongc.png";
+import { API_BASE_URL } from "../../data/Constants";
 
 const SponsorsContainer = styled(Container)`
   position: relative;
@@ -73,7 +74,7 @@ export default function Sponsors() {
   });
 
   useEffect(() => {
-    fetch("https://srijan.herokuapp.com/sponsors/", { mode: "cors" })
+    fetch(`${API_BASE_URL}/sponsors/`, { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(() => {
@@ -83,7 +84,7 @@ export default function Sponsors() {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Srijan | Sponsors</title>
         <meta
           name="description"
