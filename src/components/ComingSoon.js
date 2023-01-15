@@ -12,7 +12,7 @@ class ComingSoon extends Component {
   render() {
     return (
       <div>
-        {/* <Header />
+        <Header />
         <h1
           className="title"
           style={{
@@ -21,11 +21,11 @@ class ComingSoon extends Component {
             height: "100vh",
             display: "flex",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           COMING SOON......
-        </h1> */}
+        </h1>
       </div>
     );
   }

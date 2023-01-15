@@ -11,6 +11,7 @@ import iit from "../../assets/Srijan'23_Logo_White.png";
 import EventPageNew from "../EventsNew/EventPageNew";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
 import Loading from "../Loading/Loading";
+import { Helmet } from "react-helmet";
 
 const styles = (theme) => ({
   root: {
@@ -74,6 +75,18 @@ function EventPage(props) {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>Srijan | Events</title>
+    <meta
+      name="description"
+      content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."
+    />
+    <meta
+      name="keywords"
+      content="iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan core-team, srijan developers, srijan techfest,srijan tecnical fest, srijan 2022-2023, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+    />
+  </Helmet>
     <div className="gradientBg">
       {loading ? (
         <Loading />
@@ -98,6 +111,7 @@ function EventPage(props) {
         </>
       )}
     </div>
+    </>
   );
 }
 

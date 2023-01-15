@@ -17,7 +17,7 @@ export const HomeContent = [
     // image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/club2.jpg",
     // image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/club3.jpg",
     description:
-      "Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Srijan'23. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field.",
+      "Over 50 events are strategically planned and scheduled to be organized during this 3-day grandiose fest. Not only will these events provide a great platform for the enthusiastic participants from all over the country to showcase their awe-inspiring talents, but they are also enthralling. We have a lot of exciting events in store for you! Watch this space closely to stay tuned about all events!",
   },
 ];
 

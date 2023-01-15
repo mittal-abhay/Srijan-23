@@ -135,7 +135,7 @@ export default function OurTeam() {
   return (
     <div className="team-page">
       <Helmet>
-        <title>Srijan Team</title>
+        <title>Srijan | Our-Team</title>
         <meta
           name="description"
           content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."

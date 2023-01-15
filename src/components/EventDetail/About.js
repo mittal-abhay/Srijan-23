@@ -16,7 +16,7 @@ export default function About(props) {
     let myDate = new Date(timestamp).toLocaleString("en-IN", {
       timeZone: "Asia/Kolkata",
     });
-    console.log(myDate);
+    // console.log(myDate);
     return myDate;
   };
 

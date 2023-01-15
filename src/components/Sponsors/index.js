@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 import Header from "../Header";
+import { Helmet } from "react-helmet";
 import "./styles.css";
+import { pepsi } from "../../assets/Pepsi.png";
+import { redbull } from "../../assets/RedBull.webp";
+import { reliance } from "../../assets/Reliance.webp";
+import { vanhuesen } from "../../assets/VanHuesen.png";
+import { ongc } from "../../assets/Ongc.png";
 
 const SponsorsContainer = styled(Container)`
   position: relative;
@@ -77,6 +83,17 @@ export default function Sponsors() {
 
   return (
     <>
+    <Helmet>
+        <title>Srijan | Sponsors</title>
+        <meta
+          name="description"
+          content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Meet the core-team and developers of srijan here."
+        />
+        <meta
+          name="keywords"
+          content="iit ism dhanbad techfest, iit dhanbad techfest,srijan,srijan 22,srijan 2022,srijan 2k22,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan core-team, srijan developers, srijan techfest,srijan tecnical fest, srijan 2022-2023, srijan tech fest 22,srijan tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+        />
+      </Helmet>
       <Header />
       <section
         className="sponsors"
@@ -206,16 +223,15 @@ export default function Sponsors() {
         <Subtitle>Beverage Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
-            {/* {data.map((sponsor) => {
+            {data.map((sponsor) => {
               if (sponsor.category == "Books Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
-                   
                   </a>
                 );
               }
-            })} */}
+            })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
@@ -234,6 +250,28 @@ export default function Sponsors() {
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
+        {/* <Subtitle>Grateful to our past sponsors</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <div className="past-sponsors-container">
+              <div>
+                <img src={pepsi} alt="" />
+              </div>
+              <div>
+                <img src={ongc} alt="" />
+              </div>
+              <div>
+                <img src={redbull} alt="" />
+              </div>
+              <div>
+                <img src={vanhuesen} alt="" />
+              </div>
+              <div>
+                <img src={reliance} alt="" />
+              </div>
+            </div>
+          </div>
+        </SponsorsContainer> */}
       </section>
     </>
   );
