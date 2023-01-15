@@ -11,6 +11,7 @@ export default function Animated_Bg() {
     for (let i = 0; i < window.innerWidth / 15; i++) {
       tempDots.push(
         <span
+          key={i}
           style={{
             animationDuration: `${100 / Math.floor(Math.random() * 25 + 5)}s`,
             bottom: `${Math.floor(Math.random() * 25)}px`,

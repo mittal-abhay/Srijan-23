@@ -6,13 +6,12 @@ import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
-import bg from "../../assets/bg.jpg";
-import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
 
 import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
+import Loading from "../Loading/Loading";
 
 let max_offset, initial_offset;
 
@@ -81,11 +80,16 @@ class Home extends Component {
       header: false,
       x: 0,
       previous_scroll: 0,
+      loading: true,
     };
-    // console.log(window.innerHeight);
     this.homeRef = React.createRef();
   }
   componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        loading: false,
+      });
+    }, 3000);
     this.props.hideLogo();
     window.scrollTo(0, 0);
     console.log(window.innerWidth);
@@ -157,140 +161,69 @@ class Home extends Component {
 
   render() {
     const { classes } = this.props;
-    const { offset, x } = this.state;
-    return (
-      <div>
-        <Helmet>
-          <title>Srijan</title>
-          <link rel="shortcut icon" href="./favicon.ico" />
-          <meta
-            name="description"
-            content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes, who stalk the grounds of ISM to prove their technical expertise."
-          />
-          <meta
-            name="keywords"
-            content="srijan,srijan 22,srijan 2022,srijan 2k22,srijan iit,srijan iit (ism) dhanbad,srijan iit ism,srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
-          />
-          <meta property="og:url" content="https://www.srijan.in/" />
-        </Helmet>
-        {/* <Safe.script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVX154NPV"></Safe.script>
-        <Safe.script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)};
-          gtag('js', new Date());
+    const { offset, x, loading } = this.state;
+    if (typeof loading == "undefined" || loading == null || loading == false)
+      return (
+        <div>
+          <Helmet>
+            <title>Srijan</title>
+            <link rel="shortcut icon" href="./favicon.ico" />
+            <meta
+              name="description"
+              content="srijan is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes, who stalk the grounds of ISM to prove their technical expertise."
+            />
+            <meta
+              name="keywords"
+              content="srijan,srijan 22,srijan 2022,srijan 2k22,srijan iit,srijan iit (ism) dhanbad,srijan iit ism,srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
+            />
+            <meta property="og:url" content="https://www.srijan.in/" />
+          </Helmet>
+          <AnimatedBg />
+          <Header />
+          <div className="patterns">
+            <svg width="100%">
+              <text x="50%" y="50%" textAnchor="middle">
+                SRIJAN'23
+              </text>
+            </svg>
+            <div className="glow">
+              <h2>Carnival of Reminiscence......</h2>
+            </div>
+          </div>
+          <div className="btn-cont">
+            <a className="btn" href="#">
+              REGISTER NOW
+              <span className="line-1"></span>
+              <span className="line-2"></span>
+              <span className="line-3"></span>
+              <span className="line-4"></span>
+            </a>
+          </div>
+          <div className={classes.parallax + " gradientBg mt-0"}>
+            {HomeContent.map((content, id) => {
+              if (window.innerWidth < 992)
+                return <ParallaxM key={id.toString()} content={content} />;
+              else if (id % 2 === 0)
+                return <Parallax x={x} key={id.toString()} content={content} />;
+              else
+                return window.innerWidth >= 1200 ? (
+                  <Parallax2 x={x} key={id.toString()} content={content} />
+                ) : (
+                  <Parallax x={x} key={id.toString()} content={content} />
+                );
+            })}
 
-          gtag('config', 'G-6WVX154NPV');
-        </Safe.script> */}
-        {}
-        {/* <section id="scroll_down" className="demo">
-          <a
-            onClick={() => {
-              this.scrollDown();
-            }}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </section> */}
-        <AnimatedBg />
-        <Header />
-        {/* <div className={classes.logo} ref={this.vantaRef}> */}
-        {/* <img
-            src="../images/srijanLogo.jpeg"
-            className={`logo logo-home`}
-            ref={this.homeRef}
-            alt={" "}
-          /> */}
-        {/* <div className={`logo logo-home`} ref={this.homeRef}> */}
-        {/* <canvas id="graphics" />
-        <div className="herosection">
-          <h1>SRIJAN</h1>
-        </div> */}
-        {/* <canvas id="graphics" /> */}
-        {/* <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div> */}
-        <div className="patterns">
-          <svg width="100%">
-            <text x="50%" y="50%" textAnchor="middle">
-              SRIJAN'23
-            </text>
-          </svg>
-          <div className="glow">
-            <h2>Carnival of Reminiscence......</h2>
-          </div>
-        </div>
-        {/* <Film /> */}
-        {/* <div className="hero">
-          <div className="hero_heading">
-            <h1>SRIJAN'23</h1>
-          </div>
-          <div className="glow">
-            <h2>Carnival of Reminiscence</h2>
-          </div>
-        </div> */}
-        {/* <div id="jugaad"> */}
-        <div className="btn-cont">
-          <a className="btn" href="#">
-            REGISTER NOW
-            <span className="line-1"></span>
-            <span className="line-2"></span>
-            <span className="line-3"></span>
-            <span className="line-4"></span>
-          </a>
-        </div>
-        {/* <Gallery /> */}
-        {/* <DJLightsRow />
-          <Carousel />
-          <DJLightsRow />
-          <HomeImageScroll /> */}
-        {/* </div> */}
-        {/* {
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100vw",
-            }}
-          >
-            <img
-              src="../images/landing.png"
-              // src={window.location.origin + "/images/moon-fin.png"}
-              className={classes.moon}
-              alt=" "
-              style={{ transform: "translateY(" + offset + "px" }}
+            <PastPerformers />
+            <br />
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
             />
           </div>
-        } */}
-        <div className={classes.parallax + " gradientBg mt-0"}>
-          {HomeContent.map((content, id) => {
-            if (window.innerWidth < 992)
-              return <ParallaxM key={id.toString()} content={content} />;
-            else if (id % 2 === 0)
-              return <Parallax x={x} key={id.toString()} content={content} />;
-            else
-              return window.innerWidth >= 1200 ? (
-                <Parallax2 x={x} key={id.toString()} content={content} />
-              ) : (
-                <Parallax x={x} key={id.toString()} content={content} />
-              );
-          })}
-
-          <PastPerformers />
-          <br />
-          <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-          />
-          {/* <a href="https://api.whatsapp.com/send?phone=9835063191" class="float" target="_blank">
-          <i class="fa fa-whatsapp my-float"></i>
-        </a> */}
+          //{" "}
         </div>
-        //{" "}
-      </div>
-    );
+      );
+    return <Loading />;
   }
 }
 

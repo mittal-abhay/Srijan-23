@@ -7,7 +7,7 @@ export const HomeContent = [
     // image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/about3.jpg",
 
     description:
-    "SRIJAN is the biggest socio-cultural festival in eastern India which has been in the limelight since 1977. It attracts an annual footfall of over 30,000 from more than 200 colleges across the country and has prize money worth more than INR 7.5 lakhs. It offers a fantastic platform where participants from different parts of the country get an opportunity to interact, enhance and demonstrate their creativity, personality, and talents." ,
+      "SRIJAN is the biggest socio-cultural festival in eastern India which has been in the limelight since 1977. It attracts an annual footfall of over 30,000 from more than 200 colleges across the country and has prize money worth more than INR 7.5 lakhs. It offers a fantastic platform where participants from different parts of the country get an opportunity to interact, enhance and demonstrate their creativity, personality, and talents.",
   },
 
   {

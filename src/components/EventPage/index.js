@@ -10,6 +10,7 @@ import { NavLink } from "react-router-dom";
 import iit from "../../assets/Srijan'23_Logo_White.png";
 import EventPageNew from "../EventsNew/EventPageNew";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
+import Loading from "../Loading/Loading";
 
 const styles = (theme) => ({
   root: {
@@ -41,11 +42,12 @@ const styles = (theme) => ({
 function EventPage(props) {
   const [classes, setClasses] = useState(props.classes);
   const [events, setEvents] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (typeof events === "undefined" || events == null) {
-      if (localStorage.getItem("events") !== null) {
-        setEvents(decryptData(localStorage.getItem("events")));
+      if (sessionStorage.getItem("events") !== null) {
+        setEvents(decryptData(sessionStorage.getItem("events")));
       } else {
         fetchData();
       }
@@ -53,37 +55,48 @@ function EventPage(props) {
   }, []);
 
   useEffect(() => {
-    if (events != null)
-      window.localStorage.setItem("events", encryptData(events));
+    if (events != null) {
+      window.sessionStorage.setItem("events", encryptData(events));
+      setLoading(false);
+    }
   }, [events]);
 
   const fetchData = async () => {
     fetch("https://srijan.herokuapp.com/events/", { mode: "cors" })
       .then((res) => res.json())
-      .then((data) => setEvents(data))
+      .then((data) => {
+        setEvents(data);
+      })
       .catch(() => {
         alert("You are offline!!!");
+        // TODO : Error Page
       });
   };
 
   return (
     <div className="gradientBg">
-      <div className="root">
-        <Header />
-      </div>
-      <h1
-        style={{
-          textAlign: "center",
-          marginTop: "60px",
-          color: "white",
-          fontSize: "52px",
-          fontFamily: "'Montserrat', sans-serif",
-        }}
-        className="title"
-      >
-        EVENTS
-      </h1>
-      {events && <EventPageNew events={events} />}
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <div className="root">
+            <Header />
+          </div>
+          <h1
+            style={{
+              textAlign: "center",
+              marginTop: "60px",
+              color: "white",
+              fontSize: "52px",
+              fontFamily: "'Montserrat', sans-serif",
+            }}
+            className="title"
+          >
+            EVENTS
+          </h1>
+          {events && <EventPageNew events={events} />}
+        </>
+      )}
     </div>
   );
 }

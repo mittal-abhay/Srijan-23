@@ -135,7 +135,7 @@ export default function EventDetail() {
   useEffect(() => {
     if (typeof event === "undefined" || event == null) {
       if (typeof location.state === "undefined" || location.state == null) {
-        setEvent(decryptData(window.localStorage.getItem("event")));
+        setEvent(decryptData(window.sessionStorage.getItem("event")));
       } else {
         setEvent(location.state.event);
       }
@@ -143,7 +143,8 @@ export default function EventDetail() {
   }, []);
 
   useEffect(() => {
-    if (event != null) window.localStorage.setItem("event", encryptData(event));
+    if (event != null)
+      window.sessionStorage.setItem("event", encryptData(event));
   }, [event]);
 
   return <div>Hello</div>;
