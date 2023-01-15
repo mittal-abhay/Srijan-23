@@ -5,6 +5,7 @@ import "./styles.css";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
+import Loading from "../Loading/Loading";
 import { API_BASE_URL } from "../../data/Constants";
 
 const styles = (theme) => ({
@@ -48,6 +49,7 @@ const styles = (theme) => ({
 export default function OurTeam() {
   const [coreTeam, setCoreTeam] = useState(null);
   const [developers, setDevelopers] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
     fetch(`${API_BASE_URL}/organisingteammembers/`, {
@@ -60,15 +62,15 @@ export default function OurTeam() {
           return a.id - b.id;
         });
         setCoreTeam(newData);
-
-        console.log(newData);
       })
       .catch(() => {
         alert("You are offline!!!");
       });
     fetch(`${API_BASE_URL}/developers/`, { mode: "cors" })
       .then((res) => res.json())
-      .then((data) => setDevelopers(data))
+      .then((data) => {
+        setDevelopers(data);
+      })
       .catch(() => {
         alert("You are offline!!!");
       });
@@ -92,10 +94,14 @@ export default function OurTeam() {
   }, []);
 
   useEffect(() => {
-    if (coreTeam != null)
+    if (coreTeam != null) {
       window.sessionStorage.setItem("coreteam", encryptData(coreTeam));
-    if (developers != null)
+      setLoading(false);
+    }
+    if (developers != null) {
       window.sessionStorage.setItem("developers", encryptData(developers));
+      setLoading(false);
+    }
   }, [coreTeam, developers]);
 
   // useEffect(() => {
@@ -124,6 +130,8 @@ export default function OurTeam() {
   //       alert("You are offline!!!");
   //     });
   // }, []);
+
+  if (loading) return <Loading />;
 
   return (
     <div className="team-page">
