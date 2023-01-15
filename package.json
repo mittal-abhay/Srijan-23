@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Frontend App for srijan Website",
   "private": true,
-  "homepage": "http://13.230.38.45/",
+  "homepage": "https://srijan-iitism.com/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
