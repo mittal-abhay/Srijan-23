@@ -77,7 +77,7 @@
   margin-bottom: 16px;
 }
 
-.drop-container .drop .drop-content {
+.drop-content {
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.drop-container .drop .drop-content a {
+.drop-content a {
   position: relative;
   font-size: 1rem;
   margin-bottom: 5rem;

@@ -10,6 +10,8 @@ import Homeabout from "../HomeAbout/Homeabout.jsx";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
+import PastPerformersCard from "../pastPerformers/PastPerformersCard";
+import img1 from "../../assets/aboutImg.jfif";
 
 import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 import Loading from "../Loading/Loading";
@@ -200,7 +202,6 @@ class Home extends Component {
               <span className="line-4"></span>
             </a>
           </div>
-
           <Homeabout />
           <h1
             style={{
