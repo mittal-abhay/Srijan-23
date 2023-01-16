@@ -67,7 +67,13 @@ class AboutUs extends Component {
         <div className="container">
           <div className="col-12 opaque">
             <br />
-            <div style={{ fontSize: "25px" }}>
+            <div
+              style={{
+                fontSize: "25px",
+                textTransform: "uppercase",
+                fontWeight: "bold",
+              }}
+            >
               Srijan, from vintage to vogue
             </div>
             <br />
