@@ -6,12 +6,9 @@ import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
-import bg from "../../assets/bg.jpg";
-import * as THREE from "three";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
-
 import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 
 let max_offset, initial_offset;
@@ -88,7 +85,7 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
 
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "18vh";
