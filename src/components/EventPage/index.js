@@ -64,13 +64,17 @@ function EventPage(props) {
   }, [events]);
 
   const fetchData = async () => {
-    fetch(`${API_BASE_URL}/events/`, { mode: "cors" })
+    fetch(`${API_BASE_URL}/events/`, {
+      method: "get",
+    })
       .then((res) => res.json())
       .then((data) => {
-        setEvents(data);
+        console.log(data);
+        console.log(data.results);
+        setEvents(data.results);
       })
-      .catch(() => {
-        alert("You are offline!!!");
+      .catch((e) => {
+        alert(e);
         // TODO : Error Page
       });
   };

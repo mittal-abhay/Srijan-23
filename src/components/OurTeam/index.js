@@ -53,7 +53,7 @@ export default function OurTeam() {
 
   const fetchData = async () => {
     fetch(`${API_BASE_URL}/organisingteammembers/`, {
-      mode: "cors",
+      method: "get",
     })
       .then((res) => res.json())
       .then((data) => {
@@ -66,7 +66,7 @@ export default function OurTeam() {
       .catch(() => {
         alert("You are offline!!!");
       });
-    fetch(`${API_BASE_URL}/developers/`, { mode: "cors" })
+    fetch(`${API_BASE_URL}/developers/`, { method: "get" })
       .then((res) => res.json())
       .then((data) => {
         setDevelopers(data);

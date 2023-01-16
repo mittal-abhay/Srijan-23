@@ -74,7 +74,9 @@ export default function Sponsors() {
   });
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}/sponsors/`, { mode: "cors" })
+    fetch(`${API_BASE_URL}/sponsors/`, {
+      method: "get",
+    })
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(() => {

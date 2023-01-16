@@ -6,19 +6,18 @@ import { Suspense } from "react";
 
 export default function EventPageNew(props) {
   const [events, setEvents] = useState(props.events);
-  const eventsList = events.map((event) => (
-    <EventCardNew key={event.name} event={event} />
-  ));
+  const eventsList = events.map((event) => {
+    console.log(event);
+    return <EventCardNew key={event.name} event={event} />;
+  });
 
-  useEffect(() => {
-    setEvents(props.events);
-  }, []);
+  // useEffect(() => {
+  //   setEvents(props.events);
+  // }, []);
 
   return (
-    <Suspense fallback={<h1 style={{color: "#fff"}}>Hello</h1>}>
-      <div className="event-page-new">
-        <div className="event-cards-new">{eventsList}</div>
-      </div>
-    </Suspense>
+    <div className="event-page-new">
+      <div className="event-cards-new">{eventsList}</div>
+    </div>
   );
 }

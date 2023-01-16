@@ -6,6 +6,7 @@ import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../data/Content";
+import Homeabout from "../HomeAbout/Homeabout.jsx";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
@@ -199,28 +200,13 @@ class Home extends Component {
               <span className="line-4"></span>
             </a>
           </div>
-          <div className={classes.parallax + " gradientBg mt-0"}>
-            {HomeContent.map((content, id) => {
-              if (window.innerWidth < 992)
-                return <ParallaxM key={id.toString()} content={content} />;
-              else if (id % 2 === 0)
-                return <Parallax x={x} key={id.toString()} content={content} />;
-              else
-                return window.innerWidth >= 1200 ? (
-                  <Parallax2 x={x} key={id.toString()} content={content} />
-                ) : (
-                  <Parallax x={x} key={id.toString()} content={content} />
-                );
-            })}
 
-            <PastPerformers />
-            <br />
-            <link
-              rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-            />
-          </div>
-          //{" "}
+          <Homeabout />
+          <PastPerformers />
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+          />
         </div>
       );
     return <Loading />;
