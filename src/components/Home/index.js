@@ -213,7 +213,7 @@ class Home extends Component {
             }}
             className="title"
           >
-            PAST PERFORMERS
+            PAST&nbsp;&nbsp;&nbsp;PERFORMERS
           </h1>
           <PastPerformers />
 

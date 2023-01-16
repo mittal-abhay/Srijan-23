@@ -74,7 +74,7 @@ class AboutUs extends Component {
                 fontWeight: "bold",
               }}
             >
-              Srijan, from vintage to vogue
+              From Vintage to Vogue
             </div>
             <br />
             History is just the present in retrospect. It reveals and sculpts
