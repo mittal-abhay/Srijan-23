@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homeabout.css";
-import img1 from "../../assets/aboutImg.jfif";
+import img1 from "../../assets/Srijan Logo.png";
 import img2 from "../../assets/Gallery1.jpg";
 import { Link } from "react-router-dom";
 // import img2 from "../assets/Gallery2.jpg";
@@ -9,7 +9,7 @@ export default function Homeabout() {
     <div>
       <div className="drop-container">
         <div className="drop-image1">
-          <img src={img1} alt="" />
+          <img src={img1} alt="" style={{marginTop:'10px'}}/>
         </div>
         <div className="drop">
           <div className="drop-content">
