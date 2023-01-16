@@ -202,7 +202,20 @@ class Home extends Component {
           </div>
 
           <Homeabout />
+          <h1
+            style={{
+              textAlign: "center",
+              marginTop: "60px",
+              color: "white",
+              fontSize: "52px",
+              fontFamily: "'Montserrat', sans-serif",
+            }}
+            className="title"
+          >
+            PAST PERFORMERS
+          </h1>
           <PastPerformers />
+
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"

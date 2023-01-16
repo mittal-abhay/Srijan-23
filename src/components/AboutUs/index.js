@@ -67,23 +67,21 @@ class AboutUs extends Component {
         <div className="container">
           <div className="col-12 opaque">
             <br />
-            <div style={{ fontSize: "25px" }}>Carnival of Reminiscence</div>
-            <br />A few memories were the only vestige of the biggest
-            socio-cultural fest of Eastern India engraved in our hearts. As the
-            memories of our beloved event, SRIJAN, fade after a two-year hiatus,
-            we aim to revive the feeling of Srijan in all of our hearts. This
-            year’s theme “CARNIVAL OF REMINISCENCE” focuses on cherishing and
-            reviving the wonderful experiences we experienced during the former
-            Srijan. Bringing back the lane of memories with a flabbergasting
-            experience to all get ready to divulge yourself in the colorful and
-            electrifying joyride of SRIJAN ‘23. Indulging in the memories of our
-            past events as we enter into this year’s biggest cultural fest,
-            giving a déjà vu to many, we wish to provide a prodigious experience
-            filled with mesmerizing and nostalgic moments. It will be a voyage
-            that brings back memories of our beloved cultural fest with a blast
-            alongside creating new memories that would last a lifetime. Join us
-            in this journey of reliving and creating moments to reflect on with
-            a reminiscing smile.
+            <div style={{ fontSize: "25px" }}>
+              Srijan, from vintage to vogue
+            </div>
+            <br />
+            History is just the present in retrospect. It reveals and sculpts
+            the present. Srijan aims to help us connect with our culture and
+            innovate it to bridge the gap between the colorful vintage times and
+            the contemporary digital era. We can only truly know ourselves once
+            we get in touch with our roots, and Srijan strives to do just that
+            by letting us take a glimpse into our past. The numerous events and
+            performances by stars that it offers help bridge the disconnect we
+            feel between the vintage era and the contemporary one. Being in
+            touch with our history is in vogue and Srijan would help us dive
+            head first into our shared history and celebrate our present to look
+            forward to a better future.
           </div>
         </div>
         <br />
