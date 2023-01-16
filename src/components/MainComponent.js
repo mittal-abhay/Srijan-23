@@ -185,7 +185,7 @@ function Main(props) {
             />
           )}
         />
-        <Route path="/club-events/:eventName/about" component={ComingSoon} />
+        <Route path="/club-events/:eventName/about" component={EventDetail} />
         <Route
           path="/club-events/:eventName/rules"
           component={TempEventDetail}
