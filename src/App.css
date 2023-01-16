@@ -3,6 +3,7 @@ html {
   max-height: 160vh;
   cursor: url("../src/assets/cursor.svg") 10 10, auto !important;
   background-image: url("./assets/backdrop.webp") !important;
+  background-color: black;
   background-repeat: repeat-y;
   background-size: cover;
   background-attachment: fixed;

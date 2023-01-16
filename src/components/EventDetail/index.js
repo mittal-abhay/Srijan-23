@@ -127,6 +127,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
+import EventDetailPageNew from "../EventDetailNew/EventDetailPageNew";
+import Header from "../Header";
 
 export default function EventDetail() {
   const [event, setEvent] = useState(null);
@@ -147,5 +149,10 @@ export default function EventDetail() {
       window.sessionStorage.setItem("event", encryptData(event));
   }, [event]);
 
-  return <div>Hello</div>;
+  return (
+    <div>
+      <Header />
+      {event && <EventDetailPageNew event={event}/>}
+    </div>
+  );
 }

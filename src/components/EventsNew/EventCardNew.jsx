@@ -1,9 +1,11 @@
 import React from "react";
 import "./eventCardNew.css";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import EventDetailPageNew from "../EventDetailNew/EventDetailPageNew";
 
 export default function EventCardNew(props) {
+  const popup = useRef(null);
   const [event, setEvent] = useState(null);
   useEffect(() => {
     console.log(props.event);
