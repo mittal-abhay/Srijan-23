@@ -4,6 +4,12 @@ import styled from "styled-components";
 import Header from "../Header";
 import { Helmet } from "react-helmet";
 import "./styles.css";
+import { pepsi } from "../../assets/Pepsi.png";
+import { redbull } from "../../assets/RedBull.webp";
+import { reliance } from "../../assets/Reliance.webp";
+import { vanhuesen } from "../../assets/VanHuesen.png";
+import { ongc } from "../../assets/Ongc.png";
+import { API_BASE_URL } from "../../data/Constants";
 
 const SponsorsContainer = styled(Container)`
   position: relative;
@@ -68,7 +74,9 @@ export default function Sponsors() {
   });
 
   useEffect(() => {
-    fetch("https://srijan.herokuapp.com/sponsors/", { mode: "cors" })
+    fetch(`${API_BASE_URL}/sponsors/`, {
+      method: "get",
+    })
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(() => {
@@ -78,7 +86,7 @@ export default function Sponsors() {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Srijan | Sponsors</title>
         <meta
           name="description"
@@ -218,16 +226,15 @@ export default function Sponsors() {
         <Subtitle>Beverage Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
-            {/* {data.map((sponsor) => {
+            {data.map((sponsor) => {
               if (sponsor.category == "Books Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
-                   
                   </a>
                 );
               }
-            })} */}
+            })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
@@ -246,6 +253,28 @@ export default function Sponsors() {
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
+        {/* <Subtitle>Grateful to our past sponsors</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <div className="past-sponsors-container">
+              <div>
+                <img src={pepsi} alt="" />
+              </div>
+              <div>
+                <img src={ongc} alt="" />
+              </div>
+              <div>
+                <img src={redbull} alt="" />
+              </div>
+              <div>
+                <img src={vanhuesen} alt="" />
+              </div>
+              <div>
+                <img src={reliance} alt="" />
+              </div>
+            </div>
+          </div>
+        </SponsorsContainer> */}
       </section>
     </>
   );
