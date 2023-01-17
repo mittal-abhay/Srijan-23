@@ -17,6 +17,7 @@
   width: 400px;
   height: 400px;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .drop-image1 img {
   object-fit: cover;
