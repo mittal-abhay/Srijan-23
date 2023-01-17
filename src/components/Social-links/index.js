@@ -72,7 +72,7 @@ function SocialLink() {
         }}
         className="title"
       >
-        OUR SOCIAL LINKS
+        OUR&nbsp;&nbsp;SOCIAL&nbsp;&nbsp;LINKS
       </h1>
       <Grid container style={{ marginTop: "2.5em", paddingInline:"1em"}} spacing={2}>
         <Grid item xs={12} md={8}>

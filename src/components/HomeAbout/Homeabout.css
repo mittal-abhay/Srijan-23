@@ -5,7 +5,8 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 50px 0;
-  gap: 40px 60px;
+  gap: 40px 80px;
+  margin-top: 20px;
 }
 
 .drop-image1 {
@@ -16,7 +17,7 @@
   border-radius: 38% 62% 60% 40% / 50% 49% 51% 50%;
   width: 400px;
   height: 400px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-top: 2rem;
 }
 .drop-image1 img {
@@ -33,7 +34,8 @@
   border-radius: 58% 42% 35% 65% / 48% 50% 50% 52%;
   width: 400px;
   height: 400px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 .drop-image2 img {
   object-fit: cover;
@@ -104,5 +106,9 @@
   text-decoration: none;
   color: black;
   border-radius: 25px;
-  transition: 0.5s;
+}
+
+.drop-content a:hover {
+  color: black;
+  text-decoration: none;
 }

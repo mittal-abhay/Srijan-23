@@ -6,8 +6,6 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
-  faTwitter,
-  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
@@ -43,9 +41,9 @@ const socialNetworks = [
   },
 ];
 
-const StyledLink = styled(Link)(({ iconColor }) => ({
+const StyledLink = styled(Link)(({ iconcolor }) => ({
   "&:hover": {
-    color: `${iconColor} !important`,
+    color: `${iconcolor} !important`,
   },
   transition: "300ms ease-in",
   color: "goldenrod",
@@ -98,6 +96,7 @@ const Styles = (theme) => ({
   gap: {
     marginBlock: "0.5em",
   },
+  
   abcd: {
     [theme.breakpoints.down("xs")]: {
       display: "none",
@@ -123,7 +122,6 @@ function Footer({ classes }) {
     <Grid container component="footer" className={classes.container}>
       <Grid
         item
-        xs={0}
         sm={3}
         className={classes.grid}
         style={{ justifyContent: "flex-start" }}
@@ -182,7 +180,6 @@ function Footer({ classes }) {
       <Grid item xs={12} sm={3} className={classes.grid2}>
         <Box className={classes.box}>
           <Typography
-            variant="div"
             style={{ borderBottom: "1px solid #000" }}
             className={` ${classes.abcd} footer-nav for-using-not`}
           >
@@ -194,7 +191,7 @@ function Footer({ classes }) {
                 key={socialHandle}
                 href={link}
                 target="_blank"
-                iconColor={iconColor}
+                iconcolor={iconColor}
               >
                 {icon}
               </StyledLink>

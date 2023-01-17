@@ -56,8 +56,8 @@
   border-bottom: 25px solid #ec008c;
 }
 
-.footer-nav > a,
-.footer-nav{
+/* .footer-nav > a, */
+.footer-nav {
   background: linear-gradient(
     94.75deg,
     #d19a08,
@@ -75,7 +75,7 @@
   text-transform: uppercase;
 }
 
-.footer-nav:not(.for-using-not):hover {
+/* .footer-nav:not(.for-using-not):hover {
   text-decoration: underline;
   text-decoration-color: #fff700;
 }
@@ -88,9 +88,10 @@
   background-color: gold;
   bottom: -3px;
   left: 0;
-  transition: all 400ms ease-in-out;;
-}
+  transition: all 400ms ease-in-out;
 
-.footer-nav:hover.footer-nav > a::after{
+} */
+
+/* .footer-nav:hover.footer-nav > a::after{
   width: 100%;
-}
+} */

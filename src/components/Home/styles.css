@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 .demo a {
@@ -178,7 +178,7 @@
 }
 
 text {
-  font-family: Lora;
+  font-family: Lora, serif;
   letter-spacing: 10px;
   stroke: #ffbc00;
   font-size: 175px;

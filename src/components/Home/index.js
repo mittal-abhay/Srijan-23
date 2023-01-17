@@ -95,7 +95,7 @@ class Home extends Component {
     }, 3000);
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
 
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "18vh";
@@ -195,7 +195,7 @@ class Home extends Component {
           </div>
           <div className="btn-cont">
             <a className="btn" href="#">
-              REGISTER NOW
+              REGISTER HERE
               <span className="line-1"></span>
               <span className="line-2"></span>
               <span className="line-3"></span>
@@ -213,7 +213,7 @@ class Home extends Component {
             }}
             className="title"
           >
-            PAST PERFORMERS
+            PAST&nbsp;&nbsp;PERFORMERS
           </h1>
           <PastPerformers />
 

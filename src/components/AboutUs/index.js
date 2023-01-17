@@ -67,8 +67,14 @@ class AboutUs extends Component {
         <div className="container">
           <div className="col-12 opaque">
             <br />
-            <div style={{ fontSize: "25px" }}>
-              Srijan, from vintage to vogue
+            <div
+              style={{
+                fontSize: "25px",
+                textTransform: "uppercase",
+                fontWeight: "bold",
+              }}
+            >
+              From Vintage to Vogue
             </div>
             <br />
             History is just the present in retrospect. It reveals and sculpts
