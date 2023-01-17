@@ -39,13 +39,7 @@ export default function EventDetailPageNew(props) {
                   Presented By <b>{props.event.presented_by}</b>
                 </p>
               )}
-              {/* <p>{props.details}</p> */}
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                veritatis a dolorum commodi! Eligendi vero magni obcaecati totam
-                unde expedita architecto nulla aliquam, dolorem ad, eos
-                exercitationem fugit perspiciatis, consectetur maiores atque
-              </p>
+              <p>{props.details}</p>
             </div>
             <div className="event-detail-extra-info">
               <h5>Important dates</h5>
