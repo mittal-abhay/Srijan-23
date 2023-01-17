@@ -1,5 +1,5 @@
 .hexagon {
-  background-image: url("../../assets/bg-black.webp");
+  /* background-image: url("../../assets/bg-black.webp"); */
   width: 100px;
   height: 60px;
   background: #5f6062;
@@ -74,24 +74,3 @@
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }
-
-/* .footer-nav:not(.for-using-not):hover {
-  text-decoration: underline;
-  text-decoration-color: #fff700;
-}
-
-.footer-nav > a::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 1px;
-  background-color: gold;
-  bottom: -3px;
-  left: 0;
-  transition: all 400ms ease-in-out;
-
-} */
-
-/* .footer-nav:hover.footer-nav > a::after{
-  width: 100%;
-} */

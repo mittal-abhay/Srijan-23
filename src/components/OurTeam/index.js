@@ -1,50 +1,11 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Header";
 import Card from "./Card";
 import "./styles.css";
 import { Helmet } from "react-helmet";
-import Footer from "../Footer";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
 import Loading from "../Loading/Loading";
 import { API_BASE_URL } from "../../data/Constants";
-
-const styles = (theme) => ({
-  mobileTab: {
-    border: "1px solid white",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  tabRoot: {
-    minWidth: "50%",
-    textTransform: "initial",
-    fontWeight: "bold",
-    backgroundColor: "rgba(0, 255, 255, 0.637)",
-    borderRadius: "10px",
-    color: "white",
-    "&:hover": {
-      color: "#000",
-      opacity: 1,
-    },
-    "&$tabSelected": {
-      color: "white",
-      backgroundColor: "rgba(0, 0, 0, 0.6)",
-
-      fontWeight: "bold",
-    },
-  },
-  tabsRoot: {
-    minWidth: "50%",
-    borderBottom: "1px solid #e8e8e8",
-  },
-  tabsIndicator: {
-    backgroundColor: "#1890ff",
-  },
-  tab: {
-    width: "100%",
-  },
-  tabSelected: {},
-});
 
 export default function OurTeam() {
   const [coreTeam, setCoreTeam] = useState(null);
@@ -57,7 +18,6 @@ export default function OurTeam() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         const newData = data.sort(function (a, b) {
           return a.id - b.id;
         });
@@ -104,33 +64,6 @@ export default function OurTeam() {
     }
   }, [coreTeam, developers]);
 
-  // useEffect(() => {
-  //   fetch("https://srijan.herokuapp.com/organisingteammembers/", {
-  //     mode: "cors",
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       const newData = data.sort(function (a, b) {
-  //         return a.id - b.id;
-  //       });
-  //       setCoreTeam(newData);
-
-  //       console.log(newData);
-  //     })
-  //     .catch(() => {
-  //       alert("You are offline!!!");
-  //     });
-  // }, []);
-  // useEffect(() => {
-  //   fetch("https://srijan.herokuapp.com/developers/", { mode: "cors" })
-  //     .then((res) => res.json())
-  //     .then((data) => setDevelopers(data))
-  //     .catch(() => {
-  //       alert("You are offline!!!");
-  //     });
-  // }, []);
-
   if (loading) return <Loading />;
 
   return (
@@ -147,44 +80,6 @@ export default function OurTeam() {
         />
       </Helmet>
       <Header />
-
-      {/* <div className={classes.mobileTab}>
-        <AppBar
-          style={{
-            backgroundColor: "#1b2d50",
-            overflow: "hidden",
-            zIndex: 10
-          }}
-          position="fixed"
-        >
-          <Tab>
-            <Header />
-          </Tab>
-          <Tabs
-            value={active}
-            indicatorColor="#666666"
-            textColor="secondary"
-            className={classes.tab}
-          >
-            <Tab
-              label="Core Team"
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              component={Link}
-              to="core-team"
-            />
-            <Tab
-              label="Developers"
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              component={Link}
-              to="developers"
-            />
-          </Tabs>
-        </AppBar>
-        <br />
-        {active === true && <CardList members={coreTeam} />}
-        {active === false && <CardList members={developers} />}
-        <br />
-      </div> */}
 
       <br />
       <br />

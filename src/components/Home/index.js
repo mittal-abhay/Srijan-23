@@ -2,20 +2,12 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Header from "../Header";
-import Parallax from "../parallax";
-import Parallax2 from "../parallax2";
-import ParallaxM from "../parallaxM";
-import { HomeContent } from "../../data/Content";
 import Homeabout from "../HomeAbout/Homeabout.jsx";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
-import PastPerformersCard from "../pastPerformers/PastPerformersCard";
-import img1 from "../../assets/aboutImg.jfif";
-
 import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 import Loading from "../Loading/Loading";
-
 let max_offset, initial_offset;
 
 const styles = (theme) => ({
@@ -95,7 +87,6 @@ class Home extends Component {
     }, 3000);
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    // console.log(window.innerWidth);
 
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "18vh";
@@ -163,8 +154,7 @@ class Home extends Component {
   }
 
   render() {
-    const { classes } = this.props;
-    const { offset, x, loading } = this.state;
+    const { loading } = this.state;
     if (typeof loading == "undefined" || loading == null || loading == false)
       return (
         <div>

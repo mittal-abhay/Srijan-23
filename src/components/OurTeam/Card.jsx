@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { BsTelephoneFill } from "react-icons/bs";

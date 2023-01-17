@@ -18,16 +18,6 @@
     width: 49.33%;
   }
 }
-/* @media (min-width: 55rem) {
-  .cards {
-    width: 49.33%;
-  }
-} */
-/* @media (min-width: 60rem) {
-  .cards {
-    width: 49.33%;
-  }
-} */
 
 @media (min-width: 62rem) {
   .cards {
@@ -43,10 +33,8 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* color: rgba(0, 0, 0, 0.725); */
   width: 100%;
   border-radius: 6px;
-  /* box-shadow: 0 0px 40px -14px rgba(0, 0, 0, 0.25); */
   overflow: hidden;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
@@ -74,20 +62,18 @@
   margin-bottom: 0.2em;
 }
 .cards .card-image {
-
   max-height: 300px;
   max-width: 620px;
   overflow: hidden;
   background-size: cover;
-  /* background-position: center; */
   background-repeat: no-repeat;
   border-radius: 6px 6px 0px 0px;
   opacity: 0.91;
 }
 @media (min-width: 60rem) {
   .cards .card-image {
-  max-height: 200px;
-  max-width: 300px;
+    max-height: 200px;
+    max-width: 300px;
   }
 }
 
@@ -95,8 +81,6 @@
   margin: auto;
   line-height: 1.5em;
 }
-.club-text{
-font-weight: 800;
+.club-text {
+  font-weight: 800;
 }
-
-

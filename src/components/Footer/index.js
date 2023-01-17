@@ -7,7 +7,6 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import {
   Typography,
@@ -96,7 +95,7 @@ const Styles = (theme) => ({
   gap: {
     marginBlock: "0.5em",
   },
-  
+
   abcd: {
     [theme.breakpoints.down("xs")]: {
       display: "none",

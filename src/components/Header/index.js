@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-
 import iit from "../../assets/Logo_Final.png";
 
 class Header extends Component {
@@ -16,11 +15,9 @@ class Header extends Component {
     this.setState({ isMenuOpen: !isMenuOpen });
     if (!isMenuOpen) {
       document.body.style.overflow = "hidden";
-      // document.body.style.position = "fixed";
       document.body.style.touchAction = "none";
     } else {
       document.body.style.overflowY = "scroll";
-      // document.body.style.position = "relative";
       document.body.style.touchAction = "auto";
     }
   }
@@ -115,33 +112,6 @@ class Header extends Component {
                   SPONSORS
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/department-events"
-                  onClick={this.toggleMenu}
-                >
-                  DEPARTMENTAL EVENTS
-                </NavLink>
-              </li> */}
-              {/* <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/login"
-                  onClick={this.toggleMenu}
-                >
-                  LOGIN
-                </NavLink>
-              </li> */}
-              {/* <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/coming-soon"
-                  onClick={this.toggleMenu}
-                >
-                  CAP
-                </NavLink>
-              </li> */}
               <li>
                 <NavLink
                   className="nav-link header-link "
@@ -160,15 +130,6 @@ class Header extends Component {
                   SOCIAL LINKS
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/guest-talks"
-                  onClick={this.toggleMenu}
-                >
-                  GUEST TALKS
-                </NavLink>
-              </li> */}
               <li>
                 <a
                   className="nav-link header-link "

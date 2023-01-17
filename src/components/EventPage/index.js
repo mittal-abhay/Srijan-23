@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
-import DepartmentEvent from "./DepartmentEvent";
-import { Link } from "react-router-dom";
-import ClubEvent from "./ClubEvent";
-import Mobileview from "./Mobileview";
 import Header from "../Header";
-import { NavLink } from "react-router-dom";
-import iit from "../../assets/Srijan'23_Logo_White.png";
 import EventPageNew from "../EventsNew/EventPageNew";
 import { encryptData, decryptData } from "../../Encryption/encrypt";
 import Loading from "../Loading/Loading";
@@ -21,28 +15,15 @@ const styles = (theme) => ({
       flexDirection: "column",
     },
   },
-  // verticalTab: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   width: "20vw !important",
-  //   backgroundColor: "rgba(97, 97, 97, 0.1)",
-  //   position: "fixed",
-  //   height: "100vh",
-  //   [theme.breakpoints.down("sm")]: {
-  //     display: "none",
-  //   },
-  // },
   eventsCard: {
     margin: "auto 0",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
-      // display: "none",
     },
   },
 });
 
 function EventPage(props) {
-  const [classes, setClasses] = useState(props.classes);
   const [events, setEvents] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -69,8 +50,6 @@ function EventPage(props) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        console.log(data.results);
         setEvents(data.results);
       })
       .catch((e) => {

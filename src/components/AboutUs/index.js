@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Header from "../Header";
 import "./styles.css";
 import { Helmet } from "react-helmet";
-import CSREventDisplay from "./CSREventDisplay";
-import { Card, CardImg, CardBody, CardHeader, Button } from "reactstrap";
 import Gauri from "../../assets/prof_gauri_shankar.png";
 class AboutUs extends Component {
   componentDidMount() {

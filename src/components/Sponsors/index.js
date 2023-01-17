@@ -4,11 +4,6 @@ import styled from "styled-components";
 import Header from "../Header";
 import { Helmet } from "react-helmet";
 import "./styles.css";
-import { pepsi } from "../../assets/Pepsi.png";
-import { redbull } from "../../assets/RedBull.webp";
-import { reliance } from "../../assets/Reliance.webp";
-import { vanhuesen } from "../../assets/VanHuesen.png";
-import { ongc } from "../../assets/Ongc.png";
 import { API_BASE_URL } from "../../data/Constants";
 
 const SponsorsContainer = styled(Container)`
@@ -253,28 +248,6 @@ export default function Sponsors() {
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
-        {/* <Subtitle>Grateful to our past sponsors</Subtitle>
-        <SponsorsContainer>
-          <div className="sponsors-list">
-            <div className="past-sponsors-container">
-              <div>
-                <img src={pepsi} alt="" />
-              </div>
-              <div>
-                <img src={ongc} alt="" />
-              </div>
-              <div>
-                <img src={redbull} alt="" />
-              </div>
-              <div>
-                <img src={vanhuesen} alt="" />
-              </div>
-              <div>
-                <img src={reliance} alt="" />
-              </div>
-            </div>
-          </div>
-        </SponsorsContainer> */}
       </section>
     </>
   );

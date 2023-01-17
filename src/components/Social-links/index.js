@@ -14,7 +14,6 @@ const Wrapper = styled(Box)`
   .carousel-div {
     width: 100%;
     height: 100%;
-    // padding: 1em 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +73,11 @@ function SocialLink() {
       >
         OUR&nbsp;&nbsp;SOCIAL&nbsp;&nbsp;LINKS
       </h1>
-      <Grid container style={{ marginTop: "2.5em", paddingInline:"1em"}} spacing={2}>
+      <Grid
+        container
+        style={{ marginTop: "2.5em", paddingInline: "1em" }}
+        spacing={2}
+      >
         <Grid item xs={12} md={8}>
           <div className="title2" style={{ fontSize: "0.5em" }}>
             YOUTUBE
