@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.6b802202.chunk.css",
-    "main.js": "/static/js/main.b3feca22.chunk.js",
-    "main.js.map": "/static/js/main.b3feca22.chunk.js.map",
+    "main.js": "/static/js/main.b04faeb7.chunk.js",
+    "main.js.map": "/static/js/main.b04faeb7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ae9fc14.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ae9fc14.js.map",
     "static/css/2.04566360.chunk.css": "/static/css/2.04566360.chunk.css",
     "static/js/2.5b51d0f5.chunk.js": "/static/js/2.5b51d0f5.chunk.js",
     "static/js/2.5b51d0f5.chunk.js.map": "/static/js/2.5b51d0f5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.21d96484d80805f88c425e13b1bf554b.js": "/precache-manifest.21d96484d80805f88c425e13b1bf554b.js",
+    "precache-manifest.127eebe6ad843470d98877ad8c62d5a4.js": "/precache-manifest.127eebe6ad843470d98877ad8c62d5a4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.04566360.chunk.css.map": "/static/css/2.04566360.chunk.css.map",
     "static/css/main.6b802202.chunk.css.map": "/static/css/main.6b802202.chunk.css.map",
-    "static/media/Gallery1.jpg": "/static/media/Gallery1.afc2ef34.jpg",
-    "static/media/Logo_Final.png": "/static/media/Logo_Final.9d59bba0.png",
-    "static/media/aboutImg.jfif": "/static/media/aboutImg.f227e6fa.jfif",
+    "static/media/Gallery1.webp": "/static/media/Gallery1.4fb8780f.webp",
+    "static/media/Logo_Final.webp": "/static/media/Logo_Final.275d926d.webp",
+    "static/media/aboutImg.webp": "/static/media/aboutImg.618cbeb4.webp",
     "static/media/App.css": "/static/media/cursor.beff8f71.svg",
-    "static/media/darshan.png": "/static/media/darshan.d27e53a9.png",
+    "static/media/darshan.webp": "/static/media/darshan.7bdc54e6.webp",
     "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/jubin.png": "/static/media/jubin.7256f2b7.png",
-    "static/media/nb.png": "/static/media/nb.ffa1d9af.png",
-    "static/media/prof_gauri_shankar.png": "/static/media/prof_gauri_shankar.67eb11f9.png"
+    "static/media/jubin.webp": "/static/media/jubin.afe1cc01.webp",
+    "static/media/nb.webp": "/static/media/nb.1ed76923.webp",
+    "static/media/prof_gauri_shankar.webp": "/static/media/prof_gauri_shankar.f96af299.webp"
   }
 }

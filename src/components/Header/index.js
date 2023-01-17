@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import iit from "../../assets/Logo_Final.png";
+import iit from "../../assets/Logo_Final.webp";
 
 class Header extends Component {
   constructor(props) {
@@ -133,7 +133,8 @@ class Header extends Component {
               <li>
                 <a
                   className="nav-link header-link "
-                  href="#"
+                  href="https://forms.gle/e3ap3fcMpM8R347z7"
+                  target="_blank"
                   onClick={this.toggleMenu}
                 >
                   REGISTER

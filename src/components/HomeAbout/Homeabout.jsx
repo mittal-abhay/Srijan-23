@@ -1,7 +1,7 @@
 import React from "react";
 import "./Homeabout.css";
-import img1 from "../../assets/aboutImg.jfif";
-import img2 from "../../assets/Gallery1.jpg";
+import img1 from "../../assets/aboutImg.webp";
+import img2 from "../../assets/Gallery1.webp";
 import { Link } from "react-router-dom";
 export default function Homeabout() {
   return (

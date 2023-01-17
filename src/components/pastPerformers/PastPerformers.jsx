@@ -1,9 +1,9 @@
 import React from "react";
 import "./pastPerformers.css";
 import PastPerformersCard from "./PastPerformersCard";
-import darshan from "./../../assets/pastPerformers/darshan.png";
-import jubin from "./../../assets/pastPerformers/jubin.png";
-import nb from "./../../assets/pastPerformers/nb.png";
+import darshan from "./../../assets/pastPerformers/darshan.webp";
+import jubin from "./../../assets/pastPerformers/jubin.webp";
+import nb from "./../../assets/pastPerformers/nb.webp";
 
 export default function PastPerformers() {
   return (

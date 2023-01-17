@@ -16,7 +16,7 @@ import {
   Link,
   Divider,
 } from "@material-ui/core";
-import iit from "../../assets/Logo_Final.png";
+import iit from "../../assets/Logo_Final.webp";
 import "./styles.css";
 
 const socialNetworks = [
@@ -168,9 +168,9 @@ function Footer({ classes }) {
               </NavLink>
             </div>
             <div className="footer-nav">
-              <NavLink to="/register" exact strict>
+              <a href="https://forms.gle/e3ap3fcMpM8R347z7" target="_blank">
                 register here
-              </NavLink>
+              </a>
             </div>
           </Grid>
         </Grid>

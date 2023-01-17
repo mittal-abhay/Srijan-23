@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header";
 import "./styles.css";
 import { Helmet } from "react-helmet";
-import Gauri from "../../assets/prof_gauri_shankar.png";
+import Gauri from "../../assets/prof_gauri_shankar.webp";
 class AboutUs extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
