@@ -53,6 +53,7 @@ const Subtitle = styled.h3`
   font-size: 36px;
   font-family: "Moneterrat", sans-serif;
 `;
+
 const StyledImg = styled.img`
   height: 120px !important;
 `;
@@ -73,7 +74,10 @@ export default function Sponsors() {
       method: "get",
     })
       .then((res) => res.json())
-      .then((data) => setData(data))
+      .then((data) => {
+        setData(data);
+        console.log(`sponsor data ${data[0].name}`)
+      })
       .catch(() => {
         alert("You are offline!!!");
       });

@@ -129,7 +129,7 @@ export default function Card(props) {
             <FaLinkedin />
           </IconContext.Provider>
         </CardSocialLink>
-        <CardSocialLink href={"tel:" + member.contact}>
+        <CardSocialLink href={"tel:" + member.contact} target='_blank'>
           <IconContext.Provider value={{ color: "goldenrod", size: 18 }}>
             <BsTelephoneFill />
           </IconContext.Provider>

@@ -175,7 +175,7 @@ class Home extends Component {
           <Header />
           <div className="patterns">
             <svg width="100%">
-              <text x="50%" y="45%" textAnchor="middle">
+              <text x="50%" y="30%" textAnchor="middle">
                 SRIJAN'23
               </text>
             </svg>
