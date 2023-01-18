@@ -106,6 +106,7 @@ text {
   stroke-width: 3;
   animation: textAnimate 3s infinite alternate;
   transform: translateY(50%);
+  /* margin-bottom: 10px; */
 }
 @keyframes textAnimate {
   0% {
@@ -117,6 +118,9 @@ text {
     stroke-dasharray: 50% 0;
     stroke-dashoffstet: -20%;
   }
+}
+.glow{
+  margin-top: 25px;
 }
 .glow h2 {
   left: 50%;

@@ -65,13 +65,14 @@ const CardDesignation = styled.h2`
   margin: 0;
   margin-top: 4px;
   font-size: 12px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   font-weight: 800;
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 `;
 const StyledSVG = styled.svg`
   fill: white;
