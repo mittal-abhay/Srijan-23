@@ -167,7 +167,7 @@ class Home extends Component {
             />
             <meta
               name="keywords"
-              content="srijan,srijan 22,srijan 2022,srijan 2k22,srijan iit,srijan iit (ism) dhanbad,srijan iit ism,srijan techfest,srijan tecnical fest, srijan 2022-2020, srijan tech fest 22,srijan tech fest 2022,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
+              content="iit ism dhanbad socio-cultural fest, iit dhanbad socio-cultural fest,srijan,srijan 23,srijan 2023,srijan 2k23,srijan IIT,srijan IIT (ISM) DHANBAD,srijan IIT ISM, srijan core-team, srijan developers, srijan socio-cultural fest, srijan 2022-2023, srijan socio-cultural fest 23,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,socio-cultural fest"
             />
             <meta property="og:url" content="https://www.srijan.in/" />
           </Helmet>
