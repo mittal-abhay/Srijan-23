@@ -76,7 +76,7 @@ export default function Sponsors() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        console.log(`sponsor data ${data[0].name}`)
+        console.log(data[0].logo)
       })
       .catch(() => {
         alert("You are offline!!!");
@@ -85,6 +85,7 @@ export default function Sponsors() {
 
   return (
     <>
+   
       <Helmet>
         <title>Srijan | Sponsors</title>
         <meta
@@ -97,16 +98,18 @@ export default function Sponsors() {
         />
       </Helmet>
       <Header />
+      
       <section
         className="sponsors"
         style={{ minHeight: { windowHeight } + "px" }}
       >
+ 
         <Title>Sponsors</Title>
         <Subtitle>Title Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Major Sponsors") {
+              if (sponsor.sponsor_type == "title") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -114,14 +117,14 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            {/* <span style={{ color: "white" }}> Coming Soon...</span> */}
           </div>
         </SponsorsContainer>
         <Subtitle>Decoration Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Skill Development Partner") {
+              if (sponsor.sponsor_type == "Decoration") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -136,7 +139,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Event Sponsor") {
+              if (sponsor.sponsor_type == "Associate") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -151,7 +154,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Food Partner") {
+              if (sponsor.sponsor_type == "strategic") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -166,7 +169,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Education Sponsor") {
+              if (sponsor.sponsor_type == "prize") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -181,7 +184,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Hospitality Partner") {
+              if (sponsor.sponsor_type == "logistics") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -195,16 +198,18 @@ export default function Sponsors() {
         <Subtitle>Style Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
+   
             {data.map((sponsor) => {
-              if (sponsor.category == "Technology Service Partner") {
+
+              if (sponsor.sponsor_type == "style") {
                 return (
                   <a href={sponsor.url} target="_blank">
-                    <StyledImg src={sponsor.logo} />
+                    <StyledImg src={sponsor.logo} />hi
                   </a>
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}> Times of India</span>
           </div>
         </SponsorsContainer>
         <Subtitle>Health Sponsor</Subtitle>
