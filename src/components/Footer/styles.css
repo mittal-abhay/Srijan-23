@@ -1,0 +1,76 @@
+.hexagon {
+  /* background-image: url("../../assets/bg-black.webp"); */
+  width: 100px;
+  height: 60px;
+  background: #5f6062;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #5f6062;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #5f6062;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hexagon:hover {
+  background: #ec008c;
+}
+
+.hexagon:hover:after {
+  border-top: 25px solid #ec008c;
+}
+.hexagon:hover:before {
+  border-bottom: 25px solid #ec008c;
+}
+
+/* .footer-nav > a, */
+.footer-nav {
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}

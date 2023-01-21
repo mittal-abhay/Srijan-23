@@ -1,0 +1,39 @@
+.animatedBg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bubbles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bubbles span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin: 0 4px;
+  box-shadow: 0 0 50px 10px goldenrod;
+  animation: animate 15s linear infinite;
+}
+.bubbles span:nth-child(even) {
+  background: gold;
+  box-shadow: 0 0 50px 8px goldenrod;
+
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.9);
+  }
+}

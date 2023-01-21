@@ -1,0 +1,108 @@
+.past-performers-card-wrapper {
+  width: 1280px;
+  max-width: 95%;
+  margin: 2% auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.past-performers-card-image-container {
+  width: 50%;
+}
+
+.past-performers-card-image-container img {
+  width: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+.past-performers-caption-text {
+  width: 45%;
+  padding: 0 10px;
+}
+
+.past-performers-caption-text h2 {
+  /* color: #ffcc74; */
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.past-performers-caption-text h5 {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.past-performers-caption-text p::before {
+  content: "“";
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.past-performers-caption-text p::after {
+  content: "”";
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.past-performers-caption-text p {
+  color: #c0c4d6;
+  font-size: 1.2rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+  .past-performers-caption-text h2 {
+    font-size: 3rem;
+  }
+  .past-performers-caption-text h5 {
+    font-size: 1.7rem;
+  }
+  .past-performers-caption-text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .past-performers-card-image-container {
+    width: 100%;
+    height: auto;
+  }
+  .past-performers-caption-text {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .past-performers-caption-text h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  .past-performers-caption-text h5 {
+    font-size: 1.5rem;
+  }
+  .past-performers-caption-text p {
+    font-size: 0.9rem;
+  }
+}

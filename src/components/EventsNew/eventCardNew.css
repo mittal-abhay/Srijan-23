@@ -1,0 +1,112 @@
+.event-card-new {
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(218, 165, 32, 0.37);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+}
+
+.event-card-new-image-container {
+  position: relative;
+  height: 40%;
+}
+
+.event-card-new-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+.event-card-new-details {
+  padding: 20px 10px;
+}
+
+.event-card-new-details h3 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 10px 0 15px 0;
+  /* color: goldenrod; */
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+}
+
+.event-card-new-details p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.782);
+}
+
+.event-card-new-details-chip {
+  font-size: 12px;
+  background-color: rgba(218, 165, 32, 0.899);
+  color: black;
+  font-weight: 600;
+  display: inline;
+  padding: 3px 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+}
+
+.hide-backspacer {
+  display: block;
+  width: 100%;
+  color: transparent;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  padding: 10px;
+  bottom: 0;
+  position: relative;
+  margin-top: 10px;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(218, 165, 32, 0.961);
+  border: none;
+  border-radius: 0 0 18px 18px;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.event-card-new:hover .hide {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 920px) {
+  .event-card-new .hide {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: goldenrod;
+    padding-bottom: 20px;
+  }
+}
+
+.event-card-new:hover {
+  outline: 2px solid rgba(218, 165, 32, 0.902);
+}

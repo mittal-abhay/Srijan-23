@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+.demo a {
+  top: 60px;
+  left: 50%;
+  z-index: 205;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.demo a:hover {
+  opacity: 0.5;
+}
+#scroll_down a {
+  padding-top: 80px;
+}
+#scroll_down a span {
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.475);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.475);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#scroll_down a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#scroll_down a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+#scroll_down a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .col-12 {
+    font-size: 1.4rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .col-12 {
+    font-size: 1.1rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+.patterns {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+text {
+  font-family: Lora, serif;
+  letter-spacing: 10px;
+  stroke: #ffbc00;
+  font-size: 175px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 3s infinite alternate;
+  transform: translateY(50%);
+  /* margin-bottom: 10px; */
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+  }
+}
+.glow{
+  margin-top: 25px;
+}
+.glow h2 {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-family: "Alex Brush", cursive;
+  position: relative;
+  margin: auto !important;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #fab507 0 0 30px #daa520, 0 0 40px #cc9303;
+  }
+  to {
+    text-shadow: 0 0 30px #fab507, 0 0 40px #daa520, 0 0 50px #cc9303;
+  }
+}
+
+@media screen and (max-width: 1544px) {
+  text {
+    font-size: 175px;
+  }
+}
+
+@media screen and (max-width: 1214px) {
+  text {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  text {
+    font-size: 175px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  text {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  text {
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  text {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  text {
+    font-size: 75px;
+    stroke-width: 2;
+  }
+  .glow h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  text {
+    font-size: 60px;
+    stroke-width: 1;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  text {
+    font-size: 50px;
+    stroke-width: 1;
+  }
+}
+@media screen and (max-width: 414px) {
+  text {
+    font-size: 50px;
+    stroke-width: 1;
+  }
+  .glow h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  text {
+    font-size: 50px;
+    stroke-width: 1;
+  }
+}
+@media screen and (max-width: 390px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
+  }
+}
+@media screen and (max-width: 389px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
+  }
+}
+@media screen and (max-width: 375px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
+  }
+}
+@media screen and (max-width: 360px) {
+  text {
+    font-size: 50px;
+    stroke-width: 0.8;
+  }
+}
+
+.btn-cont {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-left: 0 auto;
+}
+.btn-cont .btn {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  border: 1px solid goldenrod;
+  color: goldenrod;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+}
+.btn-cont .btn:hover {
+  color: goldenrod;
+  border: none;
+}
+.btn-cont .btn:hover .line-1 {
+  -webkit-animation: move1 1500ms 1 ease;
+  animation: move1 1500ms ease infinite;
+}
+.btn-cont .btn:hover .line-2 {
+  -webkit-animation: move2 1500ms 1 ease;
+  animation: move2 1500ms ease infinite;
+}
+.btn-cont .btn:hover .line-3 {
+  -webkit-animation: move3 1500ms 1 ease;
+  animation: move3 1500ms ease infinite;
+}
+.btn-cont .btn:hover .line-4 {
+  -webkit-animation: move4 1500ms 1 ease;
+  animation: move4 1500ms ease infinite;
+}
+.btn-cont .line-1 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  background-color: goldenrod;
+  left: 0;
+  bottom: 0;
+}
+.btn-cont .line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: goldenrod;
+  left: 0;
+  top: 0;
+}
+.btn-cont .line-3 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  background-color: goldenrod;
+  right: 0;
+  top: 0;
+}
+.btn-cont .line-4 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: goldenrod;
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@-webkit-keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@-webkit-keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+@keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .btn-cont .btn {
+    font-size: 20px;
+  }
+}

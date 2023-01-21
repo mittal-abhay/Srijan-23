@@ -1,0 +1,22 @@
+.title2 {
+  text-align: center;
+  margin-top: 27px !important;
+  letter-spacing: -2px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    94.75deg,
+    #d19a08,
+    #fedb7e 27.6%,
+    #eac460 50%,
+    #d19a08 66.15%,
+    #d19a08
+  );
+  -webkit-background-clip: text;
+  font-size: 35px !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.CarouselItem{
+  width: 90%;
+  height: 100%;
+}
