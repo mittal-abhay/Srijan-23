@@ -133,6 +133,16 @@ class Header extends Component {
               <li>
                 <a
                   className="nav-link header-link "
+                  href="https://forms.gle/VCYYoFFHbEGz6paKA"
+                  target="_blank"
+                  onClick={this.toggleMenu}
+                >
+                  MERCHANDISE
+                </a>
+              </li>
+              <li>
+                <a
+                  className="nav-link header-link "
                   href="https://forms.gle/e3ap3fcMpM8R347z7"
                   target="_blank"
                   onClick={this.toggleMenu}

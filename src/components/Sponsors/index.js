@@ -76,7 +76,7 @@ export default function Sponsors() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        console.log(data[0].logo)
+        console.log(data[0].logo);
       })
       .catch(() => {
         alert("You are offline!!!");
@@ -85,7 +85,6 @@ export default function Sponsors() {
 
   return (
     <>
-   
       <Helmet>
         <title>Srijan | Sponsors</title>
         <meta
@@ -98,12 +97,11 @@ export default function Sponsors() {
         />
       </Helmet>
       <Header />
-      
+
       <section
         className="sponsors"
         style={{ minHeight: { windowHeight } + "px" }}
       >
- 
         <Title>Sponsors</Title>
         <Subtitle>Title Sponsor</Subtitle>
         <SponsorsContainer>
@@ -117,7 +115,7 @@ export default function Sponsors() {
                 );
               }
             })}
-            {/* <span style={{ color: "white" }}> Coming Soon...</span> */}
+            <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
         </SponsorsContainer>
         <Subtitle>Decoration Sponsor</Subtitle>
@@ -198,18 +196,17 @@ export default function Sponsors() {
         <Subtitle>Style Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
-   
             {data.map((sponsor) => {
-
               if (sponsor.sponsor_type == "style") {
                 return (
                   <a href={sponsor.url} target="_blank">
-                    <StyledImg src={sponsor.logo} />hi
+                    <StyledImg src={sponsor.logo} />
+                    hi
                   </a>
                 );
               }
             })}
-            <span style={{ color: "white" }}> Times of India</span>
+            <span style={{ color: "white" }}>Coming Soon...</span>
           </div>
         </SponsorsContainer>
         <Subtitle>Health Sponsor</Subtitle>
