@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import PastPerformers from "../pastPerformers/PastPerformers";
 import AnimatedBg from "../Animated_Bg/Animated_Bg.jsx";
 import Loading from "../Loading/Loading";
+import Counter from "../counter/Counter";
 let max_offset, initial_offset;
 
 const styles = (theme) => ({
@@ -210,7 +211,7 @@ class Home extends Component {
             PAST&nbsp;&nbsp;PERFORMERS
           </h1>
           <PastPerformers />
-
+          <Counter />
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"

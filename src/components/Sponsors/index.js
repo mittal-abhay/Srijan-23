@@ -6,6 +6,28 @@ import { Helmet } from "react-helmet";
 import "./styles.css";
 import { API_BASE_URL } from "../../data/Constants";
 
+import domino from "../../assets/pastSponsors/domino.png";
+import jhtours from "../../assets/pastSponsors/jhtours.png";
+import oilindia from "../../assets/pastSponsors/oilindia.jpg";
+import ongc from "../../assets/pastSponsors/ongc.png";
+import pepsi from "../../assets/pastSponsors/pepsi.png";
+import reliance from "../../assets/pastSponsors/reliance.png";
+import sbi from "../../assets/pastSponsors/sbi.png";
+import tata from "../../assets/pastSponsors/tata.jpg";
+import vh1 from "../../assets/pastSponsors/vh1.jpeg";
+import vodafone from "../../assets/pastSponsors/vodafone.png";
+import cairn from "../../assets/pastSponsors/cairn.png";
+import indianoil from "../../assets/pastSponsors/indianoil.jpeg";
+import jetairways from "../../assets/pastSponsors/jetairways.png";
+import pnb from "../../assets/pastSponsors/pnb.png";
+import pantaloons from "../../assets/pastSponsors/pantaloons.png";
+import vanhuesen from "../../assets/pastSponsors/vanhuesen.png";
+import redbull from "../../assets/pastSponsors/redbull.png";
+import shell from "../../assets/pastSponsors/shell.png";
+import planetfashion from "../../assets/pastSponsors/planetfashion.png";
+import hcl from "../../assets/pastSponsors/hcl.png";
+import canara from "../../assets/pastSponsors/canara.png";
+
 const SponsorsContainer = styled(Container)`
   position: relative;
   background: rgba(0, 0, 0, 0.25) !important;
@@ -62,11 +84,21 @@ export default function Sponsors() {
   const [windowHeight, setWindowHeight] = useState(null);
   const [data, setData] = useState([]);
 
+  // useEffect(() => {
+  //   const updateDimensions = () => {
+  //     setWindowHeight(window.innerHeight);
+  //   };
+  //   window.addEventListener("resize", updateDimensions);
+  // });
+
   useEffect(() => {
     const updateDimensions = () => {
       setWindowHeight(window.innerHeight);
     };
     window.addEventListener("resize", updateDimensions);
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
+    };
   });
 
   useEffect(() => {
@@ -252,6 +284,97 @@ export default function Sponsors() {
               }
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+
+        <Title style={{ marginTop: "3em", marginBottom: "1em" }}>
+          Our Past Sponsors
+        </Title>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={hcl} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={planetfashion} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={redbull} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={canara} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={shell} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={vanhuesen} />
+            </a>
+          </div>
+        </SponsorsContainer>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={domino} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={vh1} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={oilindia} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={ongc} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={pnb} />
+            </a>
+          </div>
+        </SponsorsContainer>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={cairn} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={jetairways} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={pantaloons} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={indianoil} />
+            </a>
+          </div>
+        </SponsorsContainer>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={pepsi} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={reliance} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={sbi} />
+            </a>
+          </div>
+        </SponsorsContainer>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={tata} />
+            </a>
+            <a href="#" target="_blank">
+              <StyledImg src={jhtours} />
+            </a>
+          </div>
+        </SponsorsContainer>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            <a href="#" target="_blank">
+              <StyledImg src={vodafone} />
+            </a>
           </div>
         </SponsorsContainer>
       </section>
