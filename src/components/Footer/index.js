@@ -45,7 +45,7 @@ const StyledLink = styled(Link)(({ iconcolor }) => ({
     color: `${iconcolor} !important`,
   },
   transition: "300ms ease-in",
-  color: "goldenrod",
+  color: "goldenrod !important",
 }));
 
 const Styles = (theme) => ({
