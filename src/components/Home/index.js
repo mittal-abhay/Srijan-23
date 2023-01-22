@@ -187,7 +187,7 @@ class Home extends Component {
           <div className="btn-cont">
             <a
               className="btn"
-              href="https://forms.gle/e3ap3fcMpM8R347z7"
+              href="https://forms.gle/46dqT7bEVZBj5R596"
               target="_blank"
             >
               REGISTER HERE
