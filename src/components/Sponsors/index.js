@@ -77,7 +77,7 @@ const Subtitle = styled.h3`
 `;
 
 const StyledImg = styled.img`
-  height: 120px !important;
+  height: 180px !important;
 `;
 
 export default function Sponsors() {
@@ -148,6 +148,66 @@ export default function Sponsors() {
               }
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Gold Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.sponsor_type == "Gold") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Silver Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.sponsor_type == "Silver") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Bronze Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.sponsor_type == "Bronze") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}> Coming Soon...</span>
+          </div>
+        </SponsorsContainer>
+        <Subtitle> Grooming Partner</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map((sponsor) => {
+              if (sponsor.sponsor_type == "Grooming Partner") {
+                return (
+                  <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+                );
+              }
+            })}
+            <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
         <Subtitle>Decoration Sponsor</Subtitle>
