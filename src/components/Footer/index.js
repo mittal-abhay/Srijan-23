@@ -45,7 +45,7 @@ const StyledLink = styled(Link)(({ iconcolor }) => ({
     color: `${iconcolor} !important`,
   },
   transition: "300ms ease-in",
-  color: "goldenrod",
+  color: "goldenrod !important",
 }));
 
 const Styles = (theme) => ({
@@ -168,8 +168,8 @@ function Footer({ classes }) {
               </NavLink>
             </div>
             <div className="footer-nav">
-              <a href="https://forms.gle/e3ap3fcMpM8R347z7" target="_blank">
-                register here
+              <a href="https://forms.gle/46dqT7bEVZBj5R596" target="_blank">
+                Register here
               </a>
             </div>
           </Grid>

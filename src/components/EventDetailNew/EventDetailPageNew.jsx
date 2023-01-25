@@ -44,17 +44,22 @@ export default function EventDetailPageNew(props) {
             <div className="event-detail-extra-info">
               <h5>Important dates</h5>
               <p>
-                <b>Start : </b>
+                <b>Registration Start : </b>
                 {convertDateToReadable(props.event.start_timestamp)}
               </p>
               <p>
-                <b>End : </b>
+                <b> Registration End : </b>
                 {convertDateToReadable(props.event.end_timestamp)}
               </p>
               <p>
-                <b>Registration : </b>
+                <b>Event date : </b>
                 {convertDateToReadable(props.event.register_timestamp)}
               </p>
+              <p>
+                <b>Venue : </b>
+                {props.event.venue}
+              </p>
+              
             </div>
             <div className="event-detail-buttons">
               <button>
