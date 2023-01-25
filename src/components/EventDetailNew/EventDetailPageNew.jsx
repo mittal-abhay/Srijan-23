@@ -2,18 +2,18 @@ import React from "react";
 import "./eventDetailPageNew.css";
 
 function month(m) {
-  if (m === 1) return "Jan";
-  if (m === 2) return "Feb";
-  if (m === 3) return "Mar";
-  if (m === 4) return "Apr";
-  if (m === 5) return "May";
-  if (m === 6) return "June";
-  if (m === 7) return "July";
-  if (m === 8) return "Aug";
-  if (m === 9) return "Sep";
-  if (m === 10) return "Oct";
-  if (m === 11) return "Nov";
-  if (m === 12) return "Dec";
+  if (m === 0) return "Jan";
+  if (m === 1) return "Feb";
+  if (m === 2) return "Mar";
+  if (m === 3) return "Apr";
+  if (m === 4) return "May";
+  if (m === 5) return "June";
+  if (m === 6) return "July";
+  if (m === 7) return "Aug";
+  if (m === 8) return "Sep";
+  if (m === 9) return "Oct";
+  if (m === 10) return "Nov";
+  if (m === 11) return "Dec";
 }
 
 function convertDateToReadable(timestamp) {
