@@ -91,6 +91,25 @@ function EventPage(props) {
             >
               EVENTS
             </h1>
+            <div
+              style={{
+                color: "#333",
+                margin: "auto",
+                textAlign: "center",
+                background:
+                  "linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08)",
+                padding: "0.75em 2em",
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
+              <span style={{ color: "red" }}>Attention : </span> Those who are not
+              from IIT(ISM), they need to fill the registration form before
+              filling out the participation form of any event.&nbsp;
+              <a href="https://forms.gle/46dqT7bEVZBj5R596" target="_blank">
+                Register Here.
+              </a>
+            </div>
             {events && <EventPageNew events={events} />}
           </>
         )}
