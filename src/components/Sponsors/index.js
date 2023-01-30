@@ -232,7 +232,7 @@ export default function Sponsors() {
               if (sponsor.sponsor_type == "Entertainment Partne") {
                 return (
                   <a href={sponsor.url} target="_blank">
-                    <StyledImg src={sponsor.logo} />
+                    <img src={sponsor.logo} style={{height:'120px'}}/>
                   </a>
                 );
               }
@@ -387,7 +387,7 @@ export default function Sponsors() {
               <StyledImg src={ongc} />
             </a>
             <a href="#" target="_blank">
-              <StyledImg src={pnb} />
+              <img src={pnb} style={{height:'110px'}}/>
             </a>
           </div>
         </SponsorsContainer>
@@ -433,7 +433,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             <a href="#" target="_blank">
-              <StyledImg src={vodafone} />
+              <img src={vodafone} style={{height:'120px'}}/>
             </a>
           </div>
         </SponsorsContainer>
