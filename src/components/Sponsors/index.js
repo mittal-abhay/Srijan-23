@@ -184,7 +184,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.sponsor_type == "Bronze") {
+              if (sponsor.sponsor_type == "Bronze sponsor") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -192,7 +192,7 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
         <Subtitle> Grooming Partner</Subtitle>
@@ -210,11 +210,11 @@ export default function Sponsors() {
             <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Decoration Sponsor</Subtitle>
+        <Subtitle>Talent Partner</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.sponsor_type == "Decoration") {
+              if (sponsor.sponsor_type == "Talent Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -222,14 +222,14 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}> </span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Associate Sponsor</Subtitle>
+        <Subtitle> Entertainment Partner</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.sponsor_type == "Associate") {
+              if (sponsor.sponsor_type == "Entertainment Partne") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -237,10 +237,10 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Strategic Sponsor</Subtitle>
+        {/* <Subtitle>Strategic Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -345,7 +345,7 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
-        </SponsorsContainer>
+        </SponsorsContainer> */}
 
         <Title style={{ marginTop: "3em", marginBottom: "1em" }}>
           Our Past Sponsors
