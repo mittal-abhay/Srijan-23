@@ -240,11 +240,11 @@ export default function Sponsors() {
             <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        {/* <Subtitle>Strategic Sponsor</Subtitle>
+        <Subtitle>Pronight Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.sponsor_type == "strategic") {
+              if (sponsor.sponsor_type == "Pronight Sponsor") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -252,25 +252,26 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Prize Sponsor</Subtitle>
+        <Subtitle>Festival Partner</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.sponsor_type == "prize") {
+              if (sponsor.sponsor_type == "Festival Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
+                    <div style={{color:"white"}}>Campus events</div>
                   </a>
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        <Subtitle>Logistics Sponsor</Subtitle>
+        {/* <Subtitle>Logistics Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -284,8 +285,8 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
-        </SponsorsContainer>
-        <Subtitle>Style Sponsor</Subtitle>
+        </SponsorsContainer> */}
+        {/* <Subtitle>Style Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -300,8 +301,8 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}>Coming Soon...</span>
           </div>
-        </SponsorsContainer>
-        <Subtitle>Health Sponsor</Subtitle>
+        </SponsorsContainer> */}
+        {/* <Subtitle>Health Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -315,8 +316,8 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
-        </SponsorsContainer>
-        <Subtitle>Beverage Sponsor</Subtitle>
+        </SponsorsContainer> */}
+        {/* <Subtitle>Beverage Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
@@ -330,8 +331,8 @@ export default function Sponsors() {
             })}
             <span style={{ color: "white" }}> Coming Soon...</span>
           </div>
-        </SponsorsContainer>
-        <Subtitle>Online Sponsor</Subtitle>
+        </SponsorsContainer> */}
+        {/* <Subtitle>Online Sponsor</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
