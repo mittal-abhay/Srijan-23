@@ -319,11 +319,11 @@ export default function Sponsors() {
             <span style={{ color: "white" }}></span>
           </div>
         </SponsorsContainer>
-        {/* <Subtitle>Beverage Sponsor</Subtitle>
+        <Subtitle>Food Partner</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Books Partner") {
+              if (sponsor.category == "Food Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -331,14 +331,14 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
-        </SponsorsContainer> */}
-        {/* <Subtitle>Online Sponsor</Subtitle>
+        </SponsorsContainer>
+        <Subtitle>Gifting Partner</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Books Partner") {
+              if (sponsor.category == "Gifting Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -346,9 +346,9 @@ export default function Sponsors() {
                 );
               }
             })}
-            <span style={{ color: "white" }}> Coming Soon...</span>
+            <span style={{ color: "white" }}></span>
           </div>
-        </SponsorsContainer> */}
+        </SponsorsContainer>
 
         <Title style={{ marginTop: "3em", marginBottom: "1em" }}>
           Our Past Sponsors
