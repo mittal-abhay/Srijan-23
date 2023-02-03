@@ -108,7 +108,7 @@ export default function Sponsors() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        console.log(data[0].logo);
+        console.log(data);
       })
       .catch(() => {
         alert("You are offline!!!");
@@ -324,7 +324,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Food Partner") {
+              if (sponsor.sponsor_type == "Food Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -339,7 +339,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Gifting Partner") {
+              if (sponsor.sponsor_type == "Gifting Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -354,7 +354,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Merchandise Partner") {
+              if (sponsor.sponsor_type == "Merchandise Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
@@ -369,7 +369,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map((sponsor) => {
-              if (sponsor.category == "Beverage Partner") {
+              if (sponsor.sponsor_type == "Beverage Partner") {
                 return (
                   <a href={sponsor.url} target="_blank">
                     <StyledImg src={sponsor.logo} />
