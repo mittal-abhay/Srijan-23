@@ -104,7 +104,7 @@ export default function OurTeam() {
 
       <div className="container team">
         <div className="row mt-2 mb-2 justify-content-center">
-          {developers &&
+          {developers && 
             developers.map((person) => (
               <Card key={person.name} member={person}></Card>
             ))}
