@@ -50,7 +50,11 @@ function EventPage(props) {
     })
       .then((res) => res.json())
       .then((data) => {
-        setEvents(data.results);
+        const newData = data.results.sort(function (a, b) {
+          return a.event_id - b.event_id;
+        });
+        setEvents(newData);
+        console.log(data.results)
       })
       .catch((e) => {
         alert(e);
